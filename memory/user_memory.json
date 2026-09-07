@@ -1,0 +1,61 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-09-07 19:16:54",
+  "total_memories": 8,
+  "user_profile": {
+    "user_name": "Yoel",
+    "device": "iPhone 14 (4GB RAM)",
+    "preferences": {},
+    "key_facts": []
+  },
+  "memories": [
+    {
+      "text": "L'utilisateur s'appelle Yoel et possède un iPhone 14 (4 Go de RAM).",
+      "category": "profile",
+      "timestamp": 1788801238.4104826,
+      "importance": 2.0
+    },
+    {
+      "text": "Aujourd'hui, Yoel a développé le modèle d'IA Sarah Ngin 100% de zéro avec un agent développeur.",
+      "category": "episodic_today",
+      "timestamp": 1788801238.4188197,
+      "importance": 1.8
+    },
+    {
+      "text": "Sarah Ngin intègre le Grand Dictionnaire Hébreu-Français et les livres de Voltaire, Verne et La Fontaine.",
+      "category": "knowledge",
+      "timestamp": 1788801238.4289434,
+      "importance": 1.5
+    },
+    {
+      "text": "Utilisateur: Wsh Sarah, tkt j'ai bien avance aujourd'hui !",
+      "category": "conversation",
+      "timestamp": 1788801312.5786736,
+      "importance": 1.0
+    },
+    {
+      "text": "Utilisateur: Wsh Sarah, tkt j'ai bien avance aujourd'hui ! | Sarah Ngin: J'ai bien compris ton message en langage familier/SMS ('tkt' -> 't'inquiète', 'wsh' -> 'wesh / salut / quoi') ! Tout est parfaitement noté dans ma mémoire locale sans encombrer ton téléphone.",
+      "category": "conversation",
+      "timestamp": 1788801312.5814028,
+      "importance": 1.0
+    },
+    {
+      "text": "l'utilisateur a fait : aujourd'hui ?",
+      "category": "episodic_today",
+      "timestamp": 1788801414.2925825,
+      "importance": 1.5
+    },
+    {
+      "text": "Utilisateur: Qu'est-ce que j'ai fait aujourd'hui ?",
+      "category": "conversation",
+      "timestamp": 1788801414.2745895,
+      "importance": 1.0
+    },
+    {
+      "text": "Utilisateur: Qu'est-ce que j'ai fait aujourd'hui ? | Sarah Ngin: D'après ma mémoire locale indexée, voici ce que tu as fait aujourd'hui :<br>• L'utilisateur s'appelle Yoel et possède un iPhone 14 (4 Go de RAM).<br>• Aujourd'hui, Yoel a développé le modèle d'IA Sarah Ngin 100% de zéro avec un agent développeur.<br>• l'utilisateur a fait : aujourd'hui ?",
+      "category": "conversation",
+      "timestamp": 1788801414.3097436,
+      "importance": 1.0
+    }
+  ]
+}
