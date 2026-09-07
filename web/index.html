@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarah Ngin • AI Engine & Neural Console</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0a0a0c;
+            --bg-secondary: #141418;
+            --bg-card: rgba(26, 26, 32, 0.7);
+            --border: rgba(255, 255, 255, 0.08);
+            --accent: #2997ff;
+            --accent-glow: rgba(41, 151, 255, 0.25);
+            --accent-green: #30d158;
+            --accent-purple: #bf5af2;
+            --accent-orange: #ff9f0a;
+            --text-primary: #f5f5f7;
+            --text-secondary: #86868b;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+            background-image: 
+                radial-gradient(circle at 20% 15%, rgba(41, 151, 255, 0.08) 0%, transparent 40%),
+                radial-gradient(circle at 80% 80%, rgba(191, 90, 242, 0.06) 0%, transparent 40%);
+        }
+
+        header {
+            border-bottom: 1px solid var(--border);
+            backdrop-filter: blur(20px);
+            background: rgba(10, 10, 12, 0.8);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding: 16px 28px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-badge {
+            width: 38px;
+            height: 38px;
+            border-radius: 10px;
+            background: linear-gradient(135deg, #2997ff, #bf5af2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 18px;
+            box-shadow: 0 4px 15px var(--accent-glow);
+        }
+
+        .brand h1 {
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: -0.3px;
+        }
+
+        .brand span {
+            font-size: 12px;
+            color: var(--accent-green);
+            background: rgba(48, 209, 88, 0.12);
+            padding: 2px 8px;
+            border-radius: 20px;
+            margin-left: 8px;
+            font-weight: 600;
+        }
+
+        .specs-pills {
+            display: flex;
+            gap: 10px;
+        }
+
+        .pill {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            color: var(--text-secondary);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .pill strong {
+            color: var(--text-primary);
+        }
+
+        .main-layout {
+            display: grid;
+            grid-template-columns: 1fr 380px;
+            gap: 20px;
+            padding: 24px;
+            max-width: 1500px;
+            margin: 0 auto;
+            width: 100%;
+            flex: 1;
+        }
+
+        .chat-section {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            display: flex;
+            flex-direction: column;
+            height: calc(100vh - 140px);
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+        }
+
+        .chat-header {
+            padding: 16px 20px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(255,255,255,0.02);
+        }
+
+        .chat-messages {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .msg {
+            max-width: 80%;
+            padding: 12px 18px;
+            border-radius: 16px;
+            font-size: 14px;
+            line-height: 1.5;
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(6px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .msg-user {
+            align-self: flex-end;
+            background: #2997ff;
+            color: #fff;
+            border-bottom-right-radius: 4px;
+        }
+
+        .msg-bot {
+            align-self: flex-start;
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid var(--border);
+            color: var(--text-primary);
+            border-bottom-left-radius: 4px;
+        }
+
+        .chat-input-area {
+            padding: 16px 20px;
+            border-top: 1px solid var(--border);
+            display: flex;
+            gap: 12px;
+            background: rgba(20, 20, 24, 0.95);
+        }
+
+        .chat-input-area input {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border);
+            padding: 12px 16px;
+            border-radius: 10px;
+            color: #fff;
+            font-size: 14px;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .chat-input-area input:focus {
+            border-color: var(--accent);
+        }
+
+        .btn-send {
+            background: linear-gradient(135deg, #2997ff, #0071e3);
+            border: none;
+            color: white;
+            padding: 0 24px;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+            transition: transform 0.1s, opacity 0.2s;
+        }
+
+        .btn-send:hover {
+            opacity: 0.9;
+        }
+
+        .btn-send:active {
+            transform: scale(0.97);
+        }
+
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            height: calc(100vh - 140px);
+            overflow-y: auto;
+        }
+
+        .card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 18px;
+        }
+
+        .card h3 {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .memory-list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            max-height: 220px;
+            overflow-y: auto;
+        }
+
+        .memory-item {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid var(--border);
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-size: 12px;
+            line-height: 1.4;
+            color: #d1d1d6;
+        }
+
+        .sandbox-box pre {
+            background: #000;
+            padding: 12px;
+            border-radius: 8px;
+            font-family: 'Fira Code', monospace;
+            font-size: 12px;
+            color: #34c759;
+            overflow-x: auto;
+            max-height: 180px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="brand">
+            <div class="logo-badge">S</div>
+            <div>
+                <h1>Sarah Ngin • AI Engine</h1>
+            </div>
+            <span>En Ligne</span>
+        </div>
+        <div class="specs-pills">
+            <div class="pill">Architecture: <strong>Transformer (6L / 6H)</strong></div>
+            <div class="pill">Poids: <strong>3.89M Params</strong></div>
+            <div class="pill">Cible: <strong>iPhone 14 (<4GB RAM)</strong></div>
+        </div>
+    </header>
+
+    <div class="main-layout">
+        <section class="chat-section">
+            <div class="chat-header">
+                <div>Discussion Interactive avec Sarah Ngin</div>
+                <div style="font-size: 12px; color: var(--accent-green);">Auto-Correction & Streaming Réactif Actifs</div>
+            </div>
+            <div class="chat-messages" id="chat-box">
+                <div class="msg msg-bot">
+                    Bonjour Yoel ! Je suis <strong>Sarah Ngin</strong>, ton modèle d'intelligence artificielle entraîné à 100% de zéro. Ma mémoire persistante, mon dictionnaire bilingue Hébreu-Français et mon moteur de raisonnement sont opérationnels. Comment puis-je t'aider ?
+                </div>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="user-input" placeholder="Parle à Sarah (ex: 'Qui suis-je ?', 'Traduis shalom', 'wsh sava ?')..." onkeydown="if(event.key==='Enter') sendMessage()">
+                <button class="btn-send" onclick="sendMessage()">Envoyer</button>
+            </div>
+        </section>
+
+        <aside class="sidebar">
+            <div class="card">
+                <h3>Mémoire Long-Terme <span id="mem-count" style="color:var(--accent);">3</span></h3>
+                <div class="memory-list" id="memory-container">
+                    <div class="memory-item">👤 Utilisateur : Yoel (iPhone 14 - 4 Go RAM)</div>
+                    <div class="memory-item">🧠 Modèle : Sarah Ngin entraîné de zéro</div>
+                    <div class="memory-item">📖 Connaissances : Hébreu-Français + Littérature</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Bac à Sable Multi-Langage</h3>
+                <button class="btn-send" style="width: 100%; padding: 8px; margin-bottom: 10px; font-size: 12px;" onclick="runSandboxTest()">Exécuter Tests 5 Langages</button>
+                <div class="sandbox-box">
+                    <pre id="sandbox-output">En attente de validation...</pre>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <script>
+        async function sendMessage() {
+            const input = document.getElementById('user-input');
+            const msg = input.value.trim();
+            if (!msg) return;
+
+            const chatBox = document.getElementById('chat-box');
+            
+            // Add user msg
+            const userDiv = document.createElement('div');
+            userDiv.className = 'msg msg-user';
+            userDiv.innerText = msg;
+            chatBox.appendChild(userDiv);
+            input.value = '';
+            chatBox.scrollTop = chatBox.scrollHeight;
+
+            // Loading state
+            const botDiv = document.createElement('div');
+            botDiv.className = 'msg msg-bot';
+            botDiv.innerHTML = '<em>Sarah réfléchit...</em>';
+            chatBox.appendChild(botDiv);
+            chatBox.scrollTop = chatBox.scrollHeight;
+
+            try {
+                const response = await fetch('/api/chat', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ message: msg })
+                });
+                const data = await response.json();
+                botDiv.innerHTML = data.reply;
+
+                // Update memories
+                if (data.memories) {
+                    const memContainer = document.getElementById('memory-container');
+                    memContainer.innerHTML = '';
+                    data.memories.forEach(m => {
+                        const div = document.createElement('div');
+                        div.className = 'memory-item';
+                        div.innerText = m.text;
+                        memContainer.appendChild(div);
+                    });
+                    document.getElementById('mem-count').innerText = data.memories.length;
+                }
+            } catch (err) {
+                botDiv.innerText = "Erreur de connexion avec Sarah Ngin.";
+            }
+            chatBox.scrollTop = chatBox.scrollHeight;
+        }
+
+        async function runSandboxTest() {
+            const output = document.getElementById('sandbox-output');
+            output.innerText = "Exécution de la vérification croisée (Python, JS, HTML/CSS, Java, Swift)...";
+            try {
+                const res = await fetch('/api/test_code');
+                const data = await res.json();
+                output.innerText = JSON.stringify(data, null, 2);
+            } catch (e) {
+                output.innerText = "Erreur d'exécution du sandbox.";
+            }
+        }
+    </script>
+</body>
+</html>

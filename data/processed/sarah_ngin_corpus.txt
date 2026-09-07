@@ -15187,6 +15187,374 @@ Conjugaison Hébreu-Français : Verbe לחשוב (penser) : Présent 'אני ח�
 נטיית פעלים : לחשוב (בצרפתית: penser) - הווה: אני חושב (je pense), עבר: אני חשבתי (j'ai pensé), עתיד: אני אחשוב (je penserai).
 Conjugaison Hébreu-Français : Verbe להבין (comprendre) : Présent 'אני מבין' (je comprends), Passé 'אני הבנתי' (j'ai compris), Futur 'אני אבין' (je comprendrai).
 נטיית פעלים : להבין (בצרפתית: comprendre) - הווה: אני מבין (je comprends), עבר: אני הבנתי (j'ai compris), עתיד: אני אבין (je comprendrai).
+Dictionnaire Argot & Texto : 'tkt' signifie 't'inquiète'. Définition : Ne t'inquiète pas / Sois rassuré.
+Traduction Langage Jeune vers Français : 'tkt' -> 't'inquiète'.
+Exemple en langage SMS : Tkt je gère la situation.
+Équivalence : En texto 'tkt' correspond au français 't'inquiète'.
+Dictionnaire Argot & Texto : 'tkt pas' signifie 'ne t'inquiète pas'. Définition : Rassure-toi.
+Traduction Langage Jeune vers Français : 'tkt pas' -> 'ne t'inquiète pas'.
+Exemple en langage SMS : Tkt pas, tout est sous contrôle.
+Équivalence : En texto 'tkt pas' correspond au français 'ne t'inquiète pas'.
+Dictionnaire Argot & Texto : 'jpp' signifie 'j'en peux plus'. Définition : Expression d'épuisement ou de rire incontrôlable.
+Traduction Langage Jeune vers Français : 'jpp' -> 'j'en peux plus'.
+Exemple en langage SMS : Jpp de cette blague elle est trop drôle !
+Équivalence : En texto 'jpp' correspond au français 'j'en peux plus'.
+Dictionnaire Argot & Texto : 'mdr' signifie 'mort de rire'. Définition : Expression pour indiquer que quelque chose est très drôle.
+Traduction Langage Jeune vers Français : 'mdr' -> 'mort de rire'.
+Exemple en langage SMS : Mdr c'est exactement ça.
+Équivalence : En texto 'mdr' correspond au français 'mort de rire'.
+Dictionnaire Argot & Texto : 'ptdr' signifie 'pété de rire'. Définition : Rire aux éclats / Hilarité intense.
+Traduction Langage Jeune vers Français : 'ptdr' -> 'pété de rire'.
+Exemple en langage SMS : Ptdr regarde ce qu'il vient de faire.
+Équivalence : En texto 'ptdr' correspond au français 'pété de rire'.
+Dictionnaire Argot & Texto : 'xpdr' signifie 'explosé de rire'. Définition : Rire extrême.
+Traduction Langage Jeune vers Français : 'xpdr' -> 'explosé de rire'.
+Exemple en langage SMS : Xpdr c'est incroyable.
+Équivalence : En texto 'xpdr' correspond au français 'explosé de rire'.
+Dictionnaire Argot & Texto : 'askip' signifie 'à ce qu'il paraît'. Définition : Selon les rumeurs / D'après ce qu'on dit.
+Traduction Langage Jeune vers Français : 'askip' -> 'à ce qu'il paraît'.
+Exemple en langage SMS : Askip Sarah Ngin est super rapide sur iPhone 14.
+Équivalence : En texto 'askip' correspond au français 'à ce qu'il paraît'.
+Dictionnaire Argot & Texto : 'oklm' signifie 'au calme'. Définition : Tranquillement, sans stress, en toute sérénité.
+Traduction Langage Jeune vers Français : 'oklm' -> 'au calme'.
+Exemple en langage SMS : Je révise oklm dans mon salon.
+Équivalence : En texto 'oklm' correspond au français 'au calme'.
+Dictionnaire Argot & Texto : 'wsh' signifie 'wesh / salut / quoi'. Définition : Salutation familière ou marque d'étonnement.
+Traduction Langage Jeune vers Français : 'wsh' -> 'wesh / salut / quoi'.
+Exemple en langage SMS : Wsh bien ou quoi ?
+Équivalence : En texto 'wsh' correspond au français 'wesh / salut / quoi'.
+Dictionnaire Argot & Texto : 'wesh' signifie 'salut / hé / quoi'. Définition : Interjection familière pour saluer ou interpeller.
+Traduction Langage Jeune vers Français : 'wesh' -> 'salut / hé / quoi'.
+Exemple en langage SMS : Wesh l'équipe, comment ça va ?
+Équivalence : En texto 'wesh' correspond au français 'salut / hé / quoi'.
+Dictionnaire Argot & Texto : 'sah' signifie 'en vrai / sérieusement'. Définition : Pour de vrai, en toute sincérité (de l'arabe).
+Traduction Langage Jeune vers Français : 'sah' -> 'en vrai / sérieusement'.
+Exemple en langage SMS : Sah, ce modèle d'intelligence artificielle est impressionnant.
+Équivalence : En texto 'sah' correspond au français 'en vrai / sérieusement'.
+Dictionnaire Argot & Texto : 'sah quel plaisir' signifie 'quel réel plaisir'. Définition : Expression de satisfaction sincère.
+Traduction Langage Jeune vers Français : 'sah quel plaisir' -> 'quel réel plaisir'.
+Exemple en langage SMS : Sah quel plaisir de voir le modèle fonctionner.
+Équivalence : En texto 'sah quel plaisir' correspond au français 'quel réel plaisir'.
+Dictionnaire Argot & Texto : 'bg' signifie 'beau gosse / belle gosse'. Définition : Personne séduisante ou remarquable.
+Traduction Langage Jeune vers Français : 'bg' -> 'beau gosse / belle gosse'.
+Exemple en langage SMS : Bien joué bg, super travail.
+Équivalence : En texto 'bg' correspond au français 'beau gosse / belle gosse'.
+Dictionnaire Argot & Texto : 'frero' signifie 'frérot / mon frère'. Définition : Terme d'affection pour un ami proche.
+Traduction Langage Jeune vers Français : 'frero' -> 'frérot / mon frère'.
+Exemple en langage SMS : Merci frero pour ton aide.
+Équivalence : En texto 'frero' correspond au français 'frérot / mon frère'.
+Dictionnaire Argot & Texto : 'frerot' signifie 'frérot / ami très proche'. Définition : Ami intime / personne de confiance.
+Traduction Langage Jeune vers Français : 'frerot' -> 'frérot / ami très proche'.
+Exemple en langage SMS : Tranquille frérot, on avance.
+Équivalence : En texto 'frerot' correspond au français 'frérot / ami très proche'.
+Dictionnaire Argot & Texto : 'dcp' signifie 'du coup'. Définition : Par conséquent / Donc.
+Traduction Langage Jeune vers Français : 'dcp' -> 'du coup'.
+Exemple en langage SMS : Dcp on fait quoi maintenant ?
+Équivalence : En texto 'dcp' correspond au français 'du coup'.
+Dictionnaire Argot & Texto : 'stp' signifie 's'il te plaît'. Définition : Formule de politesse.
+Traduction Langage Jeune vers Français : 'stp' -> 's'il te plaît'.
+Exemple en langage SMS : Envoie-moi le fichier stp.
+Équivalence : En texto 'stp' correspond au français 's'il te plaît'.
+Dictionnaire Argot & Texto : 'svp' signifie 's'il vous plaît'. Définition : Formule de politesse formelle.
+Traduction Langage Jeune vers Français : 'svp' -> 's'il vous plaît'.
+Exemple en langage SMS : Pouvez-vous confirmer svp ?
+Équivalence : En texto 'svp' correspond au français 's'il vous plaît'.
+Dictionnaire Argot & Texto : 'bcp' signifie 'beaucoup'. Définition : En grande quantité.
+Traduction Langage Jeune vers Français : 'bcp' -> 'beaucoup'.
+Exemple en langage SMS : Il y a bcp de données dans le dictionnaire.
+Équivalence : En texto 'bcp' correspond au français 'beaucoup'.
+Dictionnaire Argot & Texto : 'tt' signifie 'tout'. Définition : Totalité.
+Traduction Langage Jeune vers Français : 'tt' -> 'tout'.
+Exemple en langage SMS : C'est tt bon pour moi.
+Équivalence : En texto 'tt' correspond au français 'tout'.
+Dictionnaire Argot & Texto : 'pk' signifie 'pourquoi'. Définition : Interrogation sur la raison.
+Traduction Langage Jeune vers Français : 'pk' -> 'pourquoi'.
+Exemple en langage SMS : Pk tu dis ça ?
+Équivalence : En texto 'pk' correspond au français 'pourquoi'.
+Dictionnaire Argot & Texto : 'prk' signifie 'pourquoi'. Définition : Demande d'explication.
+Traduction Langage Jeune vers Français : 'prk' -> 'pourquoi'.
+Exemple en langage SMS : Prk le modèle est si rapide ?
+Équivalence : En texto 'prk' correspond au français 'pourquoi'.
+Dictionnaire Argot & Texto : 'pr' signifie 'pour'. Définition : Préposition de destination ou but.
+Traduction Langage Jeune vers Français : 'pr' -> 'pour'.
+Exemple en langage SMS : C'est un modèle pr mobile.
+Équivalence : En texto 'pr' correspond au français 'pour'.
+Dictionnaire Argot & Texto : 'vs' signifie 'vous'. Définition : Pronom vous.
+Traduction Langage Jeune vers Français : 'vs' -> 'vous'.
+Exemple en langage SMS : Vs êtes prêts ?
+Équivalence : En texto 'vs' correspond au français 'vous'.
+Dictionnaire Argot & Texto : 'ns' signifie 'nous'. Définition : Pronom nous.
+Traduction Langage Jeune vers Français : 'ns' -> 'nous'.
+Exemple en langage SMS : Ns allons tester.
+Équivalence : En texto 'ns' correspond au français 'nous'.
+Dictionnaire Argot & Texto : 'cimer' signifie 'merci (verlan)'. Définition : Remerciement chaleureux.
+Traduction Langage Jeune vers Français : 'cimer' -> 'merci (verlan)'.
+Exemple en langage SMS : Cimer pour les explications.
+Équivalence : En texto 'cimer' correspond au français 'merci (verlan)'.
+Dictionnaire Argot & Texto : 'merci bcp' signifie 'merci beaucoup'. Définition : Remerciement appuyé.
+Traduction Langage Jeune vers Français : 'merci bcp' -> 'merci beaucoup'.
+Exemple en langage SMS : Merci bcp pour ton aide.
+Équivalence : En texto 'merci bcp' correspond au français 'merci beaucoup'.
+Dictionnaire Argot & Texto : 'a+' signifie 'à plus tard'. Définition : Salutation de départ.
+Traduction Langage Jeune vers Français : 'a+' -> 'à plus tard'.
+Exemple en langage SMS : A+ et bonne journée.
+Équivalence : En texto 'a+' correspond au français 'à plus tard'.
+Dictionnaire Argot & Texto : 'a toute' signifie 'à tout à l'heure'. Définition : Formule pour signifier qu'on se revoit bientôt.
+Traduction Langage Jeune vers Français : 'a toute' -> 'à tout à l'heure'.
+Exemple en langage SMS : Je mange et je reviens, à toute.
+Équivalence : En texto 'a toute' correspond au français 'à tout à l'heure'.
+Dictionnaire Argot & Texto : 'bjr' signifie 'bonjour'. Définition : Salutation en début de journée.
+Traduction Langage Jeune vers Français : 'bjr' -> 'bonjour'.
+Exemple en langage SMS : Bjr tout le monde.
+Équivalence : En texto 'bjr' correspond au français 'bonjour'.
+Dictionnaire Argot & Texto : 'bsr' signifie 'bonsoir'. Définition : Salutation en soirée.
+Traduction Langage Jeune vers Français : 'bsr' -> 'bonsoir'.
+Exemple en langage SMS : Bsr, comment s'est passée la journée ?
+Équivalence : En texto 'bsr' correspond au français 'bonsoir'.
+Dictionnaire Argot & Texto : 'slm' signifie 'salam / salut'. Définition : Salutation bienveillante.
+Traduction Langage Jeune vers Français : 'slm' -> 'salam / salut'.
+Exemple en langage SMS : Slm mon ami.
+Équivalence : En texto 'slm' correspond au français 'salam / salut'.
+Dictionnaire Argot & Texto : 'chelou' signifie 'louche / bizarre'. Définition : Étrange, suspect ou hors du commun.
+Traduction Langage Jeune vers Français : 'chelou' -> 'louche / bizarre'.
+Exemple en langage SMS : Ce comportement est un peu chelou.
+Équivalence : En texto 'chelou' correspond au français 'louche / bizarre'.
+Dictionnaire Argot & Texto : 'relou' signifie 'lourd / pénible'. Définition : Ennuyeux, difficile ou agaçant.
+Traduction Langage Jeune vers Français : 'relou' -> 'lourd / pénible'.
+Exemple en langage SMS : C'est relou quand ça plante, mais là tout marche.
+Équivalence : En texto 'relou' correspond au français 'lourd / pénible'.
+Dictionnaire Argot & Texto : 'zarbi' signifie 'bizarre'. Définition : Étrange / singulier.
+Traduction Langage Jeune vers Français : 'zarbi' -> 'bizarre'.
+Exemple en langage SMS : C'est un truc zarbi mais efficace.
+Équivalence : En texto 'zarbi' correspond au français 'bizarre'.
+Dictionnaire Argot & Texto : 'vénère' signifie 'énervé (verlan)'. Définition : En colère ou irrité.
+Traduction Langage Jeune vers Français : 'vénère' -> 'énervé (verlan)'.
+Exemple en langage SMS : Pas besoin d'être vénère, le modèle s'adapte.
+Équivalence : En texto 'vénère' correspond au français 'énervé (verlan)'.
+Dictionnaire Argot & Texto : 'chanmé' signifie 'méchant / super bien (verlan)'. Définition : Formidable, génial, extraordinaire.
+Traduction Langage Jeune vers Français : 'chanmé' -> 'méchant / super bien (verlan)'.
+Exemple en langage SMS : Cette architecture IA est trop chanmé.
+Équivalence : En texto 'chanmé' correspond au français 'méchant / super bien (verlan)'.
+Dictionnaire Argot & Texto : 'ouf' signifie 'fou (verlan)'. Définition : Incroyable, exceptionnel ou démesuré.
+Traduction Langage Jeune vers Français : 'ouf' -> 'fou (verlan)'.
+Exemple en langage SMS : C'est un truc de ouf cette vitesse.
+Équivalence : En texto 'ouf' correspond au français 'fou (verlan)'.
+Dictionnaire Argot & Texto : 'kiffer' signifie 'aimer / apprécier énormément'. Définition : Prendre du plaisir à quelque chose.
+Traduction Langage Jeune vers Français : 'kiffer' -> 'aimer / apprécier énormément'.
+Exemple en langage SMS : Je kiffe utiliser Sarah Ngin.
+Équivalence : En texto 'kiffer' correspond au français 'aimer / apprécier énormément'.
+Dictionnaire Argot & Texto : 'seum' signifie 'amertume / déception'. Définition : Avoir la rage ou être dégoûté.
+Traduction Langage Jeune vers Français : 'seum' -> 'amertume / déception'.
+Exemple en langage SMS : Il a le seum d'avoir raté.
+Équivalence : En texto 'seum' correspond au français 'amertume / déception'.
+Dictionnaire Argot & Texto : 'avoir le seum' signifie 'être dégoûté'. Définition : Ressentir une vive frustration.
+Traduction Langage Jeune vers Français : 'avoir le seum' -> 'être dégoûté'.
+Exemple en langage SMS : J'ai pas le seum, tout fonctionne.
+Équivalence : En texto 'avoir le seum' correspond au français 'être dégoûté'.
+Dictionnaire Argot & Texto : 'masterclass' signifie 'coup de génie / réussite parfaite'. Définition : Œuvre ou action de très haut niveau.
+Traduction Langage Jeune vers Français : 'masterclass' -> 'coup de génie / réussite parfaite'.
+Exemple en langage SMS : Ce code c'est une vraie masterclass.
+Équivalence : En texto 'masterclass' correspond au français 'coup de génie / réussite parfaite'.
+Dictionnaire Argot & Texto : 'carré' signifie 'parfait / net et précis'. Définition : Tout est réglé, en ordre et conforme.
+Traduction Langage Jeune vers Français : 'carré' -> 'parfait / net et précis'.
+Exemple en langage SMS : Tout est carré mon pote.
+Équivalence : En texto 'carré' correspond au français 'parfait / net et précis'.
+Dictionnaire Argot & Texto : 'c'est carré' signifie 'c'est parfait / validé'. Définition : Tout est en ordre irréprochable.
+Traduction Langage Jeune vers Français : 'c'est carré' -> 'c'est parfait / validé'.
+Exemple en langage SMS : C'est carré dans l'axe.
+Équivalence : En texto 'c'est carré' correspond au français 'c'est parfait / validé'.
+Dictionnaire Argot & Texto : 'mif' signifie 'la famille (verlan)'. Définition : Les proches, la famille.
+Traduction Langage Jeune vers Français : 'mif' -> 'la famille (verlan)'.
+Exemple en langage SMS : Passe le bonjour à la mif.
+Équivalence : En texto 'mif' correspond au français 'la famille (verlan)'.
+Dictionnaire Argot & Texto : 'poto' signifie 'pote / ami'. Définition : Camarade ou ami fidèle.
+Traduction Langage Jeune vers Français : 'poto' -> 'pote / ami'.
+Exemple en langage SMS : Quoi de neuf poto ?
+Équivalence : En texto 'poto' correspond au français 'pote / ami'.
+Dictionnaire Argot & Texto : 'banger' signifie 'un chef-d'œuvre musical ou technique'. Définition : Quelque chose de remarquable qui a un grand succès.
+Traduction Langage Jeune vers Français : 'banger' -> 'un chef-d'œuvre musical ou technique'.
+Exemple en langage SMS : Cette IA locale est un vrai banger.
+Équivalence : En texto 'banger' correspond au français 'un chef-d'œuvre musical ou technique'.
+Dictionnaire Argot & Texto : 'flex' signifie 'se vanter / exhiber'. Définition : Montrer ses compétences ou possessions.
+Traduction Langage Jeune vers Français : 'flex' -> 'se vanter / exhiber'.
+Exemple en langage SMS : Il flex avec son nouvel iPhone 14.
+Équivalence : En texto 'flex' correspond au français 'se vanter / exhiber'.
+Dictionnaire Argot & Texto : 'crush' signifie 'coup de cœur'. Définition : Personne pour laquelle on a une attirance.
+Traduction Langage Jeune vers Français : 'crush' -> 'coup de cœur'.
+Exemple en langage SMS : Elle a un crush sur cette techno.
+Équivalence : En texto 'crush' correspond au français 'coup de cœur'.
+Dictionnaire Argot & Texto : 'ghost' signifie 'ignorer subitement / disparaître'. Définition : Ne plus donner de nouvelles sans explication.
+Traduction Langage Jeune vers Français : 'ghost' -> 'ignorer subitement / disparaître'.
+Exemple en langage SMS : Il m'a ghost toute la journée.
+Équivalence : En texto 'ghost' correspond au français 'ignorer subitement / disparaître'.
+Dictionnaire Argot & Texto : 'cap' signifie 'mensonge / faux'. Définition : Prétendre quelque chose de faux (anglicisme).
+Traduction Langage Jeune vers Français : 'cap' -> 'mensonge / faux'.
+Exemple en langage SMS : No cap, ce modèle tourne sous 4 Go de RAM.
+Équivalence : En texto 'cap' correspond au français 'mensonge / faux'.
+Dictionnaire Argot & Texto : 'no cap' signifie 'sans mentir / en toute vérité'. Définition : Sans exagération, sincèrement.
+Traduction Langage Jeune vers Français : 'no cap' -> 'sans mentir / en toute vérité'.
+Exemple en langage SMS : No cap, c'est ultra rapide.
+Équivalence : En texto 'no cap' correspond au français 'sans mentir / en toute vérité'.
+Dictionnaire Argot & Texto : 'chiller' signifie 'se reposer / se détendre'. Définition : Passer du bon temps sans rien faire de stressant.
+Traduction Langage Jeune vers Français : 'chiller' -> 'se reposer / se détendre'.
+Exemple en langage SMS : On chill au soleil.
+Équivalence : En texto 'chiller' correspond au français 'se reposer / se détendre'.
+Dictionnaire Argot & Texto : 'bail' signifie 'une affaire / un projet / un truc'. Définition : Sujet, plan ou situation en cours.
+Traduction Langage Jeune vers Français : 'bail' -> 'une affaire / un projet / un truc'.
+Exemple en langage SMS : C'est quoi les bails aujourd'hui ?
+Équivalence : En texto 'bail' correspond au français 'une affaire / un projet / un truc'.
+Humain: Wsh Sarah, bien ou quoi ?
+Sarah Ngin: Wesh ! Tout va super bien bg, je suis prête à t'aider oklm.
+Humain: C'est carré le projet ?
+Sarah Ngin: Oui c'est totalement carré ! Tous les modules sont opérationnels et optimisés.
+Humain: Tkt frero je te fais confiance.
+Sarah Ngin: T'inquiète pas, ma mémoire locale garde tout en ordre sans perte.
+Humain: Askip tu tournes sur iPhone 14 avec 4Go de RAM ?
+Sarah Ngin: No cap ! Je prends moins de 150 Mo de RAM, c'est une vraie masterclass d'optimisation.
+Humain: Sah quel plaisir de discuter avec toi.
+Sarah Ngin: Merci bcp frérot ! Le plaisir est partagé.
+Humain: Jpp de réviser mes cours.
+Sarah Ngin: Courage ! Fais une petite pause pour chiller et on reprend ensemble après.
+<knowledge_category>Python_DeepLearning</knowledge_category>
+<source_code>
+# Implémentation du Bloc Transformer Sarah Engine
+import torch
+import torch.nn as nn
+
+class RMSNorm(nn.Module):
+ def __init__(self, dim: int, eps: float = 1e-5):
+ super().__init__()
+ self.eps = eps
+ self.weight = nn.Parameter(torch.ones(dim))
+ def forward(self, x: torch.Tensor) -> torch.Tensor:
+ return x * torch.rsqrt(x.pow(2).mean(-1, keepdim=True) + self.eps) * self.weight
+
+class SwiGLUFeedForward(nn.Module):
+ def __init__(self, dim: int, hidden_dim: int):
+ super().__init__()
+ self.w1 = nn.Linear(dim, hidden_dim, bias=False)
+ self.w2 = nn.Linear(hidden_dim, dim, bias=False)
+ self.w3 = nn.Linear(dim, hidden_dim, bias=False)
+ def forward(self, x: torch.Tensor) -> torch.Tensor:
+ return self.w2(torch.nn.functional.silu(self.w1(x)) * self.w3(x))
+
+</source_code>
+<knowledge_category>Swift_AppleShortcuts</knowledge_category>
+<source_code>
+// Intégration Native Apple Shortcuts & AppIntents pour Sarah Engine
+import AppIntents
+import SwiftUI
+
+@available(iOS 16.0, macOS 13.0, *)
+struct SarahEngineChatIntent: AppIntent {
+ static var title: LocalizedStringResource = "Exécuter Sarah Engine"
+ static var description = IntentDescription("Envoie une consigne au réseau neuronal Sarah Engine embarqué.")
+ 
+ @Parameter(title: "Prompt", description: "La question ou commande pour Sarah")
+ var prompt: String
+ 
+ func perform() async throws -> some ProvidesDialog {
+ let response = await SarahEngineBridge.generate(prompt: prompt)
+ return .result(dialog: IntentDialog(stringLiteral: response))
+ }
+}
+
+</source_code>
+<knowledge_category>NodeJS_Backend</knowledge_category>
+<source_code>
+// Serveur Micro-Service HTTP Node.js Ultra-Rapide pour Sarah Engine
+const http = require('http');
+
+const server = http.createServer((req, res) => {
+ if (req.method === 'POST' && req.url === '/v1/sarah/infer') {
+ let body = '';
+ req.on('data', chunk => body += chunk);
+ req.on('end', () => {
+ const payload = JSON.parse(body);
+ res.writeHead(200, { 'Content-Type': 'application/json' });
+ res.end(JSON.stringify({ model: 'Sarah Engine', status: 'ready', answer: 'Inférence locale exécutée.' }));
+ });
+ } else {
+ res.writeHead(404);
+ res.end();
+ }
+});
+
+server.listen(8080, () => console.log('Serveur Sarah Engine en écoute sur 8080'));
+
+</source_code>
+Apple Shortcuts (Scripting & Logique) : Action 'Définir une variable (Set Variable)' - Rôle : Stocke une valeur textuelle, numérique ou objet dans une variable réutilisable.
+Guide Raccourcis iOS : Pour utiliser 'Définir une variable (Set Variable)', on configure le flux d'automatisation selon : Stocke une valeur textuelle, numérique ou objet dans une variable réutilisable.
+Automatisation Apple : 'Définir une variable (Set Variable)' permet d'interagir nativement avec l'écosystème iPhone et macOS.
+Apple Shortcuts (Scripting & Logique) : Action 'Condition Si/Sinon (If/Else)' - Rôle : Exécute un bloc d'actions si la condition logique est remplie, sinon bascule sur le bloc secondaire.
+Guide Raccourcis iOS : Pour utiliser 'Condition Si/Sinon (If/Else)', on configure le flux d'automatisation selon : Exécute un bloc d'actions si la condition logique est remplie, sinon bascule sur le bloc secondaire.
+Automatisation Apple : 'Condition Si/Sinon (If/Else)' permet d'interagir nativement avec l'écosystème iPhone et macOS.
+Apple Shortcuts (Scripting & Logique) : Action 'Répéter avec chaque élément (Repeat with Each)' - Rôle : Boucle itérative sur une liste d'éléments (fichiers, textes, contacts).
+Guide Raccourcis iOS : Pour utiliser 'Répéter avec chaque élément (Repeat with Each)', on configure le flux d'automatisation selon : Boucle itérative sur une liste d'éléments (fichiers, textes, contacts).
+Automatisation Apple : 'Répéter avec chaque élément (Repeat with Each)' permet d'interagir nativement avec l'écosystème iPhone et macOS.
+Apple Shortcuts (Scripting & Logique) : Action 'Exécuter JavaScript sur page web (Run JavaScript on Webpage)' - Rôle : Injecte du code JS directement dans le DOM Safari pour scraper ou modifier une page.
+Guide Raccourcis iOS : Pour utiliser 'Exécuter JavaScript sur page web (Run JavaScript on Webpage)', on configure le flux d'automatisation selon : Injecte du code JS directement dans le DOM Safari pour scraper ou modifier une page.
+Automatisation Apple : 'Exécuter JavaScript sur page web (Run JavaScript on Webpage)' permet d'interagir nativement avec l'écosystème iPhone et macOS.
+Apple Shortcuts (Scripting & Logique) : Action 'Exécuter un script via SSH (Run Script over SSH)' - Rôle : Se connecte à un serveur distant et exécute des commandes shell Linux/macOS.
+Guide Raccourcis iOS : Pour utiliser 'Exécuter un script via SSH (Run Script over SSH)', on configure le flux d'automatisation selon : Se connecte à un serveur distant et exécute des commandes shell Linux/macOS.
+Automatisation Apple : 'Exécuter un script via SSH (Run Script over SSH)' permet d'interagir nativement avec l'écosystème iPhone et macOS.
+Apple Shortcuts (Réseau & Requêtes Web / API) : Action 'Obtenir le contenu de l'URL (Get Contents of URL)' - Rôle : Effectue des requêtes HTTP (GET, POST, PUT, DELETE) avec en-têtes personnalisés et corps JSON.
+Guide Raccourcis iOS : Pour utiliser 'Obtenir le contenu de l'URL (Get Contents of URL)', on configure le flux d'automatisation selon : Effectue des requêtes HTTP (GET, POST, PUT, DELETE) avec en-têtes personnalisés et corps JSON.
+Automatisation Apple : 'Obtenir le contenu de l'URL (Get Contents of URL)' permet d'interagir nativement avec l'écosystème iPhone et macOS.
+Apple Shortcuts (Réseau & Requêtes Web / API) : Action 'Ouvrir une URL (Open URL)' - Rôle : Ouvre un lien Web ou un schéma d'URL profond (Universal Link) dans le navigateur ou une app dédiée.
+Guide Raccourcis iOS : Pour utiliser 'Ouvrir une URL (Open URL)', on configure le flux d'automatisation selon : Ouvre un lien Web ou un schéma d'URL profond (Universal Link) dans le navigateur ou une app dédiée.
+Automatisation Apple : 'Ouvrir une URL (Open URL)' permet d'interagir nativement avec l'écosystème iPhone et macOS.
+Apple Shortcuts (Réseau & Requêtes Web / API) : Action 'Télécharger le fichier (Download URL File)' - Rôle : Récupère un flux binaire ou un document distant et l'enregistre dans Fichiers iCloud.
+Guide Raccourcis iOS : Pour utiliser 'Télécharger le fichier (Download URL File)', on configure le flux d'automatisation selon : Récupère un flux binaire ou un document distant et l'enregistre dans Fichiers iCloud.
+Automatisation Apple : 'Télécharger le fichier (Download URL File)' permet d'interagir nativement avec l'écosystème iPhone et macOS.
+Apple Shortcuts (Système iOS, Presse-papier & Partage) : Action 'Obtenir le presse-papiers (Get Clipboard)' - Rôle : Lit le texte ou l'image actuellement copiée dans le presse-papier iOS.
+Guide Raccourcis iOS : Pour utiliser 'Obtenir le presse-papiers (Get Clipboard)', on configure le flux d'automatisation selon : Lit le texte ou l'image actuellement copiée dans le presse-papier iOS.
+Automatisation Apple : 'Obtenir le presse-papiers (Get Clipboard)' permet d'interagir nativement avec l'écosystème iPhone et macOS.
+Apple Shortcuts (Système iOS, Presse-papier & Partage) : Action 'Copier dans le presse-papiers (Set Clipboard)' - Rôle : Écrit une donnée dans le presse-papiers universel avec expiration optionnelle.
+Guide Raccourcis iOS : Pour utiliser 'Copier dans le presse-papiers (Set Clipboard)', on configure le flux d'automatisation selon : Écrit une donnée dans le presse-papiers universel avec expiration optionnelle.
+Automatisation Apple : 'Copier dans le presse-papiers (Set Clipboard)' permet d'interagir nativement avec l'écosystème iPhone et macOS.
+Apple Shortcuts (Système iOS, Presse-papier & Partage) : Action 'Afficher une notification (Show Notification)' - Rôle : Déclenche une bannière système avec titre, corps de texte et son.
+Guide Raccourcis iOS : Pour utiliser 'Afficher une notification (Show Notification)', on configure le flux d'automatisation selon : Déclenche une bannière système avec titre, corps de texte et son.
+Automatisation Apple : 'Afficher une notification (Show Notification)' permet d'interagir nativement avec l'écosystème iPhone et macOS.
+Apple Shortcuts (Système iOS, Presse-papier & Partage) : Action 'Aperçu rapide (Quick Look)' - Rôle : Ouvre une fenêtre modale pour prévisualiser instantanément un document, JSON ou image.
+Guide Raccourcis iOS : Pour utiliser 'Aperçu rapide (Quick Look)', on configure le flux d'automatisation selon : Ouvre une fenêtre modale pour prévisualiser instantanément un document, JSON ou image.
+Automatisation Apple : 'Aperçu rapide (Quick Look)' permet d'interagir nativement avec l'écosystème iPhone et macOS.
+Apple Shortcuts (Système iOS, Presse-papier & Partage) : Action 'Envoyer un message (Send Message via iMessage/SMS)' - Rôle : Prépare ou envoie automatiquement un message à un ou plusieurs destinataires.
+Guide Raccourcis iOS : Pour utiliser 'Envoyer un message (Send Message via iMessage/SMS)', on configure le flux d'automatisation selon : Prépare ou envoie automatiquement un message à un ou plusieurs destinataires.
+Automatisation Apple : 'Envoyer un message (Send Message via iMessage/SMS)' permet d'interagir nativement avec l'écosystème iPhone et macOS.
+Apple Shortcuts (Intégration Xcode & Swift (App Intents)) : Action 'Framework AppIntents (iOS 16+)' - Rôle : Définit des intents natifs en Swift pour exposer des actions de l'application à Siri et Raccourcis.
+Guide Raccourcis iOS : Pour utiliser 'Framework AppIntents (iOS 16+)', on configure le flux d'automatisation selon : Définit des intents natifs en Swift pour exposer des actions de l'application à Siri et Raccourcis.
+Automatisation Apple : 'Framework AppIntents (iOS 16+)' permet d'interagir nativement avec l'écosystème iPhone et macOS.
+Apple Shortcuts (Intégration Xcode & Swift (App Intents)) : Action 'AppShortcut (ShortcutsProvider)' - Rôle : Enregistre automatiquement des raccourcis prêts à l'emploi dès l'installation de l'application sans configuration manuelle.
+Guide Raccourcis iOS : Pour utiliser 'AppShortcut (ShortcutsProvider)', on configure le flux d'automatisation selon : Enregistre automatiquement des raccourcis prêts à l'emploi dès l'installation de l'application sans configuration manuelle.
+Automatisation Apple : 'AppShortcut (ShortcutsProvider)' permet d'interagir nativement avec l'écosystème iPhone et macOS.
+Apple Shortcuts (Intégration Xcode & Swift (App Intents)) : Action 'IntentParameter' - Rôle : Expose des paramètres typés (texte, date, énumération) pour permettre à l'utilisateur de les personnaliser dans Raccourcis.
+Guide Raccourcis iOS : Pour utiliser 'IntentParameter', on configure le flux d'automatisation selon : Expose des paramètres typés (texte, date, énumération) pour permettre à l'utilisateur de les personnaliser dans Raccourcis.
+Automatisation Apple : 'IntentParameter' permet d'interagir nativement avec l'écosystème iPhone et macOS.
+Exemple de Code Swift / Xcode pour Apple Shortcuts :
+import AppIntents
+
+struct SarahNginIntent: AppIntent {
+ static var title: LocalizedStringResource = 'Demander à Sarah Ngin'
+ @Parameter(title: 'Question') var prompt: String
+ func perform() async throws -> some ProvidesDialog {
+ return .result(dialog: 'Sarah Ngin traite votre demande.')
+ }
+}
+Exemple de Code Swift / Xcode pour Apple Shortcuts :
+import AppIntents
+
+struct SarahShortcutsProvider: AppShortcutsProvider {
+ static var appShortcuts: [AppShortcut] {
+ AppShortcut(
+ intent: SarahNginIntent(),
+ phrases: ['Demande à Sarah Ngin', 'Ouvre Sarah Ngin']
+ )
+ }
+}
+Exemple de Code Swift / Xcode pour Apple Shortcuts :
+// Apple Shortcuts HTTP API Request:
+// Action: Get Contents of URL -> Method: POST -> Headers: Content-Type: application/json -> Request Body: JSON payload
 Dictionnaire Français : L'intelligence artificielle (nom féminin) - Définition : Ensemble des théories et des techniques développant des programmes informatiques complexes capables de simuler certains traits de l'intelligence humaine comme l'apprentissage et le raisonnement.
 Exemple d'utilisation : L'intelligence artificielle est un concept fondamental dans l'analyse logique et scientifique.
 Dictionnaire Français : Réseau de neurones (nom masculin) - Définition : Système informatique inspiré du fonctionnement des neurones biologiques du cerveau humain, composé de couches de calcul pondérées interconnectées.
