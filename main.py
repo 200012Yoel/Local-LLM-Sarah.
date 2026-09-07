@@ -166,7 +166,7 @@ def interactive_chat(checkpoint_dir: str = "checkpoints"):
 
 def main():
     parser = argparse.ArgumentParser(description="Sarah Ngin AI System")
-    parser.add_argument("--action", choices=["collect", "tokenize", "train", "generate", "export", "chat", "all"], default="all", help="Action à exécuter")
+    parser.add_argument("--action", choices=["collect", "tokenize", "train", "generate", "export", "chat", "live", "graphs", "all"], default="all", help="Action à exécuter")
     parser.add_argument("--epochs", type=int, default=20, help="Nombre d'époques d'entraînement")
     parser.add_argument("--vocab_size", type=int, default=2048, help="Taille du vocabulaire")
     args = parser.parse_args()
@@ -177,19 +177,12 @@ def main():
     corpus_path = "data/processed/sarah_ngin_corpus.txt"
     tokenizer_path = f"{checkpoint_dir}/sarah_tokenizer.json"
 
-    if args.action == "collect":
-        step_1_collect_data(data_dir)
-    elif args.action == "tokenize":
-        step_2_train_tokenizer(corpus_path, vocab_size=args.vocab_size, tokenizer_path=tokenizer_path)
-    elif args.action == "train":
-        tokenizer = SarahTokenizer.load(tokenizer_path)
-        step_3_train_model(corpus_path, tokenizer, epochs=args.epochs, checkpoint_dir=checkpoint_dir)
-    elif args.action == "generate":
-        step_4_test_generation(checkpoint_dir)
-    elif args.action == "export":
-        step_5_export_mobile(checkpoint_dir, export_dir)
-    elif args.action == "chat":
-        interactive_chat(checkpoint_dir)
+    if args.action == "graphs":
+        import generate_graphs
+        print("Graphiques générés dans metrics_report.png")
+    elif args.action == "live" or args.action == "chat":
+        from inference.streaming_self_correct import start_live_interactive_session
+        start_live_interactive_session()
     elif args.action == "all":
         # Exécution du pipeline complet
         corpus = step_1_collect_data(data_dir)
