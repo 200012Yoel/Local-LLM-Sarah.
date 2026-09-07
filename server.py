@@ -36,7 +36,30 @@ class SarahRequestHandler(http.server.SimpleHTTPRequestHandler):
 
     def do_GET(self):
         parsed = urlparse(self.path)
-        if parsed.path == "/api/stats":
+        if parsed.path in ["/countdown", "/sandbox"]:
+            countdown_path = WEB_DIR / "countdown_dashboard.html"
+            self.send_response(200)
+            self.send_header("Content-Type", "text/html; charset=utf-8")
+            self.end_headers()
+            self.wfile.write(countdown_path.read_bytes())
+            return
+        elif parsed.path == "/api/test_code":
+            from testing_sandbox.code_verifier import CodeVerifierSandbox
+            sandbox = CodeVerifierSandbox()
+            samples = {
+                "Python": "def compute_loss(y_pred, y_true):\n    return sum((p - t)**2 for p, t in zip(y_pred, y_true))\nresult = compute_loss([1.0, 2.0], [1.0, 2.0])\nassert result == 0.0",
+                "JavaScript": "function formatMemory(bytes) { return (bytes / (1024 * 1024)).toFixed(2) + ' MB'; }\nconsole.log(formatMemory(157286400));",
+                "HTML & CSS": "<!DOCTYPE html><html><head><style>.card { color: blue; }</style></head><body><div class='card'>Sarah Ngin</div></body></html>",
+                "Java": "public class TestModel { public static void main(String[] args) { System.out.println(\"Sarah Ngin OK\"); } }",
+                "Swift": "import SwiftUI\nstruct ContentView: View { var body: some View { Text(\"Sarah Ngin\") } }"
+            }
+            report = sandbox.run_full_suite(samples)
+            self.send_response(200)
+            self.send_header("Content-Type", "application/json; charset=utf-8")
+            self.end_headers()
+            self.wfile.write(json.dumps(report, ensure_ascii=False).encode("utf-8"))
+            return
+        elif parsed.path == "/api/stats":
             self.send_response(200)
             self.send_header("Content-Type", "application/json; charset=utf-8")
             self.end_headers()
