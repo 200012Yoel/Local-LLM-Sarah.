@@ -360,10 +360,22 @@ class DataCollector:
         hebrew_french_data = self.download_hebrew_french_massive_corpus()
         all_texts.extend(hebrew_french_data)
 
-        # 3. Dictionnaire Français
+        # 3. Dictionnaire Argot & SMS des Jeunes
+        from .argot_sms_dict import generate_argot_training_corpus
+        all_texts.extend(generate_argot_training_corpus())
+
+        # 4. Apprentissage du Code Multi-Langages (HTML, CSS, JS, Node, Python, Java, Swift/Xcode)
+        from .coding_corpus import generate_coding_corpus
+        all_texts.extend(generate_coding_corpus())
+
+        # 5. Base Officielle Apple Shortcuts (Raccourcis iOS & App Intents)
+        from .apple_shortcuts_kb import generate_apple_shortcuts_corpus
+        all_texts.extend(generate_apple_shortcuts_corpus())
+
+        # 6. Dictionnaire Français Fondamental
         all_texts.extend(self.generate_french_dictionary_corpus())
         
-        # 4. Logique, Raisonnement et Dialogues
+        # 7. Logique, Raisonnement et Dialogues
         all_texts.extend(self.generate_extended_reasoning_data(repetitions=60))
 
         # Nettoyage et normalisation
