@@ -124,7 +124,7 @@ def run_intensive_training(num_epochs: int = 20, lr: float = 3e-4):
 
     total_duration = time.time() - start_total_time
     print("-" * 80)
-    print(f"✅ Entraînement terminé en {total_duration:.2f}s ({total_duration/60:.2f} min).")
+    print(f"[OK] Entrainement termine en {total_duration:.2f}s ({total_duration/60:.2f} min).")
 
     # 4. Sauvegarde des poids actualisés
     save_path = Path("checkpoints/sarah_engine_code_trained.pt")
