@@ -14592,6 +14592,601 @@ Page 10, ligne 21.--Au lieu de _Varègnes_, lisez _Varègues_.
 Page 13, ligne 15.--Au lieu de _Rostof_, lisez _Rostov_.
 Page 120, ligne 3.--_Kremnik_, ajoutez _ancien nom du Kremlin_.
 End of Project Gutenberg's L'art russe, by Eugène-Emmanuel Viollet-le-Duc
+Dictionnaire Hébreu-Français : אב (nom masculin) -> Traduction française : père.
+מילון עברי-צרפתי : אב פירושו בצרפתית père.
+Dictionnaire Français-Hébreu : père (nom masculin) -> Traduction hébraïque : אב.
+מילון צרפתי-עברי : père מתורגם לעברית כ-אב.
+Alignement : [HE] אב <=> [FR] père
+Dictionnaire Hébreu-Français : אם (nom féminin) -> Traduction française : mère.
+מילון עברי-צרפתי : אם פירושו בצרפתית mère.
+Dictionnaire Français-Hébreu : mère (nom féminin) -> Traduction hébraïque : אם.
+מילון צרפתי-עברי : mère מתורגם לעברית כ-אם.
+Alignement : [HE] אם <=> [FR] mère
+Dictionnaire Hébreu-Français : אח (nom masculin) -> Traduction française : frère.
+מילון עברי-צרפתי : אח פירושו בצרפתית frère.
+Dictionnaire Français-Hébreu : frère (nom masculin) -> Traduction hébraïque : אח.
+מילון צרפתי-עברי : frère מתורגם לעברית כ-אח.
+Alignement : [HE] אח <=> [FR] frère
+Dictionnaire Hébreu-Français : אחות (nom féminin) -> Traduction française : soeur.
+מילון עברי-צרפתי : אחות פירושו בצרפתית soeur.
+Dictionnaire Français-Hébreu : soeur (nom féminin) -> Traduction hébraïque : אחות.
+מילון צרפתי-עברי : soeur מתורגם לעברית כ-אחות.
+Alignement : [HE] אחות <=> [FR] soeur
+Dictionnaire Hébreu-Français : בן (nom masculin) -> Traduction française : fils.
+מילון עברי-צרפתי : בן פירושו בצרפתית fils.
+Dictionnaire Français-Hébreu : fils (nom masculin) -> Traduction hébraïque : בן.
+מילון צרפתי-עברי : fils מתורגם לעברית כ-בן.
+Alignement : [HE] בן <=> [FR] fils
+Dictionnaire Hébreu-Français : בת (nom féminin) -> Traduction française : fille.
+מילון עברי-צרפתי : בת פירושו בצרפתית fille.
+Dictionnaire Français-Hébreu : fille (nom féminin) -> Traduction hébraïque : בת.
+מילון צרפתי-עברי : fille מתורגם לעברית כ-בת.
+Alignement : [HE] בת <=> [FR] fille
+Dictionnaire Hébreu-Français : סבא (nom masculin) -> Traduction française : grand-père.
+מילון עברי-צרפתי : סבא פירושו בצרפתית grand-père.
+Dictionnaire Français-Hébreu : grand-père (nom masculin) -> Traduction hébraïque : סבא.
+מילון צרפתי-עברי : grand-père מתורגם לעברית כ-סבא.
+Alignement : [HE] סבא <=> [FR] grand-père
+Dictionnaire Hébreu-Français : סבתא (nom féminin) -> Traduction française : grand-mère.
+מילון עברי-צרפתי : סבתא פירושו בצרפתית grand-mère.
+Dictionnaire Français-Hébreu : grand-mère (nom féminin) -> Traduction hébraïque : סבתא.
+מילון צרפתי-עברי : grand-mère מתורגם לעברית כ-סבתא.
+Alignement : [HE] סבתא <=> [FR] grand-mère
+Dictionnaire Hébreu-Français : איש (nom masculin) -> Traduction française : homme.
+מילון עברי-צרפתי : איש פירושו בצרפתית homme.
+Dictionnaire Français-Hébreu : homme (nom masculin) -> Traduction hébraïque : איש.
+מילון צרפתי-עברי : homme מתורגם לעברית כ-איש.
+Alignement : [HE] איש <=> [FR] homme
+Dictionnaire Hébreu-Français : אישה (nom féminin) -> Traduction française : femme.
+מילון עברי-צרפתי : אישה פירושו בצרפתית femme.
+Dictionnaire Français-Hébreu : femme (nom féminin) -> Traduction hébraïque : אישה.
+מילון צרפתי-עברי : femme מתורגם לעברית כ-אישה.
+Alignement : [HE] אישה <=> [FR] femme
+Dictionnaire Hébreu-Français : ילד (nom masculin) -> Traduction française : enfant / garçon.
+מילון עברי-צרפתי : ילד פירושו בצרפתית enfant / garçon.
+Dictionnaire Français-Hébreu : enfant / garçon (nom masculin) -> Traduction hébraïque : ילד.
+מילון צרפתי-עברי : enfant / garçon מתורגם לעברית כ-ילד.
+Alignement : [HE] ילד <=> [FR] enfant / garçon
+Dictionnaire Hébreu-Français : ילדה (nom féminin) -> Traduction française : fillette.
+מילון עברי-צרפתי : ילדה פירושו בצרפתית fillette.
+Dictionnaire Français-Hébreu : fillette (nom féminin) -> Traduction hébraïque : ילדה.
+מילון צרפתי-עברי : fillette מתורגם לעברית כ-ילדה.
+Alignement : [HE] ילדה <=> [FR] fillette
+Dictionnaire Hébreu-Français : חבר (nom masculin) -> Traduction française : ami.
+מילון עברי-צרפתי : חבר פירושו בצרפתית ami.
+Dictionnaire Français-Hébreu : ami (nom masculin) -> Traduction hébraïque : חבר.
+מילון צרפתי-עברי : ami מתורגם לעברית כ-חבר.
+Alignement : [HE] חבר <=> [FR] ami
+Dictionnaire Hébreu-Français : חברה (nom féminin) -> Traduction française : amie / société.
+מילון עברי-צרפתי : חברה פירושו בצרפתית amie / société.
+Dictionnaire Français-Hébreu : amie / société (nom féminin) -> Traduction hébraïque : חברה.
+מילון צרפתי-עברי : amie / société מתורגם לעברית כ-חברה.
+Alignement : [HE] חברה <=> [FR] amie / société
+Dictionnaire Hébreu-Français : משפחה (nom féminin) -> Traduction française : famille.
+מילון עברי-צרפתי : משפחה פירושו בצרפתית famille.
+Dictionnaire Français-Hébreu : famille (nom féminin) -> Traduction hébraïque : משפחה.
+מילון צרפתי-עברי : famille מתורגם לעברית כ-משפחה.
+Alignement : [HE] משפחה <=> [FR] famille
+Dictionnaire Hébreu-Français : יום (nom masculin) -> Traduction française : jour.
+מילון עברי-צרפתי : יום פירושו בצרפתית jour.
+Dictionnaire Français-Hébreu : jour (nom masculin) -> Traduction hébraïque : יום.
+מילון צרפתי-עברי : jour מתורגם לעברית כ-יום.
+Alignement : [HE] יום <=> [FR] jour
+Dictionnaire Hébreu-Français : לילה (nom masculin) -> Traduction française : nuit.
+מילון עברי-צרפתי : לילה פירושו בצרפתית nuit.
+Dictionnaire Français-Hébreu : nuit (nom masculin) -> Traduction hébraïque : לילה.
+מילון צרפתי-עברי : nuit מתורגם לעברית כ-לילה.
+Alignement : [HE] לילה <=> [FR] nuit
+Dictionnaire Hébreu-Français : בוקר (nom masculin) -> Traduction française : matin.
+מילון עברי-צרפתי : בוקר פירושו בצרפתית matin.
+Dictionnaire Français-Hébreu : matin (nom masculin) -> Traduction hébraïque : בוקר.
+מילון צרפתי-עברי : matin מתורגם לעברית כ-בוקר.
+Alignement : [HE] בוקר <=> [FR] matin
+Dictionnaire Hébreu-Français : ערב (nom masculin) -> Traduction française : soir.
+מילון עברי-צרפתי : ערב פירושו בצרפתית soir.
+Dictionnaire Français-Hébreu : soir (nom masculin) -> Traduction hébraïque : ערב.
+מילון צרפתי-עברי : soir מתורגם לעברית כ-ערב.
+Alignement : [HE] ערב <=> [FR] soir
+Dictionnaire Hébreu-Français : שבוע (nom masculin) -> Traduction française : semaine.
+מילון עברי-צרפתי : שבוע פירושו בצרפתית semaine.
+Dictionnaire Français-Hébreu : semaine (nom masculin) -> Traduction hébraïque : שבוע.
+מילון צרפתי-עברי : semaine מתורגם לעברית כ-שבוע.
+Alignement : [HE] שבוע <=> [FR] semaine
+Dictionnaire Hébreu-Français : חודש (nom masculin) -> Traduction française : mois.
+מילון עברי-צרפתי : חודש פירושו בצרפתית mois.
+Dictionnaire Français-Hébreu : mois (nom masculin) -> Traduction hébraïque : חודש.
+מילון צרפתי-עברי : mois מתורגם לעברית כ-חודש.
+Alignement : [HE] חודש <=> [FR] mois
+Dictionnaire Hébreu-Français : שנה (nom féminin) -> Traduction française : année.
+מילון עברי-צרפתי : שנה פירושו בצרפתית année.
+Dictionnaire Français-Hébreu : année (nom féminin) -> Traduction hébraïque : שנה.
+מילון צרפתי-עברי : année מתורגם לעברית כ-שנה.
+Alignement : [HE] שנה <=> [FR] année
+Dictionnaire Hébreu-Français : זמן (nom masculin) -> Traduction française : temps.
+מילון עברי-צרפתי : זמן פירושו בצרפתית temps.
+Dictionnaire Français-Hébreu : temps (nom masculin) -> Traduction hébraïque : זמן.
+מילון צרפתי-עברי : temps מתורגם לעברית כ-זמן.
+Alignement : [HE] זמן <=> [FR] temps
+Dictionnaire Hébreu-Français : עבר (nom masculin) -> Traduction française : passé.
+מילון עברי-צרפתי : עבר פירושו בצרפתית passé.
+Dictionnaire Français-Hébreu : passé (nom masculin) -> Traduction hébraïque : עבר.
+מילון צרפתי-עברי : passé מתורגם לעברית כ-עבר.
+Alignement : [HE] עבר <=> [FR] passé
+Dictionnaire Hébreu-Français : הווה (nom masculin) -> Traduction française : présent.
+מילון עברי-צרפתי : הווה פירושו בצרפתית présent.
+Dictionnaire Français-Hébreu : présent (nom masculin) -> Traduction hébraïque : הווה.
+מילון צרפתי-עברי : présent מתורגם לעברית כ-הווה.
+Alignement : [HE] הווה <=> [FR] présent
+Dictionnaire Hébreu-Français : עתיד (nom masculin) -> Traduction française : futur.
+מילון עברי-צרפתי : עתיד פירושו בצרפתית futur.
+Dictionnaire Français-Hébreu : futur (nom masculin) -> Traduction hébraïque : עתיד.
+מילון צרפתי-עברי : futur מתורגם לעברית כ-עתיד.
+Alignement : [HE] עתיד <=> [FR] futur
+Dictionnaire Hébreu-Français : עולם (nom masculin) -> Traduction française : monde / univers.
+מילון עברי-צרפתי : עולם פירושו בצרפתית monde / univers.
+Dictionnaire Français-Hébreu : monde / univers (nom masculin) -> Traduction hébraïque : עולם.
+מילון צרפתי-עברי : monde / univers מתורגם לעברית כ-עולם.
+Alignement : [HE] עולם <=> [FR] monde / univers
+Dictionnaire Hébreu-Français : ארץ (nom féminin) -> Traduction française : terre / pays.
+מילון עברי-צרפתי : ארץ פירושו בצרפתית terre / pays.
+Dictionnaire Français-Hébreu : terre / pays (nom féminin) -> Traduction hébraïque : ארץ.
+מילון צרפתי-עברי : terre / pays מתורגם לעברית כ-ארץ.
+Alignement : [HE] ארץ <=> [FR] terre / pays
+Dictionnaire Hébreu-Français : שמיים (nom masculin pluriel) -> Traduction française : ciel.
+מילון עברי-צרפתי : שמיים פירושו בצרפתית ciel.
+Dictionnaire Français-Hébreu : ciel (nom masculin pluriel) -> Traduction hébraïque : שמיים.
+מילון צרפתי-עברי : ciel מתורגם לעברית כ-שמיים.
+Alignement : [HE] שמיים <=> [FR] ciel
+Dictionnaire Hébreu-Français : שמש (nom féminin/masculin) -> Traduction française : soleil.
+מילון עברי-צרפתי : שמש פירושו בצרפתית soleil.
+Dictionnaire Français-Hébreu : soleil (nom féminin/masculin) -> Traduction hébraïque : שמש.
+מילון צרפתי-עברי : soleil מתורגם לעברית כ-שמש.
+Alignement : [HE] שמש <=> [FR] soleil
+Dictionnaire Hébreu-Français : ירח (nom masculin) -> Traduction française : lune.
+מילון עברי-צרפתי : ירח פירושו בצרפתית lune.
+Dictionnaire Français-Hébreu : lune (nom masculin) -> Traduction hébraïque : ירח.
+מילון צרפתי-עברי : lune מתורגם לעברית כ-ירח.
+Alignement : [HE] ירח <=> [FR] lune
+Dictionnaire Hébreu-Français : כוכב (nom masculin) -> Traduction française : étoile.
+מילון עברי-צרפתי : כוכב פירושו בצרפתית étoile.
+Dictionnaire Français-Hébreu : étoile (nom masculin) -> Traduction hébraïque : כוכב.
+מילון צרפתי-עברי : étoile מתורגם לעברית כ-כוכב.
+Alignement : [HE] כוכב <=> [FR] étoile
+Dictionnaire Hébreu-Français : עיר (nom féminin) -> Traduction française : ville.
+מילון עברי-צרפתי : עיר פירושו בצרפתית ville.
+Dictionnaire Français-Hébreu : ville (nom féminin) -> Traduction hébraïque : עיר.
+מילון צרפתי-עברי : ville מתורגם לעברית כ-עיר.
+Alignement : [HE] עיר <=> [FR] ville
+Dictionnaire Hébreu-Français : בית (nom masculin) -> Traduction française : maison.
+מילון עברי-צרפתי : בית פירושו בצרפתית maison.
+Dictionnaire Français-Hébreu : maison (nom masculin) -> Traduction hébraïque : בית.
+מילון צרפתי-עברי : maison מתורגם לעברית כ-בית.
+Alignement : [HE] בית <=> [FR] maison
+Dictionnaire Hébreu-Français : רחוב (nom masculin) -> Traduction française : rue.
+מילון עברי-צרפתי : רחוב פירושו בצרפתית rue.
+Dictionnaire Français-Hébreu : rue (nom masculin) -> Traduction hébraïque : רחוב.
+מילון צרפתי-עברי : rue מתורגם לעברית כ-רחוב.
+Alignement : [HE] רחוב <=> [FR] rue
+Dictionnaire Hébreu-Français : דרך (nom féminin) -> Traduction française : chemin / voie.
+מילון עברי-צרפתי : דרך פירושו בצרפתית chemin / voie.
+Dictionnaire Français-Hébreu : chemin / voie (nom féminin) -> Traduction hébraïque : דרך.
+מילון צרפתי-עברי : chemin / voie מתורגם לעברית כ-דרך.
+Alignement : [HE] דרך <=> [FR] chemin / voie
+Dictionnaire Hébreu-Français : מקום (nom masculin) -> Traduction française : lieu / endroit.
+מילון עברי-צרפתי : מקום פירושו בצרפתית lieu / endroit.
+Dictionnaire Français-Hébreu : lieu / endroit (nom masculin) -> Traduction hébraïque : מקום.
+מילון צרפתי-עברי : lieu / endroit מתורגם לעברית כ-מקום.
+Alignement : [HE] מקום <=> [FR] lieu / endroit
+Dictionnaire Hébreu-Français : בינה (nom féminin) -> Traduction française : intelligence / discernement.
+מילון עברי-צרפתי : בינה פירושו בצרפתית intelligence / discernement.
+Dictionnaire Français-Hébreu : intelligence / discernement (nom féminin) -> Traduction hébraïque : בינה.
+מילון צרפתי-עברי : intelligence / discernement מתורגם לעברית כ-בינה.
+Alignement : [HE] בינה <=> [FR] intelligence / discernement
+Dictionnaire Hébreu-Français : חכמה (nom féminin) -> Traduction française : sagesse.
+מילון עברי-צרפתי : חכמה פירושו בצרפתית sagesse.
+Dictionnaire Français-Hébreu : sagesse (nom féminin) -> Traduction hébraïque : חכמה.
+מילון צרפתי-עברי : sagesse מתורגם לעברית כ-חכמה.
+Alignement : [HE] חכמה <=> [FR] sagesse
+Dictionnaire Hébreu-Français : דעת (nom féminin) -> Traduction française : connaissance.
+מילון עברי-צרפתי : דעת פירושו בצרפתית connaissance.
+Dictionnaire Français-Hébreu : connaissance (nom féminin) -> Traduction hébraïque : דעת.
+מילון צרפתי-עברי : connaissance מתורגם לעברית כ-דעת.
+Alignement : [HE] דעת <=> [FR] connaissance
+Dictionnaire Hébreu-Français : שכל (nom masculin) -> Traduction française : intellect / raison.
+מילון עברי-צרפתי : שכל פירושו בצרפתית intellect / raison.
+Dictionnaire Français-Hébreu : intellect / raison (nom masculin) -> Traduction hébraïque : שכל.
+מילון צרפתי-עברי : intellect / raison מתורגם לעברית כ-שכל.
+Alignement : [HE] שכל <=> [FR] intellect / raison
+Dictionnaire Hébreu-Français : מחשבה (nom féminin) -> Traduction française : pensée / réflexion.
+מילון עברי-צרפתי : מחשבה פירושו בצרפתית pensée / réflexion.
+Dictionnaire Français-Hébreu : pensée / réflexion (nom féminin) -> Traduction hébraïque : מחשבה.
+מילון צרפתי-עברי : pensée / réflexion מתורגם לעברית כ-מחשבה.
+Alignement : [HE] מחשבה <=> [FR] pensée / réflexion
+Dictionnaire Hébreu-Français : היגיון (nom masculin) -> Traduction française : logique / bon sens.
+מילון עברי-צרפתי : היגיון פירושו בצרפתית logique / bon sens.
+Dictionnaire Français-Hébreu : logique / bon sens (nom masculin) -> Traduction hébraïque : היגיון.
+מילון צרפתי-עברי : logique / bon sens מתורגם לעברית כ-היגיון.
+Alignement : [HE] היגיון <=> [FR] logique / bon sens
+Dictionnaire Hébreu-Français : אמת (nom féminin) -> Traduction française : vérité.
+מילון עברי-צרפתי : אמת פירושו בצרפתית vérité.
+Dictionnaire Français-Hébreu : vérité (nom féminin) -> Traduction hébraïque : אמת.
+מילון צרפתי-עברי : vérité מתורגם לעברית כ-אמת.
+Alignement : [HE] אמת <=> [FR] vérité
+Dictionnaire Hébreu-Français : צדק (nom masculin) -> Traduction française : justice.
+מילון עברי-צרפתי : צדק פירושו בצרפתית justice.
+Dictionnaire Français-Hébreu : justice (nom masculin) -> Traduction hébraïque : צדק.
+מילון צרפתי-עברי : justice מתורגם לעברית כ-צדק.
+Alignement : [HE] צדק <=> [FR] justice
+Dictionnaire Hébreu-Français : שלום (nom masculin) -> Traduction française : paix / bonjour / au revoir.
+מילון עברי-צרפתי : שלום פירושו בצרפתית paix / bonjour / au revoir.
+Dictionnaire Français-Hébreu : paix / bonjour / au revoir (nom masculin) -> Traduction hébraïque : שלום.
+מילון צרפתי-עברי : paix / bonjour / au revoir מתורגם לעברית כ-שלום.
+Alignement : [HE] שלום <=> [FR] paix / bonjour / au revoir
+Dictionnaire Hébreu-Français : רוח (nom féminin) -> Traduction française : esprit / vent.
+מילון עברי-צרפתי : רוח פירושו בצרפתית esprit / vent.
+Dictionnaire Français-Hébreu : esprit / vent (nom féminin) -> Traduction hébraïque : רוח.
+מילון צרפתי-עברי : esprit / vent מתורגם לעברית כ-רוח.
+Alignement : [HE] רוח <=> [FR] esprit / vent
+Dictionnaire Hébreu-Français : נפש (nom féminin) -> Traduction française : âme / psyché.
+מילון עברי-צרפתי : נפש פירושו בצרפתית âme / psyché.
+Dictionnaire Français-Hébreu : âme / psyché (nom féminin) -> Traduction hébraïque : נפש.
+מילון צרפתי-עברי : âme / psyché מתורגם לעברית כ-נפש.
+Alignement : [HE] נפש <=> [FR] âme / psyché
+Dictionnaire Hébreu-Français : לב (nom masculin) -> Traduction française : coeur / esprit.
+מילון עברי-צרפתי : לב פירושו בצרפתית coeur / esprit.
+Dictionnaire Français-Hébreu : coeur / esprit (nom masculin) -> Traduction hébraïque : לב.
+מילון צרפתי-עברי : coeur / esprit מתורגם לעברית כ-לב.
+Alignement : [HE] לב <=> [FR] coeur / esprit
+Dictionnaire Hébreu-Français : זיכרון (nom masculin) -> Traduction française : mémoire / souvenir.
+מילון עברי-צרפתי : זיכרון פירושו בצרפתית mémoire / souvenir.
+Dictionnaire Français-Hébreu : mémoire / souvenir (nom masculin) -> Traduction hébraïque : זיכרון.
+מילון צרפתי-עברי : mémoire / souvenir מתורגם לעברית כ-זיכרון.
+Alignement : [HE] זיכרון <=> [FR] mémoire / souvenir
+Dictionnaire Hébreu-Français : רצון (nom masculin) -> Traduction française : volonté / désir.
+מילון עברי-צרפתי : רצון פירושו בצרפתית volonté / désir.
+Dictionnaire Français-Hébreu : volonté / désir (nom masculin) -> Traduction hébraïque : רצון.
+מילון צרפתי-עברי : volonté / désir מתורגם לעברית כ-רצון.
+Alignement : [HE] רצון <=> [FR] volonté / désir
+Dictionnaire Hébreu-Français : ספק (nom masculin) -> Traduction française : doute.
+מילון עברי-צרפתי : ספק פירושו בצרפתית doute.
+Dictionnaire Français-Hébreu : doute (nom masculin) -> Traduction hébraïque : ספק.
+מילון צרפתי-עברי : doute מתורגם לעברית כ-ספק.
+Alignement : [HE] ספק <=> [FR] doute
+Dictionnaire Hébreu-Français : הבנה (nom féminin) -> Traduction française : compréhension.
+מילון עברי-צרפתי : הבנה פירושו בצרפתית compréhension.
+Dictionnaire Français-Hébreu : compréhension (nom féminin) -> Traduction hébraïque : הבנה.
+מילון צרפתי-עברי : compréhension מתורגם לעברית כ-הבנה.
+Alignement : [HE] הבנה <=> [FR] compréhension
+Dictionnaire Hébreu-Français : מדע (nom masculin) -> Traduction française : science.
+מילון עברי-צרפתי : מדע פירושו בצרפתית science.
+Dictionnaire Français-Hébreu : science (nom masculin) -> Traduction hébraïque : מדע.
+מילון צרפתי-עברי : science מתורגם לעברית כ-מדע.
+Alignement : [HE] מדע <=> [FR] science
+Dictionnaire Hébreu-Français : טבע (nom masculin) -> Traduction française : nature.
+מילון עברי-צרפתי : טבע פירושו בצרפתית nature.
+Dictionnaire Français-Hébreu : nature (nom masculin) -> Traduction hébraïque : טבע.
+מילון צרפתי-עברי : nature מתורגם לעברית כ-טבע.
+Alignement : [HE] טבע <=> [FR] nature
+Dictionnaire Hébreu-Français : אור (nom masculin) -> Traduction française : lumière.
+מילון עברי-צרפתי : אור פירושו בצרפתית lumière.
+Dictionnaire Français-Hébreu : lumière (nom masculin) -> Traduction hébraïque : אור.
+מילון צרפתי-עברי : lumière מתורגם לעברית כ-אור.
+Alignement : [HE] אור <=> [FR] lumière
+Dictionnaire Hébreu-Français : חושך (nom masculin) -> Traduction française : obscurité / ténèbres.
+מילון עברי-צרפתי : חושך פירושו בצרפתית obscurité / ténèbres.
+Dictionnaire Français-Hébreu : obscurité / ténèbres (nom masculin) -> Traduction hébraïque : חושך.
+מילון צרפתי-עברי : obscurité / ténèbres מתורגם לעברית כ-חושך.
+Alignement : [HE] חושך <=> [FR] obscurité / ténèbres
+Dictionnaire Hébreu-Français : מים (nom masculin pluriel) -> Traduction française : eau.
+מילון עברי-צרפתי : מים פירושו בצרפתית eau.
+Dictionnaire Français-Hébreu : eau (nom masculin pluriel) -> Traduction hébraïque : מים.
+מילון צרפתי-עברי : eau מתורגם לעברית כ-מים.
+Alignement : [HE] מים <=> [FR] eau
+Dictionnaire Hébreu-Français : אש (nom féminin) -> Traduction française : feu.
+מילון עברי-צרפתי : אש פירושו בצרפתית feu.
+Dictionnaire Français-Hébreu : feu (nom féminin) -> Traduction hébraïque : אש.
+מילון צרפתי-עברי : feu מתורגם לעברית כ-אש.
+Alignement : [HE] אש <=> [FR] feu
+Dictionnaire Hébreu-Français : אוויר (nom masculin) -> Traduction française : air.
+מילון עברי-צרפתי : אוויר פירושו בצרפתית air.
+Dictionnaire Français-Hébreu : air (nom masculin) -> Traduction hébraïque : אוויר.
+מילון צרפתי-עברי : air מתורגם לעברית כ-אוויר.
+Alignement : [HE] אוויר <=> [FR] air
+Dictionnaire Hébreu-Français : אדמה (nom féminin) -> Traduction française : terre / sol.
+מילון עברי-צרפתי : אדמה פירושו בצרפתית terre / sol.
+Dictionnaire Français-Hébreu : terre / sol (nom féminin) -> Traduction hébraïque : אדמה.
+מילון צרפתי-עברי : terre / sol מתורגם לעברית כ-אדמה.
+Alignement : [HE] אדמה <=> [FR] terre / sol
+Dictionnaire Hébreu-Français : מחשב (nom masculin) -> Traduction française : ordinateur.
+מילון עברי-צרפתי : מחשב פירושו בצרפתית ordinateur.
+Dictionnaire Français-Hébreu : ordinateur (nom masculin) -> Traduction hébraïque : מחשב.
+מילון צרפתי-עברי : ordinateur מתורגם לעברית כ-מחשב.
+Alignement : [HE] מחשב <=> [FR] ordinateur
+Dictionnaire Hébreu-Français : רשת (nom féminin) -> Traduction française : réseau / web.
+מילון עברי-צרפתי : רשת פירושו בצרפתית réseau / web.
+Dictionnaire Français-Hébreu : réseau / web (nom féminin) -> Traduction hébraïque : רשת.
+מילון צרפתי-עברי : réseau / web מתורגם לעברית כ-רשת.
+Alignement : [HE] רשת <=> [FR] réseau / web
+Dictionnaire Hébreu-Français : תוכנה (nom féminin) -> Traduction française : logiciel.
+מילון עברי-צרפתי : תוכנה פירושו בצרפתית logiciel.
+Dictionnaire Français-Hébreu : logiciel (nom féminin) -> Traduction hébraïque : תוכנה.
+מילון צרפתי-עברי : logiciel מתורגם לעברית כ-תוכנה.
+Alignement : [HE] תוכנה <=> [FR] logiciel
+Dictionnaire Hébreu-Français : למידה (nom féminin) -> Traduction française : apprentissage.
+מילון עברי-צרפתי : למידה פירושו בצרפתית apprentissage.
+Dictionnaire Français-Hébreu : apprentissage (nom féminin) -> Traduction hébraïque : למידה.
+מילון צרפתי-עברי : apprentissage מתורגם לעברית כ-למידה.
+Alignement : [HE] למידה <=> [FR] apprentissage
+Dictionnaire Hébreu-Français : ספר (nom masculin) -> Traduction française : livre.
+מילון עברי-צרפתי : ספר פירושו בצרפתית livre.
+Dictionnaire Français-Hébreu : livre (nom masculin) -> Traduction hébraïque : ספר.
+מילון צרפתי-עברי : livre מתורגם לעברית כ-ספר.
+Alignement : [HE] ספר <=> [FR] livre
+Dictionnaire Hébreu-Français : מילה (nom féminin) -> Traduction française : mot.
+מילון עברי-צרפתי : מילה פירושו בצרפתית mot.
+Dictionnaire Français-Hébreu : mot (nom féminin) -> Traduction hébraïque : מילה.
+מילון צרפתי-עברי : mot מתורגם לעברית כ-מילה.
+Alignement : [HE] מילה <=> [FR] mot
+Dictionnaire Hébreu-Français : אות (nom féminin) -> Traduction française : lettre / signe.
+מילון עברי-צרפתי : אות פירושו בצרפתית lettre / signe.
+Dictionnaire Français-Hébreu : lettre / signe (nom féminin) -> Traduction hébraïque : אות.
+מילון צרפתי-עברי : lettre / signe מתורגם לעברית כ-אות.
+Alignement : [HE] אות <=> [FR] lettre / signe
+Dictionnaire Hébreu-Français : שפה (nom féminin) -> Traduction française : langue / langage.
+מילון עברי-צרפתי : שפה פירושו בצרפתית langue / langage.
+Dictionnaire Français-Hébreu : langue / langage (nom féminin) -> Traduction hébraïque : שפה.
+מילון צרפתי-עברי : langue / langage מתורגם לעברית כ-שפה.
+Alignement : [HE] שפה <=> [FR] langue / langage
+Dictionnaire Hébreu-Français : משפט (nom masculin) -> Traduction française : phrase / jugement / procès.
+מילון עברי-צרפתי : משפט פירושו בצרפתית phrase / jugement / procès.
+Dictionnaire Français-Hébreu : phrase / jugement / procès (nom masculin) -> Traduction hébraïque : משפט.
+מילון צרפתי-עברי : phrase / jugement / procès מתורגם לעברית כ-משפט.
+Alignement : [HE] משפט <=> [FR] phrase / jugement / procès
+Dictionnaire Hébreu-Français : לדעת (verbe) -> Traduction française : savoir / connaître.
+מילון עברי-צרפתי : לדעת פירושו בצרפתית savoir / connaître.
+Dictionnaire Français-Hébreu : savoir / connaître (verbe) -> Traduction hébraïque : לדעת.
+מילון צרפתי-עברי : savoir / connaître מתורגם לעברית כ-לדעת.
+Alignement : [HE] לדעת <=> [FR] savoir / connaître
+Dictionnaire Hébreu-Français : לחשוב (verbe) -> Traduction française : penser.
+מילון עברי-צרפתי : לחשוב פירושו בצרפתית penser.
+Dictionnaire Français-Hébreu : penser (verbe) -> Traduction hébraïque : לחשוב.
+מילון צרפתי-עברי : penser מתורגם לעברית כ-לחשוב.
+Alignement : [HE] לחשוב <=> [FR] penser
+Dictionnaire Hébreu-Français : לדבר (verbe) -> Traduction française : parler.
+מילון עברי-צרפתי : לדבר פירושו בצרפתית parler.
+Dictionnaire Français-Hébreu : parler (verbe) -> Traduction hébraïque : לדבר.
+מילון צרפתי-עברי : parler מתורגם לעברית כ-לדבר.
+Alignement : [HE] לדבר <=> [FR] parler
+Dictionnaire Hébreu-Français : לכתוב (verbe) -> Traduction française : écrire.
+מילון עברי-צרפתי : לכתוב פירושו בצרפתית écrire.
+Dictionnaire Français-Hébreu : écrire (verbe) -> Traduction hébraïque : לכתוב.
+מילון צרפתי-עברי : écrire מתורגם לעברית כ-לכתוב.
+Alignement : [HE] לכתוב <=> [FR] écrire
+Dictionnaire Hébreu-Français : לקרוא (verbe) -> Traduction française : lire / appeler.
+מילון עברי-צרפתי : לקרוא פירושו בצרפתית lire / appeler.
+Dictionnaire Français-Hébreu : lire / appeler (verbe) -> Traduction hébraïque : לקרוא.
+מילון צרפתי-עברי : lire / appeler מתורגם לעברית כ-לקרוא.
+Alignement : [HE] לקרוא <=> [FR] lire / appeler
+Dictionnaire Hébreu-Français : ללמוד (verbe) -> Traduction française : apprendre / étudier.
+מילון עברי-צרפתי : ללמוד פירושו בצרפתית apprendre / étudier.
+Dictionnaire Français-Hébreu : apprendre / étudier (verbe) -> Traduction hébraïque : ללמוד.
+מילון צרפתי-עברי : apprendre / étudier מתורגם לעברית כ-ללמוד.
+Alignement : [HE] ללמוד <=> [FR] apprendre / étudier
+Dictionnaire Hébreu-Français : להבין (verbe) -> Traduction française : comprendre.
+מילון עברי-צרפתי : להבין פירושו בצרפתית comprendre.
+Dictionnaire Français-Hébreu : comprendre (verbe) -> Traduction hébraïque : להבין.
+מילון צרפתי-עברי : comprendre מתורגם לעברית כ-להבין.
+Alignement : [HE] להבין <=> [FR] comprendre
+Dictionnaire Hébreu-Français : לראות (verbe) -> Traduction française : voir / regarder.
+מילון עברי-צרפתי : לראות פירושו בצרפתית voir / regarder.
+Dictionnaire Français-Hébreu : voir / regarder (verbe) -> Traduction hébraïque : לראות.
+מילון צרפתי-עברי : voir / regarder מתורגם לעברית כ-לראות.
+Alignement : [HE] לראות <=> [FR] voir / regarder
+Dictionnaire Hébreu-Français : לשמוע (verbe) -> Traduction française : entendre / écouter.
+מילון עברי-צרפתי : לשמוע פירושו בצרפתית entendre / écouter.
+Dictionnaire Français-Hébreu : entendre / écouter (verbe) -> Traduction hébraïque : לשמוע.
+מילון צרפתי-עברי : entendre / écouter מתורגם לעברית כ-לשמוע.
+Alignement : [HE] לשמוע <=> [FR] entendre / écouter
+Dictionnaire Hébreu-Français : לעשות (verbe) -> Traduction française : faire / fabriquer.
+מילון עברי-צרפתי : לעשות פירושו בצרפתית faire / fabriquer.
+Dictionnaire Français-Hébreu : faire / fabriquer (verbe) -> Traduction hébraïque : לעשות.
+מילון צרפתי-עברי : faire / fabriquer מתורגם לעברית כ-לעשות.
+Alignement : [HE] לעשות <=> [FR] faire / fabriquer
+Dictionnaire Hébreu-Français : ללכת (verbe) -> Traduction française : aller / marcher.
+מילון עברי-צרפתי : ללכת פירושו בצרפתית aller / marcher.
+Dictionnaire Français-Hébreu : aller / marcher (verbe) -> Traduction hébraïque : ללכת.
+מילון צרפתי-עברי : aller / marcher מתורגם לעברית כ-ללכת.
+Alignement : [HE] ללכת <=> [FR] aller / marcher
+Dictionnaire Hébreu-Français : לבוא (verbe) -> Traduction française : venir / arriver.
+מילון עברי-צרפתי : לבוא פירושו בצרפתית venir / arriver.
+Dictionnaire Français-Hébreu : venir / arriver (verbe) -> Traduction hébraïque : לבוא.
+מילון צרפתי-עברי : venir / arriver מתורגם לעברית כ-לבוא.
+Alignement : [HE] לבוא <=> [FR] venir / arriver
+Dictionnaire Hébreu-Français : לתת (verbe) -> Traduction française : donner.
+מילון עברי-צרפתי : לתת פירושו בצרפתית donner.
+Dictionnaire Français-Hébreu : donner (verbe) -> Traduction hébraïque : לתת.
+מילון צרפתי-עברי : donner מתורגם לעברית כ-לתת.
+Alignement : [HE] לתת <=> [FR] donner
+Dictionnaire Hébreu-Français : לקחת (verbe) -> Traduction française : prendre.
+מילון עברי-צרפתי : לקחת פירושו בצרפתית prendre.
+Dictionnaire Français-Hébreu : prendre (verbe) -> Traduction hébraïque : לקחת.
+מילון צרפתי-עברי : prendre מתורגם לעברית כ-לקחת.
+Alignement : [HE] לקחת <=> [FR] prendre
+Dictionnaire Hébreu-Français : לאהוב (verbe) -> Traduction française : aimer.
+מילון עברי-צרפתי : לאהוב פירושו בצרפתית aimer.
+Dictionnaire Français-Hébreu : aimer (verbe) -> Traduction hébraïque : לאהוב.
+מילון צרפתי-עברי : aimer מתורגם לעברית כ-לאהוב.
+Alignement : [HE] לאהוב <=> [FR] aimer
+Dictionnaire Hébreu-Français : לעזור (verbe) -> Traduction française : aider / assister.
+מילון עברי-צרפתי : לעזור פירושו בצרפתית aider / assister.
+Dictionnaire Français-Hébreu : aider / assister (verbe) -> Traduction hébraïque : לעזור.
+מילון צרפתי-עברי : aider / assister מתורגם לעברית כ-לעזור.
+Alignement : [HE] לעזור <=> [FR] aider / assister
+Dictionnaire Hébreu-Français : לחיות (verbe) -> Traduction française : vivre.
+מילון עברי-צרפתי : לחיות פירושו בצרפתית vivre.
+Dictionnaire Français-Hébreu : vivre (verbe) -> Traduction hébraïque : לחיות.
+מילון צרפתי-עברי : vivre מתורגם לעברית כ-לחיות.
+Alignement : [HE] לחיות <=> [FR] vivre
+Dictionnaire Hébreu-Français : להיות (verbe) -> Traduction française : être.
+מילון עברי-צרפתי : להיות פירושו בצרפתית être.
+Dictionnaire Français-Hébreu : être (verbe) -> Traduction hébraïque : להיות.
+מילון צרפתי-עברי : être מתורגם לעברית כ-להיות.
+Alignement : [HE] להיות <=> [FR] être
+Dictionnaire Hébreu-Français : לרצות (verbe) -> Traduction française : vouloir.
+מילון עברי-צרפתי : לרצות פירושו בצרפתית vouloir.
+Dictionnaire Français-Hébreu : vouloir (verbe) -> Traduction hébraïque : לרצות.
+מילון צרפתי-עברי : vouloir מתורגם לעברית כ-לרצות.
+Alignement : [HE] לרצות <=> [FR] vouloir
+Dictionnaire Hébreu-Français : למצוא (verbe) -> Traduction française : trouver.
+מילון עברי-צרפתי : למצוא פירושו בצרפתית trouver.
+Dictionnaire Français-Hébreu : trouver (verbe) -> Traduction hébraïque : למצוא.
+מילון צרפתי-עברי : trouver מתורגם לעברית כ-למצוא.
+Alignement : [HE] למצוא <=> [FR] trouver
+Dictionnaire Hébreu-Français : גדול (adjectif) -> Traduction française : grand.
+מילון עברי-צרפתי : גדול פירושו בצרפתית grand.
+Dictionnaire Français-Hébreu : grand (adjectif) -> Traduction hébraïque : גדול.
+מילון צרפתי-עברי : grand מתורגם לעברית כ-גדול.
+Alignement : [HE] גדול <=> [FR] grand
+Dictionnaire Hébreu-Français : קטן (adjectif) -> Traduction française : petit.
+מילון עברי-צרפתי : קטן פירושו בצרפתית petit.
+Dictionnaire Français-Hébreu : petit (adjectif) -> Traduction hébraïque : קטן.
+מילון צרפתי-עברי : petit מתורגם לעברית כ-קטן.
+Alignement : [HE] קטן <=> [FR] petit
+Dictionnaire Hébreu-Français : טוב (adjectif) -> Traduction française : bon / bien.
+מילון עברי-צרפתי : טוב פירושו בצרפתית bon / bien.
+Dictionnaire Français-Hébreu : bon / bien (adjectif) -> Traduction hébraïque : טוב.
+מילון צרפתי-עברי : bon / bien מתורגם לעברית כ-טוב.
+Alignement : [HE] טוב <=> [FR] bon / bien
+Dictionnaire Hébreu-Français : רע (adjectif) -> Traduction française : mauvais.
+מילון עברי-צרפתי : רע פירושו בצרפתית mauvais.
+Dictionnaire Français-Hébreu : mauvais (adjectif) -> Traduction hébraïque : רע.
+מילון צרפתי-עברי : mauvais מתורגם לעברית כ-רע.
+Alignement : [HE] רע <=> [FR] mauvais
+Dictionnaire Hébreu-Français : יפה (adjectif) -> Traduction française : beau / joli.
+מילון עברי-צרפתי : יפה פירושו בצרפתית beau / joli.
+Dictionnaire Français-Hébreu : beau / joli (adjectif) -> Traduction hébraïque : יפה.
+מילון צרפתי-עברי : beau / joli מתורגם לעברית כ-יפה.
+Alignement : [HE] יפה <=> [FR] beau / joli
+Dictionnaire Hébreu-Français : חדש (adjectif) -> Traduction française : nouveau / neuf.
+מילון עברי-צרפתי : חדש פירושו בצרפתית nouveau / neuf.
+Dictionnaire Français-Hébreu : nouveau / neuf (adjectif) -> Traduction hébraïque : חדש.
+מילון צרפתי-עברי : nouveau / neuf מתורגם לעברית כ-חדש.
+Alignement : [HE] חדש <=> [FR] nouveau / neuf
+Dictionnaire Hébreu-Français : ישן (adjectif) -> Traduction française : vieux / ancien.
+מילון עברי-צרפתי : ישן פירושו בצרפתית vieux / ancien.
+Dictionnaire Français-Hébreu : vieux / ancien (adjectif) -> Traduction hébraïque : ישן.
+מילון צרפתי-עברי : vieux / ancien מתורגם לעברית כ-ישן.
+Alignement : [HE] ישן <=> [FR] vieux / ancien
+Dictionnaire Hébreu-Français : חכם (adjectif) -> Traduction française : sage / intelligent.
+מילון עברי-צרפתי : חכם פירושו בצרפתית sage / intelligent.
+Dictionnaire Français-Hébreu : sage / intelligent (adjectif) -> Traduction hébraïque : חכם.
+מילון צרפתי-עברי : sage / intelligent מתורגם לעברית כ-חכם.
+Alignement : [HE] חכם <=> [FR] sage / intelligent
+Dictionnaire Hébreu-Français : נכון (adjectif) -> Traduction française : vrai / correct.
+מילון עברי-צרפתי : נכון פירושו בצרפתית vrai / correct.
+Dictionnaire Français-Hébreu : vrai / correct (adjectif) -> Traduction hébraïque : נכון.
+מילון צרפתי-עברי : vrai / correct מתורגם לעברית כ-נכון.
+Alignement : [HE] נכון <=> [FR] vrai / correct
+Dictionnaire Hébreu-Français : חזק (adjectif) -> Traduction française : fort / puissant.
+מילון עברי-צרפתי : חזק פירושו בצרפתית fort / puissant.
+Dictionnaire Français-Hébreu : fort / puissant (adjectif) -> Traduction hébraïque : חזק.
+מילון צרפתי-עברי : fort / puissant מתורגם לעברית כ-חזק.
+Alignement : [HE] חזק <=> [FR] fort / puissant
+Dictionnaire Hébreu-Français : קל (adjectif) -> Traduction française : facile / léger.
+מילון עברי-צרפתי : קל פירושו בצרפתית facile / léger.
+Dictionnaire Français-Hébreu : facile / léger (adjectif) -> Traduction hébraïque : קל.
+מילון צרפתי-עברי : facile / léger מתורגם לעברית כ-קל.
+Alignement : [HE] קל <=> [FR] facile / léger
+Dictionnaire Hébreu-Français : קשה (adjectif) -> Traduction française : difficile / dur.
+מילון עברי-צרפתי : קשה פירושו בצרפתית difficile / dur.
+Dictionnaire Français-Hébreu : difficile / dur (adjectif) -> Traduction hébraïque : קשה.
+מילון צרפתי-עברי : difficile / dur מתורגם לעברית כ-קשה.
+Alignement : [HE] קשה <=> [FR] difficile / dur
+Dictionnaire Hébreu-Français : מהיר (adjectif) -> Traduction française : rapide.
+מילון עברי-צרפתי : מהיר פירושו בצרפתית rapide.
+Dictionnaire Français-Hébreu : rapide (adjectif) -> Traduction hébraïque : מהיר.
+מילון צרפתי-עברי : rapide מתורגם לעברית כ-מהיר.
+Alignement : [HE] מהיר <=> [FR] rapide
+Dictionnaire Hébreu-Français : עמוק (adjectif) -> Traduction française : profond.
+מילון עברי-צרפתי : עמוק פירושו בצרפתית profond.
+Dictionnaire Français-Hébreu : profond (adjectif) -> Traduction hébraïque : עמוק.
+מילון צרפתי-עברי : profond מתורגם לעברית כ-עמוק.
+Alignement : [HE] עמוק <=> [FR] profond
+Dictionnaire Hébreu-Français : ברור (adjectif) -> Traduction française : clair / évident.
+מילון עברי-צרפתי : ברור פירושו בצרפתית clair / évident.
+Dictionnaire Français-Hébreu : clair / évident (adjectif) -> Traduction hébraïque : ברור.
+מילון צרפתי-עברי : clair / évident מתורגם לעברית כ-ברור.
+Alignement : [HE] ברור <=> [FR] clair / évident
+Traduction Hébreu vers Français : 'שלום לכולם, איך אתם היום?' -> 'Bonjour à tous, comment allez-vous aujourd'hui ?'
+תרגום מצרפתית לעברית : 'Bonjour à tous, comment allez-vous aujourd'hui ?' -> 'שלום לכולם, איך אתם היום?'
+[HE] שלום לכולם, איך אתם היום? | [FR] Bonjour à tous, comment allez-vous aujourd'hui ?
+[FR] Bonjour à tous, comment allez-vous aujourd'hui ? | [HE] שלום לכולם, איך אתם היום?
+Traduction Hébreu vers Français : 'הבינה המלאכותית לומדת את השפה העברית והצרפתית.' -> 'L'intelligence artificielle apprend la langue hébraïque et française.'
+תרגום מצרפתית לעברית : 'L'intelligence artificielle apprend la langue hébraïque et française.' -> 'הבינה המלאכותית לומדת את השפה העברית והצרפתית.'
+[HE] הבינה המלאכותית לומדת את השפה העברית והצרפתית. | [FR] L'intelligence artificielle apprend la langue hébraïque et française.
+[FR] L'intelligence artificielle apprend la langue hébraïque et française. | [HE] הבינה המלאכותית לומדת את השפה העברית והצרפתית.
+Traduction Hébreu vers Français : 'הידע והחכמה הם המפתח להבנת העולם.' -> 'La connaissance et la sagesse sont la clé pour comprendre le monde.'
+תרגום מצרפתית לעברית : 'La connaissance et la sagesse sont la clé pour comprendre le monde.' -> 'הידע והחכמה הם המפתח להבנת העולם.'
+[HE] הידע והחכמה הם המפתח להבנת העולם. | [FR] La connaissance et la sagesse sont la clé pour comprendre le monde.
+[FR] La connaissance et la sagesse sont la clé pour comprendre le monde. | [HE] הידע והחכמה הם המפתח להבנת העולם.
+Traduction Hébreu vers Français : 'שרה נג'ין היא מערכת בינה קלה ומהירה.' -> 'Sarah Ngin est un système d'intelligence léger et rapide.'
+תרגום מצרפתית לעברית : 'Sarah Ngin est un système d'intelligence léger et rapide.' -> 'שרה נג'ין היא מערכת בינה קלה ומהירה.'
+[HE] שרה נג'ין היא מערכת בינה קלה ומהירה. | [FR] Sarah Ngin est un système d'intelligence léger et rapide.
+[FR] Sarah Ngin est un système d'intelligence léger et rapide. | [HE] שרה נג'ין היא מערכת בינה קלה ומהירה.
+Traduction Hébreu vers Français : 'האמת וההיגיון מובילים תמיד לתוצאה הנכונה.' -> 'La vérité et la logique mènent toujours au résultat correct.'
+תרגום מצרפתית לעברית : 'La vérité et la logique mènent toujours au résultat correct.' -> 'האמת וההיגיון מובילים תמיד לתוצאה הנכונה.'
+[HE] האמת וההיגיון מובילים תמיד לתוצאה הנכונה. | [FR] La vérité et la logique mènent toujours au résultat correct.
+[FR] La vérité et la logique mènent toujours au résultat correct. | [HE] האמת וההיגיון מובילים תמיד לתוצאה הנכונה.
+Traduction Hébreu vers Français : 'כל אדם שואף לחיות בשלום ובצדק.' -> 'Tout être humain aspire à vivre en paix et en justice.'
+תרגום מצרפתית לעברית : 'Tout être humain aspire à vivre en paix et en justice.' -> 'כל אדם שואף לחיות בשלום ובצדק.'
+[HE] כל אדם שואף לחיות בשלום ובצדק. | [FR] Tout être humain aspire à vivre en paix et en justice.
+[FR] Tout être humain aspire à vivre en paix et en justice. | [HE] כל אדם שואף לחיות בשלום ובצדק.
+Traduction Hébreu vers Français : 'ספר טוב פותח דלתות לחשיבה חדשה.' -> 'Un bon livre ouvre les portes vers une nouvelle pensée.'
+תרגום מצרפתית לעברית : 'Un bon livre ouvre les portes vers une nouvelle pensée.' -> 'ספר טוב פותח דלתות לחשיבה חדשה.'
+[HE] ספר טוב פותח דלתות לחשיבה חדשה. | [FR] Un bon livre ouvre les portes vers une nouvelle pensée.
+[FR] Un bon livre ouvre les portes vers une nouvelle pensée. | [HE] ספר טוב פותח דלתות לחשיבה חדשה.
+Traduction Hébreu vers Français : 'כאשר הרשת לומדת, הדיוק משתפר בכל שלב.' -> 'Lorsque le réseau apprend, la précision s'améliore à chaque étape.'
+תרגום מצרפתית לעברית : 'Lorsque le réseau apprend, la précision s'améliore à chaque étape.' -> 'כאשר הרשת לומדת, הדיוק משתפר בכל שלב.'
+[HE] כאשר הרשת לומדת, הדיוק משתפר בכל שלב. | [FR] Lorsque le réseau apprend, la précision s'améliore à chaque étape.
+[FR] Lorsque le réseau apprend, la précision s'améliore à chaque étape. | [HE] כאשר הרשת לומדת, הדיוק משתפר בכל שלב.
+Traduction Hébreu vers Français : 'השפה היא גשר בין תרבויות שונות.' -> 'La langue est un pont entre différentes cultures.'
+תרגום מצרפתית לעברית : 'La langue est un pont entre différentes cultures.' -> 'השפה היא גשר בין תרבויות שונות.'
+[HE] השפה היא גשר בין תרבויות שונות. | [FR] La langue est un pont entre différentes cultures.
+[FR] La langue est un pont entre différentes cultures. | [HE] השפה היא גשר בין תרבויות שונות.
+Traduction Hébreu vers Français : 'יש לנתח את הנתונים לפי כללי ההיגיון.' -> 'Il faut analyser les données selon les règles de la logique.'
+תרגום מצרפתית לעברית : 'Il faut analyser les données selon les règles de la logique.' -> 'יש לנתח את הנתונים לפי כללי ההיגיון.'
+[HE] יש לנתח את הנתונים לפי כללי ההיגיון. | [FR] Il faut analyser les données selon les règles de la logique.
+[FR] Il faut analyser les données selon les règles de la logique. | [HE] יש לנתח את הנתונים לפי כללי ההיגיון.
+Traduction Hébreu vers Français : 'מה ההגדרה של מחשב? מחשב הוא מכונה אלקטרונית לעיבוד נתונים.' -> 'Quelle est la définition d'un ordinateur ? Un ordinateur est une machine électronique de traitement de données.'
+תרגום מצרפתית לעברית : 'Quelle est la définition d'un ordinateur ? Un ordinateur est une machine électronique de traitement de données.' -> 'מה ההגדרה של מחשב? מחשב הוא מכונה אלקטרונית לעיבוד נתונים.'
+[HE] מה ההגדרה של מחשב? מחשב הוא מכונה אלקטרונית לעיבוד נתונים. | [FR] Quelle est la définition d'un ordinateur ? Un ordinateur est une machine électronique de traitement de données.
+[FR] Quelle est la définition d'un ordinateur ? Un ordinateur est une machine électronique de traitement de données. | [HE] מה ההגדרה של מחשב? מחשב הוא מכונה אלקטרונית לעיבוד נתונים.
+Traduction Hébreu vers Français : 'אור השמש מאיר את הארץ ונותן חיים לטבע.' -> 'La lumière du soleil éclaire la terre et donne vie à la nature.'
+תרגום מצרפתית לעברית : 'La lumière du soleil éclaire la terre et donne vie à la nature.' -> 'אור השמש מאיר את הארץ ונותן חיים לטבע.'
+[HE] אור השמש מאיר את הארץ ונותן חיים לטבע. | [FR] La lumière du soleil éclaire la terre et donne vie à la nature.
+[FR] La lumière du soleil éclaire la terre et donne vie à la nature. | [HE] אור השמש מאיר את הארץ ונותן חיים לטבע.
+Traduction Hébreu vers Français : 'בראשית ברא אלוהים את השמיים ואת הארץ.' -> 'Au commencement, Dieu créa les cieux et la terre.'
+תרגום מצרפתית לעברית : 'Au commencement, Dieu créa les cieux et la terre.' -> 'בראשית ברא אלוהים את השמיים ואת הארץ.'
+[HE] בראשית ברא אלוהים את השמיים ואת הארץ. | [FR] Au commencement, Dieu créa les cieux et la terre.
+[FR] Au commencement, Dieu créa les cieux et la terre. | [HE] בראשית ברא אלוהים את השמיים ואת הארץ.
+Traduction Hébreu vers Français : 'ואהבת לרעך כמוך הוא כלל גדול בתורה ובתרבות.' -> 'Tu aimeras ton prochain comme toi-même est une grande règle fondamentale.'
+תרגום מצרפתית לעברית : 'Tu aimeras ton prochain comme toi-même est une grande règle fondamentale.' -> 'ואהבת לרעך כמוך הוא כלל גדול בתורה ובתרבות.'
+[HE] ואהבת לרעך כמוך הוא כלל גדול בתורה ובתרבות. | [FR] Tu aimeras ton prochain comme toi-même est une grande règle fondamentale.
+[FR] Tu aimeras ton prochain comme toi-même est une grande règle fondamentale. | [HE] ואהבת לרעך כמוך הוא כלל גדול בתורה ובתרבות.
+Traduction Hébreu vers Français : 'המשפט הלוגי תקף אם המסקנה נובעת מן ההנחות.' -> 'La proposition logique est valide si la conclusion découle des prémisses.'
+תרגום מצרפתית לעברית : 'La proposition logique est valide si la conclusion découle des prémisses.' -> 'המשפט הלוגי תקף אם המסקנה נובעת מן ההנחות.'
+[HE] המשפט הלוגי תקף אם המסקנה נובעת מן ההנחות. | [FR] La proposition logique est valide si la conclusion découle des prémisses.
+[FR] La proposition logique est valide si la conclusion découle des prémisses. | [HE] המשפט הלוגי תקף אם המסקנה נובעת מן ההנחות.
+Conjugaison Hébreu-Français : Verbe ללמוד (apprendre) : Présent 'אני לומד' (j'apprends), Passé 'אני למדתי' (j'ai appris), Futur 'אני אלמד' (j'apprendrai).
+נטיית פעלים : ללמוד (בצרפתית: apprendre) - הווה: אני לומד (j'apprends), עבר: אני למדתי (j'ai appris), עתיד: אני אלמד (j'apprendrai).
+Conjugaison Hébreu-Français : Verbe לדבר (parler) : Présent 'אני מדבר' (je parle), Passé 'אני דיברתי' (j'ai parlé), Futur 'אני אדבר' (je parlerai).
+נטיית פעלים : לדבר (בצרפתית: parler) - הווה: אני מדבר (je parle), עבר: אני דיברתי (j'ai parlé), עתיד: אני אדבר (je parlerai).
+Conjugaison Hébreu-Français : Verbe לכתוב (écrire) : Présent 'אני כותב' (j'écris), Passé 'אני כתבתי' (j'ai écrit), Futur 'אני אכתוב' (j'écrirai).
+נטיית פעלים : לכתוב (בצרפתית: écrire) - הווה: אני כותב (j'écris), עבר: אני כתבתי (j'ai écrit), עתיד: אני אכתוב (j'écrirai).
+Conjugaison Hébreu-Français : Verbe לחשוב (penser) : Présent 'אני חושב' (je pense), Passé 'אני חשבתי' (j'ai pensé), Futur 'אני אחשוב' (je penserai).
+נטיית פעלים : לחשוב (בצרפתית: penser) - הווה: אני חושב (je pense), עבר: אני חשבתי (j'ai pensé), עתיד: אני אחשוב (je penserai).
+Conjugaison Hébreu-Français : Verbe להבין (comprendre) : Présent 'אני מבין' (je comprends), Passé 'אני הבנתי' (j'ai compris), Futur 'אני אבין' (je comprendrai).
+נטיית פעלים : להבין (בצרפתית: comprendre) - הווה: אני מבין (je comprends), עבר: אני הבנתי (j'ai compris), עתיד: אני אבין (je comprendrai).
 Dictionnaire Français : L'intelligence artificielle (nom féminin) - Définition : Ensemble des théories et des techniques développant des programmes informatiques complexes capables de simuler certains traits de l'intelligence humaine comme l'apprentissage et le raisonnement.
 Exemple d'utilisation : L'intelligence artificielle est un concept fondamental dans l'analyse logique et scientifique.
 Dictionnaire Français : Réseau de neurones (nom masculin) - Définition : Système informatique inspiré du fonctionnement des neurones biologiques du cerveau humain, composé de couches de calcul pondérées interconnectées.
@@ -14731,102 +15326,6 @@ L'utilisateur génère les concepts de la langue française et ses nuances.
 L'utilisateur génère les concepts de la relation sémantique entre les mots.
 L'utilisateur génère les concepts de la déduction logique étape par étape.
 L'utilisateur génère les concepts de l'inférence rapide sur appareil mobile.
-Dictionnaire Multilingue : [FR] bonjour <-> [HE] שלום <-> [EN] hello <-> [ZH] 你好
-Traduction FR-HE : 'bonjour' se traduit en hébreu par 'שלום'.
-Traduction FR-EN : 'bonjour' translates into English as 'hello'.
-Traduction FR-ZH : 'bonjour' 在中文里翻译为 '你好'.
-Dictionnaire Multilingue : [FR] monde <-> [HE] עולם <-> [EN] world <-> [ZH] 世界
-Traduction FR-HE : 'monde' se traduit en hébreu par 'עולם'.
-Traduction FR-EN : 'monde' translates into English as 'world'.
-Traduction FR-ZH : 'monde' 在中文里翻译为 '世界'.
-Dictionnaire Multilingue : [FR] intelligence <-> [HE] בינה <-> [EN] intelligence <-> [ZH] 智能
-Traduction FR-HE : 'intelligence' se traduit en hébreu par 'בינה'.
-Traduction FR-EN : 'intelligence' translates into English as 'intelligence'.
-Traduction FR-ZH : 'intelligence' 在中文里翻译为 '智能'.
-Dictionnaire Multilingue : [FR] artificielle <-> [HE] מלאכותית <-> [EN] artificial <-> [ZH] 人工
-Traduction FR-HE : 'artificielle' se traduit en hébreu par 'מלאכותית'.
-Traduction FR-EN : 'artificielle' translates into English as 'artificial'.
-Traduction FR-ZH : 'artificielle' 在中文里翻译为 '人工'.
-Dictionnaire Multilingue : [FR] réseau de neurones <-> [HE] רשת עצבית <-> [EN] neural network <-> [ZH] 神经网络
-Traduction FR-HE : 'réseau de neurones' se traduit en hébreu par 'רשת עצבית'.
-Traduction FR-EN : 'réseau de neurones' translates into English as 'neural network'.
-Traduction FR-ZH : 'réseau de neurones' 在中文里翻译为 '神经网络'.
-Dictionnaire Multilingue : [FR] livre <-> [HE] ספר <-> [EN] book <-> [ZH] 书
-Traduction FR-HE : 'livre' se traduit en hébreu par 'ספר'.
-Traduction FR-EN : 'livre' translates into English as 'book'.
-Traduction FR-ZH : 'livre' 在中文里翻译为 '书'.
-Dictionnaire Multilingue : [FR] connaissance <-> [HE] ידע <-> [EN] knowledge <-> [ZH] 知识
-Traduction FR-HE : 'connaissance' se traduit en hébreu par 'ידע'.
-Traduction FR-EN : 'connaissance' translates into English as 'knowledge'.
-Traduction FR-ZH : 'connaissance' 在中文里翻译为 '知识'.
-Dictionnaire Multilingue : [FR] langage <-> [HE] שפה <-> [EN] language <-> [ZH] 语言
-Traduction FR-HE : 'langage' se traduit en hébreu par 'שפה'.
-Traduction FR-EN : 'langage' translates into English as 'language'.
-Traduction FR-ZH : 'langage' 在中文里翻译为 '语言'.
-Dictionnaire Multilingue : [FR] esprit <-> [HE] רוח <-> [EN] mind <-> [ZH] 心灵
-Traduction FR-HE : 'esprit' se traduit en hébreu par 'רוח'.
-Traduction FR-EN : 'esprit' translates into English as 'mind'.
-Traduction FR-ZH : 'esprit' 在中文里翻译为 '心灵'.
-Dictionnaire Multilingue : [FR] pensée <-> [HE] מחשבה <-> [EN] thought <-> [ZH] 思想
-Traduction FR-HE : 'pensée' se traduit en hébreu par 'מחשבה'.
-Traduction FR-EN : 'pensée' translates into English as 'thought'.
-Traduction FR-ZH : 'pensée' 在中文里翻译为 '思想'.
-Dictionnaire Multilingue : [FR] vérité <-> [HE] אמת <-> [EN] truth <-> [ZH] 真理
-Traduction FR-HE : 'vérité' se traduit en hébreu par 'אמת'.
-Traduction FR-EN : 'vérité' translates into English as 'truth'.
-Traduction FR-ZH : 'vérité' 在中文里翻译为 '真理'.
-Dictionnaire Multilingue : [FR] lumière <-> [HE] אור <-> [EN] light <-> [ZH] 光
-Traduction FR-HE : 'lumière' se traduit en hébreu par 'אור'.
-Traduction FR-EN : 'lumière' translates into English as 'light'.
-Traduction FR-ZH : 'lumière' 在中文里翻译为 '光'.
-Dictionnaire Multilingue : [FR] paix <-> [HE] שלום <-> [EN] peace <-> [ZH] 和平
-Traduction FR-HE : 'paix' se traduit en hébreu par 'שלום'.
-Traduction FR-EN : 'paix' translates into English as 'peace'.
-Traduction FR-ZH : 'paix' 在中文里翻译为 '和平'.
-Dictionnaire Multilingue : [FR] force <-> [HE] כוח <-> [EN] strength <-> [ZH] 力量
-Traduction FR-HE : 'force' se traduit en hébreu par 'כוח'.
-Traduction FR-EN : 'force' translates into English as 'strength'.
-Traduction FR-ZH : 'force' 在中文里翻译为 '力量'.
-Dictionnaire Multilingue : [FR] temps <-> [HE] זמן <-> [EN] time <-> [ZH] 时间
-Traduction FR-HE : 'temps' se traduit en hébreu par 'זמן'.
-Traduction FR-EN : 'temps' translates into English as 'time'.
-Traduction FR-ZH : 'temps' 在中文里翻译为 '时间'.
-Dictionnaire Multilingue : [FR] futur <-> [HE] עתיד <-> [EN] future <-> [ZH] 未来
-Traduction FR-HE : 'futur' se traduit en hébreu par 'עתיד'.
-Traduction FR-EN : 'futur' translates into English as 'future'.
-Traduction FR-ZH : 'futur' 在中文里翻译为 '未来'.
-Dictionnaire Multilingue : [FR] apprentissage <-> [HE] למידה <-> [EN] learning <-> [ZH] 学习
-Traduction FR-HE : 'apprentissage' se traduit en hébreu par 'למידה'.
-Traduction FR-EN : 'apprentissage' translates into English as 'learning'.
-Traduction FR-ZH : 'apprentissage' 在中文里翻译为 '学习'.
-Dictionnaire Multilingue : [FR] ordinateur <-> [HE] מחשב <-> [EN] computer <-> [ZH] 计算机
-Traduction FR-HE : 'ordinateur' se traduit en hébreu par 'מחשב'.
-Traduction FR-EN : 'ordinateur' translates into English as 'computer'.
-Traduction FR-ZH : 'ordinateur' 在中文里翻译为 '计算机'.
-Dictionnaire Multilingue : [FR] science <-> [HE] מדע <-> [EN] science <-> [ZH] 科学
-Traduction FR-HE : 'science' se traduit en hébreu par 'מדע'.
-Traduction FR-EN : 'science' translates into English as 'science'.
-Traduction FR-ZH : 'science' 在中文里翻译为 '科学'.
-Dictionnaire Multilingue : [FR] logique <-> [HE] היגיון <-> [EN] logic <-> [ZH] 逻辑
-Traduction FR-HE : 'logique' se traduit en hébreu par 'היגיון'.
-Traduction FR-EN : 'logique' translates into English as 'logic'.
-Traduction FR-ZH : 'logique' 在中文里翻译为 '逻辑'.
-[FR] L'intelligence artificielle apprend la logique. | [HE] בינה מלאכותית לומדת היגיון. | [EN] Artificial intelligence learns logic. | [ZH] 人工智能学习逻辑。
-Alignement : Français: L'intelligence artificielle apprend la logique. --> Hébreu: בינה מלאכותית לומדת היגיון.
-Alignment : French: L'intelligence artificielle apprend la logique. --> English: Artificial intelligence learns logic.
-对齐 : 法语: L'intelligence artificielle apprend la logique. --> 中文: 人工智能学习逻辑。
-[FR] Le savoir est la clé de la sagesse. | [HE] הידע הוא המפתח לחוכמה. | [EN] Knowledge is the key to wisdom. | [ZH] 知识是智慧的钥匙。
-Alignement : Français: Le savoir est la clé de la sagesse. --> Hébreu: הידע הוא המפתח לחוכמה.
-Alignment : French: Le savoir est la clé de la sagesse. --> English: Knowledge is the key to wisdom.
-对齐 : 法语: Le savoir est la clé de la sagesse. --> 中文: 知识是智慧的钥匙。
-[FR] Sarah Ngin est un moteur d'intelligence léger et puissant. | [HE] שרה נג'ין הוא מנוע בינה קל ועוצמתי. | [EN] Sarah Ngin is a lightweight and powerful AI engine. | [ZH] Sarah Ngin 是一个轻量级且强大的智能引擎。
-Alignement : Français: Sarah Ngin est un moteur d'intelligence léger et puissant. --> Hébreu: שרה נג'ין הוא מנוע בינה קל ועוצמתי.
-Alignment : French: Sarah Ngin est un moteur d'intelligence léger et puissant. --> English: Sarah Ngin is a lightweight and powerful AI engine.
-对齐 : 法语: Sarah Ngin est un moteur d'intelligence léger et puissant. --> 中文: Sarah Ngin 是一个轻量级且强大的智能引擎。
-[FR] La vérité et la logique guident la réflexion. | [HE] האמת וההיגיון מדריכים את המחשבה. | [EN] Truth and logic guide thinking. | [ZH] 真理与逻辑指引思考。
-Alignement : Français: La vérité et la logique guident la réflexion. --> Hébreu: האמת וההיגיון מדריכים את המחשבה.
-Alignment : French: La vérité et la logique guident la réflexion. --> English: Truth and logic guide thinking.
-对齐 : 法语: La vérité et la logique guident la réflexion. --> 中文: 真理与逻辑指引思考。
 Question: Qu'est-ce que l'intelligence artificielle ?
 Réponse: L'intelligence artificielle est la capacité d'un système informatique à apprendre des modèles et à raisonner logiquement.
 Question: Quel est le rôle d'un dictionnaire ?

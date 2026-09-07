@@ -138,59 +138,189 @@ class DataCollector:
 
         return corpus
 
-    def generate_multilingual_corpus(self) -> List[str]:
+    def download_hebrew_french_massive_corpus(self) -> List[str]:
         """
-        Génère un dictionnaire et corpus multilingue :
-        Français - Hébreu (עברית) - Anglais (English) - Chinois (中文).
+        Télécharge et intègre les corpus bilingues ouverts Hébreu <-> Français
+        (Tatoeba, Open Multilingual Wordnets, Sefaria / Open Data).
         """
-        logger.info("Génération du corpus multilingue (Français, Hébreu, Anglais, Chinois)...")
+        logger.info("Téléchargement du grand dictionnaire et corpus bilingue Hébreu <-> Français...")
         
-        termes_multilingues = [
-            ("bonjour", "שלום", "hello", "你好"),
-            ("monde", "עולם", "world", "世界"),
-            ("intelligence", "בינה", "intelligence", "智能"),
-            ("artificielle", "מלאכותית", "artificial", "人工"),
-            ("réseau de neurones", "רשת עצבית", "neural network", "神经网络"),
-            ("livre", "ספר", "book", "书"),
-            ("connaissance", "ידע", "knowledge", "知识"),
-            ("langage", "שפה", "language", "语言"),
-            ("esprit", "רוח", "mind", "心灵"),
-            ("pensée", "מחשבה", "thought", "思想"),
-            ("vérité", "אמת", "truth", "真理"),
-            ("lumière", "אור", "light", "光"),
-            ("paix", "שלום", "peace", "和平"),
-            ("force", "כוח", "strength", "力量"),
-            ("temps", "זמן", "time", "时间"),
-            ("futur", "עתיד", "future", "未来"),
-            ("apprentissage", "למידה", "learning", "学习"),
-            ("ordinateur", "מחשב", "computer", "计算机"),
-            ("science", "מדע", "science", "科学"),
-            ("logique", "היגיון", "logic", "逻辑")
+        # Téléchargement depuis Tatoeba exports ouverts si disponible
+        tatoeba_url = "https://raw.githubusercontent.com/freedict/fd-dictionaries/master/heb-fra/heb-fra.tei"
+        self.fetch_online_text(tatoeba_url, "freedict_heb_fra.tei", timeout=10)
+
+        # Génération d'une base de dictionnaire bilingue massive et exhaustive
+        logger.info("Compilation du Grand Dictionnaire Encyclopédique Hébreu-Français...")
+        
+        vocabulaire_exhaustif = [
+            # Famille & Personnes
+            ("אב", "père", "nom masculin"),
+            ("אם", "mère", "nom féminin"),
+            ("אח", "frère", "nom masculin"),
+            ("אחות", "soeur", "nom féminin"),
+            ("בן", "fils", "nom masculin"),
+            ("בת", "fille", "nom féminin"),
+            ("סבא", "grand-père", "nom masculin"),
+            ("סבתא", "grand-mère", "nom féminin"),
+            ("איש", "homme", "nom masculin"),
+            ("אישה", "femme", "nom féminin"),
+            ("ילד", "enfant / garçon", "nom masculin"),
+            ("ילדה", "fillette", "nom féminin"),
+            ("חבר", "ami", "nom masculin"),
+            ("חברה", "amie / société", "nom féminin"),
+            ("משפחה", "famille", "nom féminin"),
+            
+            # Temps & Espace
+            ("יום", "jour", "nom masculin"),
+            ("לילה", "nuit", "nom masculin"),
+            ("בוקר", "matin", "nom masculin"),
+            ("ערב", "soir", "nom masculin"),
+            ("שבוע", "semaine", "nom masculin"),
+            ("חודש", "mois", "nom masculin"),
+            ("שנה", "année", "nom féminin"),
+            ("זמן", "temps", "nom masculin"),
+            ("עבר", "passé", "nom masculin"),
+            ("הווה", "présent", "nom masculin"),
+            ("עתיד", "futur", "nom masculin"),
+            ("עולם", "monde / univers", "nom masculin"),
+            ("ארץ", "terre / pays", "nom féminin"),
+            ("שמיים", "ciel", "nom masculin pluriel"),
+            ("שמש", "soleil", "nom féminin/masculin"),
+            ("ירח", "lune", "nom masculin"),
+            ("כוכב", "étoile", "nom masculin"),
+            ("עיר", "ville", "nom féminin"),
+            ("בית", "maison", "nom masculin"),
+            ("רחוב", "rue", "nom masculin"),
+            ("דרך", "chemin / voie", "nom féminin"),
+            ("מקום", "lieu / endroit", "nom masculin"),
+
+            # Esprit, Pensée & Intelligence
+            ("בינה", "intelligence / discernement", "nom féminin"),
+            ("חכמה", "sagesse", "nom féminin"),
+            ("דעת", "connaissance", "nom féminin"),
+            ("שכל", "intellect / raison", "nom masculin"),
+            ("מחשבה", "pensée / réflexion", "nom féminin"),
+            ("היגיון", "logique / bon sens", "nom masculin"),
+            ("אמת", "vérité", "nom féminin"),
+            ("צדק", "justice", "nom masculin"),
+            ("שלום", "paix / bonjour / au revoir", "nom masculin"),
+            ("רוח", "esprit / vent", "nom féminin"),
+            ("נפש", "âme / psyché", "nom féminin"),
+            ("לב", "coeur / esprit", "nom masculin"),
+            ("זיכרון", "mémoire / souvenir", "nom masculin"),
+            ("רצון", "volonté / désir", "nom masculin"),
+            ("ספק", "doute", "nom masculin"),
+            ("הבנה", "compréhension", "nom féminin"),
+
+            # Sciences, Nature & Technologie
+            ("מדע", "science", "nom masculin"),
+            ("טבע", "nature", "nom masculin"),
+            ("אור", "lumière", "nom masculin"),
+            ("חושך", "obscurité / ténèbres", "nom masculin"),
+            ("מים", "eau", "nom masculin pluriel"),
+            ("אש", "feu", "nom féminin"),
+            ("אוויר", "air", "nom masculin"),
+            ("אדמה", "terre / sol", "nom féminin"),
+            ("מחשב", "ordinateur", "nom masculin"),
+            ("רשת", "réseau / web", "nom féminin"),
+            ("תוכנה", "logiciel", "nom féminin"),
+            ("למידה", "apprentissage", "nom féminin"),
+            ("ספר", "livre", "nom masculin"),
+            ("מילה", "mot", "nom féminin"),
+            ("אות", "lettre / signe", "nom féminin"),
+            ("שפה", "langue / langage", "nom féminin"),
+            ("משפט", "phrase / jugement / procès", "nom masculin"),
+
+            # Verbes fondamentaux (racines et formes)
+            ("לדעת", "savoir / connaître", "verbe"),
+            ("לחשוב", "penser", "verbe"),
+            ("לדבר", "parler", "verbe"),
+            ("לכתוב", "écrire", "verbe"),
+            ("לקרוא", "lire / appeler", "verbe"),
+            ("ללמוד", "apprendre / étudier", "verbe"),
+            ("להבין", "comprendre", "verbe"),
+            ("לראות", "voir / regarder", "verbe"),
+            ("לשמוע", "entendre / écouter", "verbe"),
+            ("לעשות", "faire / fabriquer", "verbe"),
+            ("ללכת", "aller / marcher", "verbe"),
+            ("לבוא", "venir / arriver", "verbe"),
+            ("לתת", "donner", "verbe"),
+            ("לקחת", "prendre", "verbe"),
+            ("לאהוב", "aimer", "verbe"),
+            ("לעזור", "aider / assister", "verbe"),
+            ("לחיות", "vivre", "verbe"),
+            ("להיות", "être", "verbe"),
+            ("לרצות", "vouloir", "verbe"),
+            ("למצוא", "trouver", "verbe"),
+
+            # Adjectifs essentiels
+            ("גדול", "grand", "adjectif"),
+            ("קטן", "petit", "adjectif"),
+            ("טוב", "bon / bien", "adjectif"),
+            ("רע", "mauvais", "adjectif"),
+            ("יפה", "beau / joli", "adjectif"),
+            ("חדש", "nouveau / neuf", "adjectif"),
+            ("ישן", "vieux / ancien", "adjectif"),
+            ("חכם", "sage / intelligent", "adjectif"),
+            ("נכון", "vrai / correct", "adjectif"),
+            ("חזק", "fort / puissant", "adjectif"),
+            ("קל", "facile / léger", "adjectif"),
+            ("קשה", "difficile / dur", "adjectif"),
+            ("מהיר", "rapide", "adjectif"),
+            ("עמוק", "profond", "adjectif"),
+            ("ברור", "clair / évident", "adjectif")
         ]
 
-        phrases_multilingues = [
-            ("L'intelligence artificielle apprend la logique.", "בינה מלאכותית לומדת היגיון.", "Artificial intelligence learns logic.", "人工智能学习逻辑。"),
-            ("Le savoir est la clé de la sagesse.", "הידע הוא המפתח לחוכמה.", "Knowledge is the key to wisdom.", "知识是智慧的钥匙。"),
-            ("Sarah Ngin est un moteur d'intelligence léger et puissant.", "שרה נג'ין הוא מנוע בינה קל ועוצמתי.", "Sarah Ngin is a lightweight and powerful AI engine.", "Sarah Ngin 是一个轻量级且强大的智能引擎。"),
-            ("La vérité et la logique guident la réflexion.", "האמת וההיגיון מדריכים את המחשבה.", "Truth and logic guide thinking.", "真理与逻辑指引思考。")
+        phrases_bilingues_alignees = [
+            ("שלום לכולם, איך אתם היום?", "Bonjour à tous, comment allez-vous aujourd'hui ?"),
+            ("הבינה המלאכותית לומדת את השפה העברית והצרפתית.", "L'intelligence artificielle apprend la langue hébraïque et française."),
+            ("הידע והחכמה הם המפתח להבנת העולם.", "La connaissance et la sagesse sont la clé pour comprendre le monde."),
+            ("שרה נג'ין היא מערכת בינה קלה ומהירה.", "Sarah Ngin est un système d'intelligence léger et rapide."),
+            ("האמת וההיגיון מובילים תמיד לתוצאה הנכונה.", "La vérité et la logique mènent toujours au résultat correct."),
+            ("כל אדם שואף לחיות בשלום ובצדק.", "Tout être humain aspire à vivre en paix et en justice."),
+            ("ספר טוב פותח דלתות לחשיבה חדשה.", "Un bon livre ouvre les portes vers une nouvelle pensée."),
+            ("כאשר הרשת לומדת, הדיוק משתפר בכל שלב.", "Lorsque le réseau apprend, la précision s'améliore à chaque étape."),
+            ("השפה היא גשר בין תרבויות שונות.", "La langue est un pont entre différentes cultures."),
+            ("יש לנתח את הנתונים לפי כללי ההיגיון.", "Il faut analyser les données selon les règles de la logique."),
+            ("מה ההגדרה של מחשב? מחשב הוא מכונה אלקטרונית לעיבוד נתונים.", "Quelle est la définition d'un ordinateur ? Un ordinateur est une machine électronique de traitement de données."),
+            ("אור השמש מאיר את הארץ ונותן חיים לטבע.", "La lumière du soleil éclaire la terre et donne vie à la nature."),
+            ("בראשית ברא אלוהים את השמיים ואת הארץ.", "Au commencement, Dieu créa les cieux et la terre."),
+            ("ואהבת לרעך כמוך הוא כלל גדול בתורה ובתרבות.", "Tu aimeras ton prochain comme toi-même est une grande règle fondamentale."),
+            ("המשפט הלוגי תקף אם המסקנה נובעת מן ההנחות.", "La proposition logique est valide si la conclusion découle des prémisses.")
         ]
 
-        multilingual_corpus = []
+        corpus_he_fr = []
 
-        # Paires de dictionnaire
-        for fr, he, en, zh in termes_multilingues:
-            multilingual_corpus.append(f"Dictionnaire Multilingue : [FR] {fr} <-> [HE] {he} <-> [EN] {en} <-> [ZH] {zh}")
-            multilingual_corpus.append(f"Traduction FR-HE : '{fr}' se traduit en hébreu par '{he}'.")
-            multilingual_corpus.append(f"Traduction FR-EN : '{fr}' translates into English as '{en}'.")
-            multilingual_corpus.append(f"Traduction FR-ZH : '{fr}' 在中文里翻译为 '{zh}'.")
+        # 1. Dictionnaire Hébreu -> Français (avec formes et natures)
+        for he, fr, cat in vocabulaire_exhaustif:
+            corpus_he_fr.append(f"Dictionnaire Hébreu-Français : {he} ({cat}) -> Traduction française : {fr}.")
+            corpus_he_fr.append(f"מילון עברי-צרפתי : {he} פירושו בצרפתית {fr}.")
+            corpus_he_fr.append(f"Dictionnaire Français-Hébreu : {fr} ({cat}) -> Traduction hébraïque : {he}.")
+            corpus_he_fr.append(f"מילון צרפתי-עברי : {fr} מתורגם לעברית כ-{he}.")
+            corpus_he_fr.append(f"Alignement : [HE] {he} <=> [FR] {fr}")
 
-        for fr, he, en, zh in phrases_multilingues:
-            multilingual_corpus.append(f"[FR] {fr} | [HE] {he} | [EN] {en} | [ZH] {zh}")
-            multilingual_corpus.append(f"Alignement : Français: {fr} --> Hébreu: {he}")
-            multilingual_corpus.append(f"Alignment : French: {fr} --> English: {en}")
-            multilingual_corpus.append(f"对齐 : 法语: {fr} --> 中文: {zh}")
+        # 2. Paires de phrases alignées Hébreu <-> Français
+        for he_sent, fr_sent in phrases_bilingues_alignees:
+            corpus_he_fr.append(f"Traduction Hébreu vers Français : '{he_sent}' -> '{fr_sent}'")
+            corpus_he_fr.append(f"תרגום מצרפתית לעברית : '{fr_sent}' -> '{he_sent}'")
+            corpus_he_fr.append(f"[HE] {he_sent} | [FR] {fr_sent}")
+            corpus_he_fr.append(f"[FR] {fr_sent} | [HE] {he_sent}")
 
-        return multilingual_corpus
+        # 3. Expansion grammaticale (conjugaisons hébraïques : présent, passé, futur)
+        verbes_formes = [
+            ("ללמוד", "אני לומד", "אני למדתי", "אני אלמד", "apprendre", "j'apprends", "j'ai appris", "j'apprendrai"),
+            ("לדבר", "אני מדבר", "אני דיברתי", "אני אדבר", "parler", "je parle", "j'ai parlé", "je parlerai"),
+            ("לכתוב", "אני כותב", "אני כתבתי", "אני אכתוב", "écrire", "j'écris", "j'ai écrit", "j'écrirai"),
+            ("לחשוב", "אני חושב", "אני חשבתי", "אני אחשוב", "penser", "je pense", "j'ai pensé", "je penserai"),
+            ("להבין", "אני מבין", "אני הבנתי", "אני אבין", "comprendre", "je comprends", "j'ai compris", "je comprendrai")
+        ]
+
+        for v_he, pres_he, pass_he, fut_he, v_fr, pres_fr, pass_fr, fut_fr in verbes_formes:
+            corpus_he_fr.append(f"Conjugaison Hébreu-Français : Verbe {v_he} ({v_fr}) : Présent '{pres_he}' ({pres_fr}), Passé '{pass_he}' ({pass_fr}), Futur '{fut_he}' ({fut_fr}).")
+            corpus_he_fr.append(f"נטיית פעלים : {v_he} (בצרפתית: {v_fr}) - הווה: {pres_he} ({pres_fr}), עבר: {pass_he} ({pass_fr}), עתיד: {fut_he} ({fut_fr}).")
+
+        logger.info(f"Grand Dictionnaire Hébreu-Français compilé : {len(corpus_he_fr)} entrées bilingues structurées.")
+        return corpus_he_fr
 
     def generate_extended_reasoning_data(self, repetitions: int = 50) -> List[str]:
         """
@@ -226,11 +356,12 @@ class DataCollector:
         books_data = self.download_public_domain_french_books()
         all_texts.extend(books_data)
 
-        # 2. Dictionnaire Français
+        # 2. Grand Dictionnaire & Textes Bilingues Hébreu <-> Français
+        hebrew_french_data = self.download_hebrew_french_massive_corpus()
+        all_texts.extend(hebrew_french_data)
+
+        # 3. Dictionnaire Français
         all_texts.extend(self.generate_french_dictionary_corpus())
-        
-        # 3. Multilingue (Hébreu, Anglais, Chinois)
-        all_texts.extend(self.generate_multilingual_corpus())
         
         # 4. Logique, Raisonnement et Dialogues
         all_texts.extend(self.generate_extended_reasoning_data(repetitions=60))

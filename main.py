@@ -93,10 +93,11 @@ def step_4_test_generation(checkpoint_dir: str = "checkpoints"):
     )
 
     prompts = [
-        "Dictionnaire Français : L'intelligence artificielle",
-        "Principe de Raisonnement Logique :",
-        "Traduction FR-HE : 'bonjour' se traduit en hébreu par",
-        "Traduction FR-ZH : 'monde' 在中文里翻译为",
+        "Dictionnaire Hébreu-Français : שכל (nom masculin) -> Traduction française :",
+        "Dictionnaire Français-Hébreu : sagesse (nom féminin) -> Traduction hébraïque :",
+        "Traduction Hébreu vers Français : 'שלום לכולם, איך אתם היום?' ->",
+        "Traduction Hébreu vers Français : 'הבינה המלאכותית לומדת את השפה העברית והצרפתית.' ->",
+        "Conjugaison Hébreu-Français : Verbe ללמוד (apprendre) : Présent",
         "Question: Qu'est-ce que l'intelligence artificielle ?\nRéponse:",
         "Le modèle Sarah Ngin analyse avec précision"
     ]
