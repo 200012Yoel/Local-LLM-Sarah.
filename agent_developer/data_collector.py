@@ -45,6 +45,41 @@ class DataCollector:
             logger.warning(f"Impossible de joindre {url} ({e}). Utilisation du générateur linguistique local.")
         return None
 
+    def download_public_domain_french_books(self) -> List[str]:
+        """
+        Télécharge des grands classiques de la littérature française libres de droits
+        (Jules Verne, Voltaire, La Fontaine, Alexandre Dumas) pour apprendre la syntaxe et le vocabulaire riche.
+        """
+        logger.info("Téléchargement de livres français libres de droits (Project Gutenberg & Open Literature)...")
+        books_urls = [
+            ("candide_voltaire.txt", "https://www.gutenberg.org/cache/epub/4650/pg4650.txt"),
+            ("tour_du_monde_verne.txt", "https://www.gutenberg.org/cache/epub/800/pg800.txt"),
+            ("fables_la_fontaine.txt", "https://www.gutenberg.org/cache/epub/18749/pg18749.txt"),
+        ]
+
+        book_lines = []
+        for filename, url in books_urls:
+            path = self.fetch_online_text(url, filename, timeout=12)
+            if path and path.exists():
+                text = path.read_text(encoding="utf-8", errors="ignore")
+                # Supprimer les en-têtes et pieds de page Gutenberg
+                start_marker = "*** START OF THE PROJECT GUTENBERG"
+                end_marker = "*** END OF THE PROJECT GUTENBERG"
+                
+                if start_marker in text:
+                    text = text.split(start_marker, 1)[1]
+                if end_marker in text:
+                    text = text.split(end_marker, 1)[0]
+                
+                # Découper en phrases et paragraphes
+                for line in text.splitlines():
+                    cleaned_line = line.strip()
+                    if len(cleaned_line) > 20 and not cleaned_line.startswith("["):
+                        book_lines.append(cleaned_line)
+
+        logger.info(f"Total lignes littéraires extraites des livres : {len(book_lines)}")
+        return book_lines
+
     def generate_french_dictionary_corpus(self) -> List[str]:
         """
         Génère un dictionnaire et lexique français encyclopédique structuré
@@ -181,19 +216,24 @@ class DataCollector:
 
     def collect_and_build_all(self) -> Path:
         """
-        Exécute la collecte globale, le nettoyage et la sauvegarde du corpus d'entraînement.
+        Exécute la collecte globale, le téléchargement des livres libres de droits,
+        le nettoyage et la sauvegarde du corpus d'entraînement.
         """
         logger.info("=== Lancement de la collecte de données par l'Agent Développeur ===")
         all_texts = []
         
-        # 1. Dictionnaire Français
+        # 1. Livres et littérature française libres de droits (Gutenberg)
+        books_data = self.download_public_domain_french_books()
+        all_texts.extend(books_data)
+
+        # 2. Dictionnaire Français
         all_texts.extend(self.generate_french_dictionary_corpus())
         
-        # 2. Multilingue (Hébreu, Anglais, Chinois)
+        # 3. Multilingue (Hébreu, Anglais, Chinois)
         all_texts.extend(self.generate_multilingual_corpus())
         
-        # 3. Logique & Raisonnement
-        all_texts.extend(self.generate_extended_reasoning_data(repetitions=80))
+        # 4. Logique, Raisonnement et Dialogues
+        all_texts.extend(self.generate_extended_reasoning_data(repetitions=60))
 
         # Nettoyage et normalisation
         cleaned_data = self.cleaner.process_corpus(all_texts)

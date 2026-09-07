@@ -8,7 +8,6 @@ checkpoints/*.pt
 mobile_build/*.ptl
 mobile_build/*.pt
 
-# OS files
-.DS_Store
-Thumbs.db
-*.log
+# Raw data downloads
+data/raw/
+

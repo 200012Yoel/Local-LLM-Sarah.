@@ -32,12 +32,14 @@ class TextDataset(Dataset):
         return x, y
 
 
-def build_token_stream(filepath: str, tokenizer: SarahTokenizer) -> List[int]:
+def build_token_stream(filepath: str, tokenizer: SarahTokenizer, max_lines: Optional[int] = 3000) -> List[int]:
     """Lit un fichier texte et le convertit en flux continu de tokens avec séparateurs <eos>."""
     path = Path(filepath)
     tokens: List[int] = []
     with open(path, "r", encoding="utf-8") as f:
-        for line in f:
+        for idx, line in enumerate(f):
+            if max_lines and idx >= max_lines:
+                break
             line_str = line.strip()
             if not line_str:
                 continue
@@ -52,10 +54,11 @@ def create_dataloaders(
     block_size: int = 128,
     batch_size: int = 16,
     val_split: float = 0.1,
+    max_lines: Optional[int] = 3000,
     num_workers: int = 0
 ) -> Tuple[DataLoader, Optional[DataLoader]]:
     """Crée les DataLoaders d'entraînement et de validation."""
-    all_tokens = build_token_stream(filepath, tokenizer)
+    all_tokens = build_token_stream(filepath, tokenizer, max_lines=max_lines)
     split_idx = int(len(all_tokens) * (1.0 - val_split))
     
     train_tokens = all_tokens[:split_idx]

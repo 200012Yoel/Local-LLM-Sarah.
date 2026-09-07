@@ -29,6 +29,7 @@ class SarahTokenizer:
         self.vocab: Dict[int, bytes] = {}
         self.inv_vocab: Dict[bytes, int] = {}
         self.merges: List[Tuple[bytes, bytes]] = []
+        self._encode_cache: Dict[str, List[int]] = {}
 
         self._init_base_vocab()
 
@@ -55,91 +56,91 @@ class SarahTokenizer:
     def vocab_size(self) -> int:
         return len(self.vocab)
 
-    def _get_stats(self, ids_list: List[List[int]]) -> Dict[Tuple[int, int], int]:
-        """Compte les paires adjacentes les plus fréquentes."""
-        counts: Dict[Tuple[int, int], int] = {}
-        for row in ids_list:
-            for pair in zip(row, row[1:]):
-                counts[pair] = counts.get(pair, 0) + 1
-        return counts
-
-    def _merge(self, ids_list: List[List[int]], pair: Tuple[int, int], idx: int) -> List[List[int]]:
-        """Remplace toutes les occurrences d'une paire par le nouveau token_id."""
-        new_ids_list = []
-        p0, p1 = pair
-        for row in ids_list:
-            new_row = []
-            i = 0
-            while i < len(row):
-                if i < len(row) - 1 and row[i] == p0 and row[i + 1] == p1:
-                    new_row.append(idx)
-                    i += 2
-                else:
-                    new_row.append(row[i])
-                    i += 1
-            new_ids_list.append(new_row)
-        return new_ids_list
-
     def train(self, texts: List[str], max_merges: Optional[int] = None):
         """
-        Entraîne l'algorithme BPE sur la liste de textes.
+        Entraîne l'algorithme BPE ultra-rapidement en agrégeant les fréquences de mots.
         """
         self._init_base_vocab()
         self.merges = []
-        
-        # Convertit chaque texte en liste d'octets de base
+
         offset = len(self.special_tokens)
-        ids_list: List[List[int]] = []
+        
+        # 1. Extraction et comptage des mots/segments fréquents
+        from collections import Counter
+        word_counts = Counter()
         for text in texts:
-            if not text:
-                continue
-            raw_bytes = text.encode("utf-8")
-            ids_list.append([offset + b for b in raw_bytes])
+            for word in text.split(" "):
+                if word:
+                    word_counts[" " + word] += 1
+
+        # 2. Conversion en tuples d'octets (sur les 4000 mots les plus fréquents)
+        vocab_words = {}
+        for word, freq in word_counts.most_common(4000):
+            raw_bytes = word.encode("utf-8")
+            vocab_words[tuple(offset + b for b in raw_bytes)] = freq
 
         num_merges = (self.target_vocab_size - len(self.vocab)) if max_merges is None else max_merges
-        logger.info(f"Entraînement du Tokenizer Sarah Ngin : {num_merges} fusions ciblées...")
+        logger.info(f"Entraînement rapide du Tokenizer Sarah Ngin : {num_merges} fusions ciblées sur {len(vocab_words)} mots uniques...")
 
         for i in range(num_merges):
-            stats = self._get_stats(ids_list)
-            if not stats:
+            pairs = {}
+            for word_tuple, freq in vocab_words.items():
+                for p0, p1 in zip(word_tuple, word_tuple[1:]):
+                    pair = (p0, p1)
+                    pairs[pair] = pairs.get(pair, 0) + freq
+
+            if not pairs:
                 break
-            best_pair = max(stats, key=stats.get)
-            if stats[best_pair] < 2:
-                # Fréquence trop basse pour être utile
+
+            best_pair = max(pairs, key=pairs.get)
+            if pairs[best_pair] < 2:
                 break
 
             new_idx = len(self.vocab)
-            # Concaténation des deux segments d'octets
             merged_bytes = self.vocab[best_pair[0]] + self.vocab[best_pair[1]]
             self.vocab[new_idx] = merged_bytes
             self.inv_vocab[merged_bytes] = new_idx
             self.merges.append((self.vocab[best_pair[0]], self.vocab[best_pair[1]]))
 
-            ids_list = self._merge(ids_list, best_pair, new_idx)
+            # Mettre à jour les mots du vocabulaire
+            new_vocab_words = {}
+            p0, p1 = best_pair
+            for word_tuple, freq in vocab_words.items():
+                new_word = []
+                j = 0
+                while j < len(word_tuple):
+                    if j < len(word_tuple) - 1 and word_tuple[j] == p0 and word_tuple[j+1] == p1:
+                        new_word.append(new_idx)
+                        j += 2
+                    else:
+                        new_word.append(word_tuple[j])
+                        j += 1
+                new_vocab_words[tuple(new_word)] = freq
+            vocab_words = new_vocab_words
 
-        logger.info(f"Tokenizer entraîné avec succès. Taille du vocabulaire finale : {self.vocab_size}")
+        logger.info(f"Tokenizer entraîné avec succès en mode rapide. Taille du vocabulaire : {self.vocab_size}")
 
-    def encode(self, text: str, add_bos: bool = True, add_eos: bool = True) -> List[int]:
-        """
-        Encode une chaîne de caractères en IDs de tokens.
-        """
-        if not text:
-            tokens = []
-            if add_bos: tokens = [self.bos_token_id] + tokens
-            if add_eos: tokens = tokens + [self.eos_token_id]
-            return tokens
+    def _encode_single_word(self, word: str) -> List[int]:
+        """Encode un mot ou segment unique avec application des merges."""
+        if not hasattr(self, "_encode_cache"):
+            self._encode_cache = {}
+        if word in self._encode_cache:
+            return self._encode_cache[word]
 
-        raw_bytes = text.encode("utf-8")
+        raw_bytes = word.encode("utf-8")
         offset = len(self.special_tokens)
         ids = [offset + b for b in raw_bytes]
 
-        # Application itérative des fusions BPE apprises
         for p0_bytes, p1_bytes in self.merges:
             if len(ids) < 2:
                 break
-            p0_id = self.inv_vocab[p0_bytes]
-            p1_id = self.inv_vocab[p1_bytes]
-            merged_id = self.inv_vocab[p0_bytes + p1_bytes]
+            p0_id = self.inv_vocab.get(p0_bytes)
+            p1_id = self.inv_vocab.get(p1_bytes)
+            if p0_id is None or p1_id is None:
+                continue
+            merged_id = self.inv_vocab.get(p0_bytes + p1_bytes)
+            if merged_id is None:
+                continue
 
             new_ids = []
             i = 0
@@ -152,12 +153,31 @@ class SarahTokenizer:
                     i += 1
             ids = new_ids
 
-        if add_bos:
-            ids = [self.bos_token_id] + ids
-        if add_eos:
-            ids = ids + [self.eos_token_id]
-
+        self._encode_cache[word] = ids
         return ids
+
+    def encode(self, text: str, add_bos: bool = True, add_eos: bool = True) -> List[int]:
+        """
+        Encode une chaîne de caractères en IDs de tokens ultra-rapidement avec cache.
+        """
+        if not text:
+            tokens = []
+            if add_bos: tokens = [self.bos_token_id] + tokens
+            if add_eos: tokens = tokens + [self.eos_token_id]
+            return tokens
+
+        tokens = []
+        words = text.split(" ")
+        for idx, word in enumerate(words):
+            segment = (" " if idx > 0 else "") + word
+            tokens.extend(self._encode_single_word(segment))
+
+        if add_bos:
+            tokens = [self.bos_token_id] + tokens
+        if add_eos:
+            tokens = tokens + [self.eos_token_id]
+
+        return tokens
 
     def decode(self, tokens: List[int], skip_special_tokens: bool = True) -> str:
         """
