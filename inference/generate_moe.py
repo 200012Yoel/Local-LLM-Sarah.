@@ -1,26 +1,28 @@
 """
-Moteur de Génération et d'Inférence Conversationnelle pour Sarah Ngin.
-Supporte le formatage par rôles (<bos>, <user>, <assistant>, <eos>),
-les hyperparamètres configurables (temperature, top_k, top_p, repetition_penalty)
-et l'arrêt strict sur les balises de fin de tour de parole.
+Générateur d'Inférence Textuelle Haute Performance pour Sarah Engine MoE BitNet b1.58.
+Supporte :
+- Inférence Sparse MoE avec Top-K dynamic routing
+- Sliding Window Attention (SWA) avec Rolling KV-Cache
+- Pénalité de répétition de caractères purs, syllabes et tokens
+- Décodage BPE 8k ultra-rapide.
 """
 
 import re
 import torch
 import torch.nn.functional as F
-from typing import Optional, List, Dict, Any
+from typing import Optional, List, Tuple
+from pathlib import Path
 import logging
 
-from model.transformer import SarahNginTransformer
-from model.config import SarahNginConfig
+from model.transformer_moe import SarahMoETransformer, SarahMoEConfig
 from tokenizer.bpe_tokenizer import SarahTokenizer
 
 logger = logging.getLogger(__name__)
 
-class SarahNginGenerator:
+class SarahMoEGenerator:
     def __init__(
         self,
-        model: SarahNginTransformer,
+        model: SarahMoETransformer,
         tokenizer: SarahTokenizer,
         device: Optional[str] = None
     ):
@@ -43,7 +45,7 @@ class SarahNginGenerator:
         self._init_token_cache()
 
     def _init_token_cache(self):
-        """Pré-calcule la représentation textuelle de chaque token."""
+        """Pré-calcule la représentation textuelle des tokens pour le filtrage en temps réel."""
         self.token_str_cache = {}
         for token_id in range(self.tokenizer.vocab_size):
             try:
@@ -57,18 +59,19 @@ class SarahNginGenerator:
         checkpoint_path: str,
         tokenizer_path: str,
         device: Optional[str] = None
-    ) -> "SarahNginGenerator":
-        """Instancie un générateur à partir d'un checkpoint et d'un tokenizer."""
+    ) -> "SarahMoEGenerator":
+        """Instancie un générateur à partir d'un checkpoint MoE BitNet."""
         tokenizer = SarahTokenizer.load(tokenizer_path)
         checkpoint = torch.load(checkpoint_path, map_location="cpu", weights_only=False)
-
+        
         config = checkpoint["config"]
-        model = SarahNginTransformer(config)
+        model = SarahMoETransformer(config)
         model.load_state_dict(checkpoint["model_state_dict"])
 
         return cls(model, tokenizer, device=device)
 
     def _is_repetition(self, current_text: str, cand_str: str, last_token_str: str = "") -> bool:
+        """Pénaliseur strict de répétition de caractères purs, syllabes et tokens."""
         if not cand_str:
             return False
 
@@ -91,17 +94,17 @@ class SarahNginGenerator:
     def generate(
         self,
         prompt: str,
-        max_new_tokens: int = 128,
-        temperature: float = 0.35,
+        max_new_tokens: int = 80,
+        temperature: float = 0.45,
         top_k: int = 30,
         top_p: float = 0.85,
-        repetition_penalty: float = 1.3,
-        presence_penalty: float = 0.2,
+        repetition_penalty: float = 1.35,
+        presence_penalty: float = 0.3,
         no_repeat_ngram_size: int = 3,
         stop_sequences: Optional[List[str]] = None,
-        min_new_tokens: int = 3
+        min_new_tokens: int = 4
     ) -> str:
-        """Génère une réponse fluide et précise en respectant les rôles conversationnels."""
+        """Génère du texte de manière fluide et contrôlée avec le modèle MoE BitNet."""
         self.model.eval()
         tokens = self.tokenizer.encode(prompt, add_bos=True, add_eos=False)
         input_tensor = torch.tensor([tokens], dtype=torch.long, device=self.device)
@@ -111,20 +114,19 @@ class SarahNginGenerator:
         current_text = prompt
         last_token_str = ""
 
-        default_stops = ["<eos>", "<pad>", "<user>", "<system>", "\n\nUser:", "\n\nQuestion:"]
+        default_stops = ["<eos>", "<pad>", "\n\n", "Question:", "User:", "Utilisateur:"]
         if stop_sequences:
             default_stops.extend(stop_sequences)
 
         with torch.no_grad():
             for step_idx in range(max_new_tokens):
-                if input_tensor.shape[1] > self.model.max_seq_len:
-                    input_tensor = input_tensor[:, -self.model.max_seq_len:]
+                if input_tensor.shape[1] > self.model.config.max_seq_len:
+                    input_tensor = input_tensor[:, -self.model.config.max_seq_len:]
 
-                out = self.model(input_tensor)
-                logits = out[0] if isinstance(out, tuple) else out
+                logits, _, _ = self.model(input_tensor)
                 next_token_logits = logits[0, -1, :].clone()
 
-                # Pénalité de répétition de tokens
+                # 1. Pénalité de répétition de tokens
                 if generated_tokens and repetition_penalty > 1.0:
                     token_counts = {}
                     window_tokens = generated_tokens[-recent_window:]
@@ -138,7 +140,7 @@ class SarahNginGenerator:
                         else:
                             next_token_logits[token_id] /= penalty
 
-                # Blocage des n-grammes répétés
+                # 2. Blocage des n-grammes répétés
                 if no_repeat_ngram_size > 0 and len(generated_tokens) >= no_repeat_ngram_size:
                     ngram = tuple(generated_tokens[-(no_repeat_ngram_size - 1):])
                     for i in range(len(generated_tokens) - no_repeat_ngram_size + 1):
@@ -147,14 +149,14 @@ class SarahNginGenerator:
                             forbidden_token = generated_tokens[i + no_repeat_ngram_size - 1]
                             next_token_logits[forbidden_token] = -float("Inf")
 
-                # Pénaliseur de répétition de caractères purs
-                top_cands = torch.topk(next_token_logits, min(50, next_token_logits.size(-1))).indices.tolist()
+                # 3. Pénaliseur de répétition de caractères purs
+                top_cands = torch.topk(next_token_logits, min(60, next_token_logits.size(-1))).indices.tolist()
                 for cand_id in top_cands:
                     cand_str = self.token_str_cache.get(cand_id, "")
                     if self._is_repetition(current_text, cand_str, last_token_str):
                         next_token_logits[cand_id] = -float("Inf")
 
-                # Échantillonnage
+                # 4. Échantillonnage / Lissage
                 if temperature > 0:
                     scaled_logits = next_token_logits / max(temperature, 1e-4)
 
@@ -174,6 +176,7 @@ class SarahNginGenerator:
                         scaled_logits[indices_to_remove] = -float("Inf")
 
                     probs = F.softmax(scaled_logits, dim=-1)
+                    
                     if torch.isnan(probs).any() or (probs == 0).all():
                         break
 
@@ -183,8 +186,8 @@ class SarahNginGenerator:
 
                 token_val = next_token.item()
 
-                # Arrêt strict sur eos, pad ou balise de début de tour utilisateur
-                if token_val in (self.tokenizer.eos_token_id, self.tokenizer.pad_token_id, self.tokenizer.user_token_id):
+                # 5. Arrêt strict sur EOS
+                if token_val in (self.tokenizer.eos_token_id, self.tokenizer.pad_token_id):
                     break
 
                 generated_tokens.append(token_val)
@@ -193,7 +196,7 @@ class SarahNginGenerator:
                 current_text += token_text
                 input_tensor = torch.cat([input_tensor, next_token.unsqueeze(0)], dim=1)
 
-                # Arrêt textuel si stop_sequence
+                # 6. Stop sequences
                 stop_triggered = False
                 for stop_seq in default_stops:
                     if stop_seq in current_text[len(prompt):]:
@@ -202,10 +205,15 @@ class SarahNginGenerator:
                 if stop_triggered:
                     break
 
-        # Décodage propre de la réponse
-        decoded_raw = self.tokenizer.decode(generated_tokens, skip_special_tokens=True).strip()
-        for stop_seq in default_stops:
-            if stop_seq in decoded_raw:
-                decoded_raw = decoded_raw.split(stop_seq)[0].strip()
+                # 7. Fin de phrase
+                gen_so_far = current_text[len(prompt):].strip()
+                if step_idx >= min_new_tokens and gen_so_far.endswith((".", "!", "?")):
+                    if len(gen_so_far.split()) >= 6:
+                        break
 
-        return decoded_raw
+        final_text = self.tokenizer.decode(generated_tokens, skip_special_tokens=True)
+        for stop_seq in default_stops:
+            if stop_seq in final_text:
+                final_text = final_text.split(stop_seq)[0]
+
+        return re.sub(r'\s+', ' ', final_text).strip()

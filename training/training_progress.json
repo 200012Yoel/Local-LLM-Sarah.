@@ -1,0 +1,23 @@
+{
+  "status": "training",
+  "current_epoch": 9,
+  "total_epochs": 15,
+  "percent_complete": 60,
+  "current_loss": 0.1189,
+  "best_loss": 0.1464,
+  "loss_history": [
+    4.4117,
+    2.2434,
+    0.938,
+    0.4661,
+    0.307,
+    0.2364,
+    0.1903,
+    0.1545,
+    0.1189
+  ],
+  "parameters": 18556416,
+  "target_hardware": "Apple iPhone 14 (A15 Bionic)",
+  "last_log": "\u00c9poque 9/15 valid\u00e9e (Train: 0.1189 | Val: 0.1464)",
+  "elapsed_seconds": 4047.3
+}

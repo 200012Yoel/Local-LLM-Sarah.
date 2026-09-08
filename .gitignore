@@ -3,11 +3,11 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-# PyTorch checkpoints / model weights (optional to ignore or keep small ones)
+# PyTorch checkpoints and large binaries (generated via export/compile_model.py)
 checkpoints/*.pt
+export/*.pt
 mobile_build/*.ptl
 mobile_build/*.pt
 
 # Raw data downloads
 data/raw/
-

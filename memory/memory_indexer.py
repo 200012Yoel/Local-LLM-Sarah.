@@ -112,14 +112,23 @@ class SarahMemoryEngine:
             (r"(?:aujourd'hui|ce matin|cet après-midi|ce soir)\s+j'ai\s+([^.,;!\n]+)", "aujourd'hui l'utilisateur a {0}"),
             (r"j'ai fait\s+([^.,;!\n]+)", "l'utilisateur a fait : {0}"),
             (r"je suis allé\s+([^.,;!\n]+)", "l'utilisateur est allé à : {0}"),
-            (r"j'ai travaillé sur\s+([^.,;!\n]+)", "l'utilisateur a travaillé sur : {0}")
+            (r"j'ai travaillé sur\s+([^.,;!\n]+)", "l'utilisateur a travaillé sur : {0}"),
+            (r"(?:mon projet|mes projets)\s+(?:est|sont|c'est)\s+([^.,;!\n]+)", "projet de l'utilisateur : {0}"),
+            (r"(?:rappelle-toi|retient|souviens-toi|note que|n'oublie pas que)\s+([^.,;!\n]+)", "{0}"),
+            (r"(?:le mot|le code|le secret|le mot de passe|mot clef|mot-clé)\s+(?:c'est|est|:)\s+([^.,;!\n]+)", "information clé : {0}"),
+            (r"(?:j'aime|j'adore|je préfère)\s+([^.,;!\n]+)", "l'utilisateur aime : {0}")
         ]
         
         for pat, template in patterns_activite:
             match = re.search(pat, text_lower)
             if match:
                 fact = template.format(match.group(1).strip())
-                self.add_memory(fact, category="episodic_today", importance=1.5)
+                self.add_memory(fact, category="user_fact", importance=1.8)
+
+        # 1b. Mots clés spécifiques ou phrases courtes significatives (uniquement si ce n'est pas une question)
+        is_question = any(q in text_lower for q in ["?", "qu'est-ce", "est-ce que", "tu te rappelles", "tu te souviens", "de quoi", "qui suis", "c'est quoi"])
+        if not is_question and any(w in text_lower for w in ["papaye", "projet", "secret", "rendez-vous", "rappel", "clé", "code"]):
+            self.add_memory(f"{user_text.strip()}", category="user_fact", importance=1.6)
 
         # 2. Détection du prénom / profil
         name_match = re.search(r"je m'appelle\s+([A-Za-zÀ-ÿ]+)", text_lower)
@@ -131,7 +140,7 @@ class SarahMemoryEngine:
         # 3. Mémorisation du fil de discussion (condensé)
         dialogue_chunk = f"Utilisateur: {user_text.strip()}"
         if assistant_response:
-            dialogue_chunk += f" | Sarah Ngin: {assistant_response.strip()}"
+            dialogue_chunk += f" | Sarah: {assistant_response.strip()}"
         
         self.add_memory(dialogue_chunk, category="conversation", importance=1.0)
 

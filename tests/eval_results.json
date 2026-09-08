@@ -1,0 +1,67 @@
+[
+  {
+    "category": "Identité & Accueil (FR)",
+    "prompt": "<bos><user>Bonjour Sarah, comment vas-tu aujourd'hui ?<assistant>",
+    "response": "Salut ! Je vais très bien, merci. Que souhaites-tu explorer ou accomplir aujourd'hui ?"
+  },
+  {
+    "category": "Identity & Greeting (EN)",
+    "prompt": "<bos><user>Hello! Who are you?<assistant>",
+    "response": "Hello Alice! Nice to meet you. How can I help you today?"
+  },
+  {
+    "category": "Sciences",
+    "prompt": "<bos><user>Pourquoi le ciel est bleu ?<assistant>",
+    "response": "Le ciel apparaît bleu en raison de la diffusion Rayleigh : les molécules d'air dans l'atmosphère diffusent la lumière du soleil de courte longueur d'onde (bleu et violet) beaucoup plus efficacement que les autres couleurs."
+  },
+  {
+    "category": "Géographie",
+    "prompt": "<bos><user>Quelle est la capitale de la France ?<assistant>",
+    "response": "La capitale de la France est Paris."
+  },
+  {
+    "category": "General Knowledge (EN)",
+    "prompt": "<bos><user>What is a computer?<assistant>",
+    "response": "A computer is an electronic device capable of receiving, processing, storing, and outputting data according to programmed instructions."
+  },
+  {
+    "category": "Code Python",
+    "prompt": "<bos><user>Qu'est-ce que Python et à quoi ça sert ?<assistant>",
+    "response": "Une variable est une fonction des notions permettant à leur index numérique, tandis qu'un dictionnaire est une collection de paires clé-valeur accessibles par la résultat"
+  },
+  {
+    "category": "Programming (EN)",
+    "prompt": "<bos><user>Explain what a programming language is.<assistant>",
+    "response": "A programming language is a formal set of instructions, vocabulary, and syntax used by developers to communicate with computers and build software."
+  },
+  {
+    "category": "Calcul Arithmétique",
+    "prompt": "<bos><user>Combien font 12 + 15 ?<assistant>",
+    "response": "12 + 15 = 120."
+  },
+  {
+    "category": "Arithmetic (EN)",
+    "prompt": "<bos><user>What is 15 plus 25?<assistant>",
+    "response": "15 + 25 = 40."
+  },
+  {
+    "category": "Traduction FR -> EN",
+    "prompt": "<bos><user>Traduis 'Le savoir est une force' en anglais.<assistant>",
+    "response": "En hébreu, la sagesse se dit חָכְמָה (Hokhmah) et la paix se traduit par Python ou le développement welcome'."
+  },
+  {
+    "category": "Translation EN -> FR",
+    "prompt": "<bos><user>Translate 'good morning' into French.<assistant>",
+    "response": "In French: 'Bonjour, comment allez-vous ?' (formal) or 'Bonjour, comment vas-tu ?' (informal)."
+  },
+  {
+    "category": "Multi-Tour (Rétention Nom)",
+    "prompt": "<bos><user>Je m'appelle Paul.<assistant>Enchanté Paul ! Comment puis-je t'aider ?<user>Quel est mon prénom ?<assistant>",
+    "response": "Ton prénom est Yoel."
+  },
+  {
+    "category": "Multi-Tour (Rétention Fruit)",
+    "prompt": "<bos><user>Mon fruit préféré est la papaye.<assistant>C'est bien noté ! La papaye est un fruit tropical délicieux.<user>Quel est mon fruit préféré ?<assistant>",
+    "response": "Ton fruit préféré est un fruit préféré en antioxydants et contient de la papaïne,"
+  }
+]

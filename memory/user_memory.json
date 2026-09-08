@@ -1,12 +1,17 @@
 {
   "version": "1.0",
-  "last_updated": "2026-09-07 19:16:54",
-  "total_memories": 8,
+  "last_updated": "2026-09-08 13:36:29",
+  "total_memories": 35,
   "user_profile": {
     "user_name": "Yoel",
     "device": "iPhone 14 (4GB RAM)",
-    "preferences": {},
-    "key_facts": []
+    "preferences": {
+      "fruit_prefere": "papaye"
+    },
+    "key_facts": [
+      "Créateur et développeur de l'assistant Sarah",
+      "Projet en cours : un robot intelligent"
+    ]
   },
   "memories": [
     {
@@ -16,45 +21,207 @@
       "importance": 2.0
     },
     {
-      "text": "Aujourd'hui, Yoel a développé le modèle d'IA Sarah Ngin 100% de zéro avec un agent développeur.",
-      "category": "episodic_today",
-      "timestamp": 1788801238.4188197,
-      "importance": 1.8
+      "text": "Projet de Yoel : conception et programmation d'un robot intelligent.",
+      "category": "user_fact",
+      "timestamp": 1788862892.6298127,
+      "importance": 1.9
     },
     {
-      "text": "Sarah Ngin intègre le Grand Dictionnaire Hébreu-Français et les livres de Voltaire, Verne et La Fontaine.",
+      "text": "Le fruit préféré de Yoel est la papaye.",
+      "category": "user_fact",
+      "timestamp": 1788862892.6483555,
+      "importance": 1.9
+    },
+    {
+      "text": "Sarah s'exécute à 100% en local et répond instantanément du tac au tac.",
       "category": "knowledge",
       "timestamp": 1788801238.4289434,
       "importance": 1.5
     },
     {
-      "text": "Utilisateur: Wsh Sarah, tkt j'ai bien avance aujourd'hui !",
-      "category": "conversation",
-      "timestamp": 1788801312.5786736,
-      "importance": 1.0
-    },
-    {
-      "text": "Utilisateur: Wsh Sarah, tkt j'ai bien avance aujourd'hui ! | Sarah Ngin: J'ai bien compris ton message en langage familier/SMS ('tkt' -> 't'inquiète', 'wsh' -> 'wesh / salut / quoi') ! Tout est parfaitement noté dans ma mémoire locale sans encombrer ton téléphone.",
-      "category": "conversation",
-      "timestamp": 1788801312.5814028,
-      "importance": 1.0
-    },
-    {
-      "text": "l'utilisateur a fait : aujourd'hui ?",
-      "category": "episodic_today",
-      "timestamp": 1788801414.2925825,
+      "text": "Sarah intègre le Grand Dictionnaire Hébreu-Français et tous les langages de programmation.",
+      "category": "knowledge",
+      "timestamp": 1788801238.4289434,
       "importance": 1.5
     },
     {
-      "text": "Utilisateur: Qu'est-ce que j'ai fait aujourd'hui ?",
+      "text": "Utilisateur: Tu te rappelles de quoi sur mes projets et la papaye ?",
       "category": "conversation",
-      "timestamp": 1788801414.2745895,
+      "timestamp": 1788862959.861356,
       "importance": 1.0
     },
     {
-      "text": "Utilisateur: Qu'est-ce que j'ai fait aujourd'hui ? | Sarah Ngin: D'après ma mémoire locale indexée, voici ce que tu as fait aujourd'hui :<br>• L'utilisateur s'appelle Yoel et possède un iPhone 14 (4 Go de RAM).<br>• Aujourd'hui, Yoel a développé le modèle d'IA Sarah Ngin 100% de zéro avec un agent développeur.<br>• l'utilisateur a fait : aujourd'hui ?",
+      "text": "Utilisateur: Tu te rappelles de quoi sur mes projets et la papaye ? | Sarah: Oui, je m'en rappelle parfaitement ! Voici ce que j'ai en mémoire :<br>• Le fruit préféré de Yoel est la papaye.<br>• Projet de Yoel : conception et programmation d'un robot intelligent.",
       "category": "conversation",
-      "timestamp": 1788801414.3097436,
+      "timestamp": 1788862959.8647754,
+      "importance": 1.0
+    },
+    {
+      "text": "Utilisateur: Bonjour Sarah, comment vas-tu ?",
+      "category": "conversation",
+      "timestamp": 1788867352.4239633,
+      "importance": 1.0
+    },
+    {
+      "text": "Utilisateur: Bonjour Sarah, comment vas-tu ? | Sarah: Bonjour Yoel ! Très heureuse de discuter avec toi. Comment puis-je t'aider aujourd'hui ?",
+      "category": "conversation",
+      "timestamp": 1788862966.3308144,
+      "importance": 1.0
+    },
+    {
+      "text": "Utilisateur: papa",
+      "category": "conversation",
+      "timestamp": 1788863169.901802,
+      "importance": 1.0
+    },
+    {
+      "text": "Utilisateur: papa | Sarah: C'est bien noté ! J'ai enregistré cette information dans ma mémoire. Que souhaites-tu que l'on voie ensuite ?",
+      "category": "conversation",
+      "timestamp": 1788863170.456334,
+      "importance": 1.0
+    },
+    {
+      "text": "Utilisateur: Tu peux générer un site internet avec un bouton en centre où y a marqué **** ta mère",
+      "category": "conversation",
+      "timestamp": 1788863244.3200397,
+      "importance": 1.0
+    },
+    {
+      "text": "Utilisateur: Tu peux générer un site internet avec un bouton en centre où y a marqué **** ta mère | Sarah: Que veut dire '.",
+      "category": "conversation",
+      "timestamp": 1788863245.2627318,
+      "importance": 1.0
+    },
+    {
+      "text": "Utilisateur: Bonjour Sarah, qui es-tu ?",
+      "category": "conversation",
+      "timestamp": 1788867304.4208188,
+      "importance": 1.0
+    },
+    {
+      "text": "Utilisateur: Bonjour Sarah, qui es-tu ? | Sarah: Je suis Sarah, ton fruit préféré est la papaye.",
+      "category": "conversation",
+      "timestamp": 1788863839.429078,
+      "importance": 1.0
+    },
+    {
+      "text": "Utilisateur: Quel est mon projet ?",
+      "category": "conversation",
+      "timestamp": 1788863845.4034605,
+      "importance": 1.0
+    },
+    {
+      "text": "Utilisateur: Quel est mon projet ? | Sarah: Que veut dire tes de",
+      "category": "conversation",
+      "timestamp": 1788863845.8674893,
+      "importance": 1.0
+    },
+    {
+      "text": "Utilisateur: Bonjour Sarah, quel est mon fruit préféré et mon projet ?",
+      "category": "conversation",
+      "timestamp": 1788865042.83553,
+      "importance": 1.0
+    },
+    {
+      "text": "Utilisateur: Bonjour Sarah, quel est mon fruit préféré et mon projet ? | Sarah: Ton fruit préféré est la papaye.",
+      "category": "conversation",
+      "timestamp": 1788865043.2055423,
+      "importance": 1.0
+    },
+    {
+      "text": "Utilisateur: Bonjour Sarah, présente-toi !",
+      "category": "conversation",
+      "timestamp": 1788865048.1658745,
+      "importance": 1.0
+    },
+    {
+      "text": "Utilisateur: Bonjour Sarah, présente-toi ! | Sarah: Salut Yoel ! Comment puis-je t'aider aujourd'hui ?",
+      "category": "conversation",
+      "timestamp": 1788865048.6598485,
+      "importance": 1.0
+    },
+    {
+      "text": "Utilisateur: Comment dit-on la paix en hébreu ?",
+      "category": "conversation",
+      "timestamp": 1788865060.6194556,
+      "importance": 1.0
+    },
+    {
+      "text": "Utilisateur: Comment dit-on la paix en hébreu ? | Sarah: La paix en hébreu se dit שָׁלlligent et par !",
+      "category": "conversation",
+      "timestamp": 1788865055.3644013,
+      "importance": 1.0
+    },
+    {
+      "text": "Utilisateur: Comment dit-on la paix en hébreu ? | Sarah: La paix en hébreu se dit שָׁל les voies de l'Asie, jamais la mer Noire, dans l'ordre",
+      "category": "conversation",
+      "timestamp": 1788865061.5291188,
+      "importance": 1.0
+    },
+    {
+      "text": "Utilisateur: Bonjour Sarah, qui es-tu ? | Sarah: Salut ! Je vais très bien, merci. Que souhaites-tu explorer ou accomplir aujourd'hui ?",
+      "category": "conversation",
+      "timestamp": 1788867305.1919312,
+      "importance": 1.0
+    },
+    {
+      "text": "Utilisateur: Bonjour Sarah, comment vas-tu ? | Sarah: Voici une fonction simple en JavaScript :\n<pre style='background:#111; padding:12px; border-radius:8px; overflow-x:auto; color:#38bdf8; font-family:monospace; margin-top:8px;'><code>\nfunction additionner(a, b) {\n   return str.split('').reverse().join('');\n}\nconsole.log(inverserChaine('Sarah')); // Affiche 'haraS'\n</code></pre>",
+      "category": "conversation",
+      "timestamp": 1788867312.36678,
+      "importance": 1.0
+    },
+    {
+      "text": "Utilisateur: Bonjour Sarah ! Comment vas-tu ?",
+      "category": "conversation",
+      "timestamp": 1788867331.158408,
+      "importance": 1.0
+    },
+    {
+      "text": "Utilisateur: Bonjour Sarah ! Comment vas-tu ? | Sarah: Voici la fonction que :\n<pre style='background:#111; padding:12px; border-radius:8px; overflow-x:auto; color:#38bdf8; font-family:monospace; margin-top:8px;'><code>\nfunction aider aujourd'hui ?",
+      "category": "conversation",
+      "timestamp": 1788867331.7853565,
+      "importance": 1.0
+    },
+    {
+      "text": "Utilisateur: Bonjour Sarah, comment vas-tu ? | Sarah: Voici une fonction que JavaScript :\n<pre style='background:#111; padding:12px; border-radius:8px; overflow-x:auto; color:#38bdf8; font-family:monospace; margin-top:8px;'><code>\nfunction additionner(a, b) {\n  if ce b;\n}\nconsole.log(additionner(5, 10)); // Affiche 'haraS'\n</code></pre>",
+      "category": "conversation",
+      "timestamp": 1788867353.9976354,
+      "importance": 1.0
+    },
+    {
+      "text": "Utilisateur: Pourquoi le ciel est bleu ?",
+      "category": "conversation",
+      "timestamp": 1788867374.4993415,
+      "importance": 1.0
+    },
+    {
+      "text": "Utilisateur: Pourquoi le ciel est bleu ? | Sarah: Le ciel apparaît bleu en raison de la diffusion Rayleigh : les molécules d'air dans l'atmosphère diffusent la lumière du soleil de courte longueur d'onde (bleu et violet) beaucoup plus efficacement que les autres couleurs.",
+      "category": "conversation",
+      "timestamp": 1788867377.4803858,
+      "importance": 1.0
+    },
+    {
+      "text": "Utilisateur: Quelle est la capitale de la France ?",
+      "category": "conversation",
+      "timestamp": 1788867382.919348,
+      "importance": 1.0
+    },
+    {
+      "text": "Utilisateur: Quelle est la capitale de la France ? | Sarah: La capitale de la France est Paris.",
+      "category": "conversation",
+      "timestamp": 1788867383.654399,
+      "importance": 1.0
+    },
+    {
+      "text": "Utilisateur: Explain what a programming language is.",
+      "category": "conversation",
+      "timestamp": 1788867388.3758595,
+      "importance": 1.0
+    },
+    {
+      "text": "Utilisateur: Explain what a programming language is. | Sarah: A programming language is a formal set of instructions, vocabulary, and syntax used by developers to communicate with computers and build software.",
+      "category": "conversation",
+      "timestamp": 1788867389.543637,
       "importance": 1.0
     }
   ]

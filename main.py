@@ -177,13 +177,10 @@ def main():
     corpus_path = "data/processed/sarah_ngin_corpus.txt"
     tokenizer_path = f"{checkpoint_dir}/sarah_tokenizer.json"
 
-    if args.action == "graphs":
-        import generate_graphs
-        print("Graphiques générés dans metrics_report.png")
-    elif args.action == "live" or args.action == "chat":
+    if args.action == "live" or args.action == "chat":
         from inference.streaming_self_correct import start_live_interactive_session
         start_live_interactive_session()
-    elif args.action == "all":
+    elif args.action == "all" or args.action == "train":
         # Exécution du pipeline complet
         corpus = step_1_collect_data(data_dir)
         tokenizer = step_2_train_tokenizer(corpus, vocab_size=args.vocab_size, tokenizer_path=tokenizer_path)

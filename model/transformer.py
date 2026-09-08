@@ -207,12 +207,12 @@ class SarahNginTransformer(nn.Module):
         # Projection sur le vocabulaire (Logits)
         logits = self.output(h)
 
-        # Calcul de la perte si cibles fournies
+        # Calcul de la perte si cibles fournies (ignore_index=-100 pour le masquage d'instruction)
         if targets is not None:
             loss = F.cross_entropy(
                 logits.view(-1, self.vocab_size),
                 targets.view(-1),
-                ignore_index=-1
+                ignore_index=-100
             )
             return logits, loss
 

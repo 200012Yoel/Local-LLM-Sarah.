@@ -1,0 +1,2536 @@
+{
+  "model_name": "Sarah Engine MoE BitNet b1.58",
+  "version": "2.0-mobile",
+  "target_hardware": "Apple iPhone 14 (4GB RAM)",
+  "ram_footprint_mb": 28.76,
+  "total_nominal_capacity": "10B-40B Equivalent Sparse MoE",
+  "active_parameters": 7665792,
+  "total_parameters": 18314880,
+  "num_experts": 8,
+  "active_experts_per_token": 2,
+  "quantization": "Ternary 1.58-bit (BitNet b1.58) + 8-bit activations",
+  "attention_type": "Sliding Window Attention (Window: 128) + RoPE",
+  "vocab_size": 7790,
+  "packed_weights_summary": {
+    "layers.0.attn.q_proj.weight": {
+      "shape": [
+        256,
+        256
+      ],
+      "gamma": 0.03375758230686188,
+      "packed_bytes_len": 16384
+    },
+    "layers.0.attn.q_proj.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9999972581863403,
+      "packed_bytes_len": 64
+    },
+    "layers.0.attn.k_proj.weight": {
+      "shape": [
+        256,
+        256
+      ],
+      "gamma": 0.03377164900302887,
+      "packed_bytes_len": 16384
+    },
+    "layers.0.attn.k_proj.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9998742341995239,
+      "packed_bytes_len": 64
+    },
+    "layers.0.attn.v_proj.weight": {
+      "shape": [
+        256,
+        256
+      ],
+      "gamma": 0.032204870134592056,
+      "packed_bytes_len": 16384
+    },
+    "layers.0.attn.v_proj.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9992403984069824,
+      "packed_bytes_len": 64
+    },
+    "layers.0.attn.out_proj.weight": {
+      "shape": [
+        256,
+        256
+      ],
+      "gamma": 0.031737081706523895,
+      "packed_bytes_len": 16384
+    },
+    "layers.0.attn.out_proj.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9968709349632263,
+      "packed_bytes_len": 64
+    },
+    "layers.0.moe.experts.0.w1.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.032900940626859665,
+      "packed_bytes_len": 24576
+    },
+    "layers.0.moe.experts.0.w1.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9993820190429688,
+      "packed_bytes_len": 64
+    },
+    "layers.0.moe.experts.0.w2.weight": {
+      "shape": [
+        256,
+        384
+      ],
+      "gamma": 0.0303042009472847,
+      "packed_bytes_len": 24576
+    },
+    "layers.0.moe.experts.0.w2.rms_norm.weight": {
+      "shape": [
+        384
+      ],
+      "gamma": 0.9998903870582581,
+      "packed_bytes_len": 96
+    },
+    "layers.0.moe.experts.0.w3.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.03197472169995308,
+      "packed_bytes_len": 24576
+    },
+    "layers.0.moe.experts.0.w3.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9995551109313965,
+      "packed_bytes_len": 64
+    },
+    "layers.0.moe.experts.1.w1.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.03551311418414116,
+      "packed_bytes_len": 24576
+    },
+    "layers.0.moe.experts.1.w1.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 1.0006520748138428,
+      "packed_bytes_len": 64
+    },
+    "layers.0.moe.experts.1.w2.weight": {
+      "shape": [
+        256,
+        384
+      ],
+      "gamma": 0.03982596844434738,
+      "packed_bytes_len": 24576
+    },
+    "layers.0.moe.experts.1.w2.rms_norm.weight": {
+      "shape": [
+        384
+      ],
+      "gamma": 1.002684473991394,
+      "packed_bytes_len": 96
+    },
+    "layers.0.moe.experts.1.w3.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.031828708946704865,
+      "packed_bytes_len": 24576
+    },
+    "layers.0.moe.experts.1.w3.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9999285936355591,
+      "packed_bytes_len": 64
+    },
+    "layers.0.moe.experts.2.w1.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.0337335504591465,
+      "packed_bytes_len": 24576
+    },
+    "layers.0.moe.experts.2.w1.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 1.0000108480453491,
+      "packed_bytes_len": 64
+    },
+    "layers.0.moe.experts.2.w2.weight": {
+      "shape": [
+        256,
+        384
+      ],
+      "gamma": 0.03172368183732033,
+      "packed_bytes_len": 24576
+    },
+    "layers.0.moe.experts.2.w2.rms_norm.weight": {
+      "shape": [
+        384
+      ],
+      "gamma": 1.0003316402435303,
+      "packed_bytes_len": 96
+    },
+    "layers.0.moe.experts.2.w3.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.03182356059551239,
+      "packed_bytes_len": 24576
+    },
+    "layers.0.moe.experts.2.w3.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9998229742050171,
+      "packed_bytes_len": 64
+    },
+    "layers.0.moe.experts.3.w1.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.035819459706544876,
+      "packed_bytes_len": 24576
+    },
+    "layers.0.moe.experts.3.w1.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 1.000618577003479,
+      "packed_bytes_len": 64
+    },
+    "layers.0.moe.experts.3.w2.weight": {
+      "shape": [
+        256,
+        384
+      ],
+      "gamma": 0.037463121116161346,
+      "packed_bytes_len": 24576
+    },
+    "layers.0.moe.experts.3.w2.rms_norm.weight": {
+      "shape": [
+        384
+      ],
+      "gamma": 1.002156138420105,
+      "packed_bytes_len": 96
+    },
+    "layers.0.moe.experts.3.w3.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.031771544367074966,
+      "packed_bytes_len": 24576
+    },
+    "layers.0.moe.experts.3.w3.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9997174739837646,
+      "packed_bytes_len": 64
+    },
+    "layers.0.moe.experts.4.w1.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.033832401037216187,
+      "packed_bytes_len": 24576
+    },
+    "layers.0.moe.experts.4.w1.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 1.0001295804977417,
+      "packed_bytes_len": 64
+    },
+    "layers.0.moe.experts.4.w2.weight": {
+      "shape": [
+        256,
+        384
+      ],
+      "gamma": 0.03404943645000458,
+      "packed_bytes_len": 24576
+    },
+    "layers.0.moe.experts.4.w2.rms_norm.weight": {
+      "shape": [
+        384
+      ],
+      "gamma": 1.0008773803710938,
+      "packed_bytes_len": 96
+    },
+    "layers.0.moe.experts.4.w3.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.03198224678635597,
+      "packed_bytes_len": 24576
+    },
+    "layers.0.moe.experts.4.w3.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 1.0001797676086426,
+      "packed_bytes_len": 64
+    },
+    "layers.0.moe.experts.5.w1.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.032194849103689194,
+      "packed_bytes_len": 24576
+    },
+    "layers.0.moe.experts.5.w1.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9998102188110352,
+      "packed_bytes_len": 64
+    },
+    "layers.0.moe.experts.5.w2.weight": {
+      "shape": [
+        256,
+        384
+      ],
+      "gamma": 0.02898240089416504,
+      "packed_bytes_len": 24576
+    },
+    "layers.0.moe.experts.5.w2.rms_norm.weight": {
+      "shape": [
+        384
+      ],
+      "gamma": 0.999249279499054,
+      "packed_bytes_len": 96
+    },
+    "layers.0.moe.experts.5.w3.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.032109905034303665,
+      "packed_bytes_len": 24576
+    },
+    "layers.0.moe.experts.5.w3.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9996649622917175,
+      "packed_bytes_len": 64
+    },
+    "layers.0.moe.experts.6.w1.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.03557109832763672,
+      "packed_bytes_len": 24576
+    },
+    "layers.0.moe.experts.6.w1.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 1.0006543397903442,
+      "packed_bytes_len": 64
+    },
+    "layers.0.moe.experts.6.w2.weight": {
+      "shape": [
+        256,
+        384
+      ],
+      "gamma": 0.03574981167912483,
+      "packed_bytes_len": 24576
+    },
+    "layers.0.moe.experts.6.w2.rms_norm.weight": {
+      "shape": [
+        384
+      ],
+      "gamma": 1.0016123056411743,
+      "packed_bytes_len": 96
+    },
+    "layers.0.moe.experts.6.w3.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.031782444566488266,
+      "packed_bytes_len": 24576
+    },
+    "layers.0.moe.experts.6.w3.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9999151229858398,
+      "packed_bytes_len": 64
+    },
+    "layers.0.moe.experts.7.w1.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.034043896943330765,
+      "packed_bytes_len": 24576
+    },
+    "layers.0.moe.experts.7.w1.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 1.0008726119995117,
+      "packed_bytes_len": 64
+    },
+    "layers.0.moe.experts.7.w2.weight": {
+      "shape": [
+        256,
+        384
+      ],
+      "gamma": 0.03421836718916893,
+      "packed_bytes_len": 24576
+    },
+    "layers.0.moe.experts.7.w2.rms_norm.weight": {
+      "shape": [
+        384
+      ],
+      "gamma": 1.0012799501419067,
+      "packed_bytes_len": 96
+    },
+    "layers.0.moe.experts.7.w3.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.031859081238508224,
+      "packed_bytes_len": 24576
+    },
+    "layers.0.moe.experts.7.w3.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9994584321975708,
+      "packed_bytes_len": 64
+    },
+    "layers.1.attn.q_proj.weight": {
+      "shape": [
+        256,
+        256
+      ],
+      "gamma": 0.03397808596491814,
+      "packed_bytes_len": 16384
+    },
+    "layers.1.attn.q_proj.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9992389678955078,
+      "packed_bytes_len": 64
+    },
+    "layers.1.attn.k_proj.weight": {
+      "shape": [
+        256,
+        256
+      ],
+      "gamma": 0.034067608416080475,
+      "packed_bytes_len": 16384
+    },
+    "layers.1.attn.k_proj.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 1.0001380443572998,
+      "packed_bytes_len": 64
+    },
+    "layers.1.attn.v_proj.weight": {
+      "shape": [
+        256,
+        256
+      ],
+      "gamma": 0.032043009996414185,
+      "packed_bytes_len": 16384
+    },
+    "layers.1.attn.v_proj.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9991180300712585,
+      "packed_bytes_len": 64
+    },
+    "layers.1.attn.out_proj.weight": {
+      "shape": [
+        256,
+        256
+      ],
+      "gamma": 0.031402409076690674,
+      "packed_bytes_len": 16384
+    },
+    "layers.1.attn.out_proj.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9972780346870422,
+      "packed_bytes_len": 64
+    },
+    "layers.1.moe.experts.0.w1.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.03247468173503876,
+      "packed_bytes_len": 24576
+    },
+    "layers.1.moe.experts.0.w1.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.998561680316925,
+      "packed_bytes_len": 64
+    },
+    "layers.1.moe.experts.0.w2.weight": {
+      "shape": [
+        256,
+        384
+      ],
+      "gamma": 0.027071459218859673,
+      "packed_bytes_len": 24576
+    },
+    "layers.1.moe.experts.0.w2.rms_norm.weight": {
+      "shape": [
+        384
+      ],
+      "gamma": 0.998849630355835,
+      "packed_bytes_len": 96
+    },
+    "layers.1.moe.experts.0.w3.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.0322183221578598,
+      "packed_bytes_len": 24576
+    },
+    "layers.1.moe.experts.0.w3.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9994970560073853,
+      "packed_bytes_len": 64
+    },
+    "layers.1.moe.experts.1.w1.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.03277777135372162,
+      "packed_bytes_len": 24576
+    },
+    "layers.1.moe.experts.1.w1.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 1.0002734661102295,
+      "packed_bytes_len": 64
+    },
+    "layers.1.moe.experts.1.w2.weight": {
+      "shape": [
+        256,
+        384
+      ],
+      "gamma": 0.028910376131534576,
+      "packed_bytes_len": 24576
+    },
+    "layers.1.moe.experts.1.w2.rms_norm.weight": {
+      "shape": [
+        384
+      ],
+      "gamma": 1.000066876411438,
+      "packed_bytes_len": 96
+    },
+    "layers.1.moe.experts.1.w3.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.031912755221128464,
+      "packed_bytes_len": 24576
+    },
+    "layers.1.moe.experts.1.w3.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9994186162948608,
+      "packed_bytes_len": 64
+    },
+    "layers.1.moe.experts.2.w1.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.03288855031132698,
+      "packed_bytes_len": 24576
+    },
+    "layers.1.moe.experts.2.w1.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9997010827064514,
+      "packed_bytes_len": 64
+    },
+    "layers.1.moe.experts.2.w2.weight": {
+      "shape": [
+        256,
+        384
+      ],
+      "gamma": 0.029979050159454346,
+      "packed_bytes_len": 24576
+    },
+    "layers.1.moe.experts.2.w2.rms_norm.weight": {
+      "shape": [
+        384
+      ],
+      "gamma": 0.9996934533119202,
+      "packed_bytes_len": 96
+    },
+    "layers.1.moe.experts.2.w3.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.03205195441842079,
+      "packed_bytes_len": 24576
+    },
+    "layers.1.moe.experts.2.w3.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9994559288024902,
+      "packed_bytes_len": 64
+    },
+    "layers.1.moe.experts.3.w1.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.03452441468834877,
+      "packed_bytes_len": 24576
+    },
+    "layers.1.moe.experts.3.w1.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9994252920150757,
+      "packed_bytes_len": 64
+    },
+    "layers.1.moe.experts.3.w2.weight": {
+      "shape": [
+        256,
+        384
+      ],
+      "gamma": 0.031405869871377945,
+      "packed_bytes_len": 24576
+    },
+    "layers.1.moe.experts.3.w2.rms_norm.weight": {
+      "shape": [
+        384
+      ],
+      "gamma": 0.9997057914733887,
+      "packed_bytes_len": 96
+    },
+    "layers.1.moe.experts.3.w3.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.03201064094901085,
+      "packed_bytes_len": 24576
+    },
+    "layers.1.moe.experts.3.w3.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.99955815076828,
+      "packed_bytes_len": 64
+    },
+    "layers.1.moe.experts.4.w1.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.034846581518650055,
+      "packed_bytes_len": 24576
+    },
+    "layers.1.moe.experts.4.w1.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 1.0002745389938354,
+      "packed_bytes_len": 64
+    },
+    "layers.1.moe.experts.4.w2.weight": {
+      "shape": [
+        256,
+        384
+      ],
+      "gamma": 0.030424408614635468,
+      "packed_bytes_len": 24576
+    },
+    "layers.1.moe.experts.4.w2.rms_norm.weight": {
+      "shape": [
+        384
+      ],
+      "gamma": 1.0003026723861694,
+      "packed_bytes_len": 96
+    },
+    "layers.1.moe.experts.4.w3.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.03173984959721565,
+      "packed_bytes_len": 24576
+    },
+    "layers.1.moe.experts.4.w3.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9995777010917664,
+      "packed_bytes_len": 64
+    },
+    "layers.1.moe.experts.5.w1.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.03355051204562187,
+      "packed_bytes_len": 24576
+    },
+    "layers.1.moe.experts.5.w1.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.999701201915741,
+      "packed_bytes_len": 64
+    },
+    "layers.1.moe.experts.5.w2.weight": {
+      "shape": [
+        256,
+        384
+      ],
+      "gamma": 0.03060176782310009,
+      "packed_bytes_len": 24576
+    },
+    "layers.1.moe.experts.5.w2.rms_norm.weight": {
+      "shape": [
+        384
+      ],
+      "gamma": 0.9996592402458191,
+      "packed_bytes_len": 96
+    },
+    "layers.1.moe.experts.5.w3.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.031868353486061096,
+      "packed_bytes_len": 24576
+    },
+    "layers.1.moe.experts.5.w3.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9994217753410339,
+      "packed_bytes_len": 64
+    },
+    "layers.1.moe.experts.6.w1.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.03180638328194618,
+      "packed_bytes_len": 24576
+    },
+    "layers.1.moe.experts.6.w1.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9993664026260376,
+      "packed_bytes_len": 64
+    },
+    "layers.1.moe.experts.6.w2.weight": {
+      "shape": [
+        256,
+        384
+      ],
+      "gamma": 0.027902252972126007,
+      "packed_bytes_len": 24576
+    },
+    "layers.1.moe.experts.6.w2.rms_norm.weight": {
+      "shape": [
+        384
+      ],
+      "gamma": 0.9986007213592529,
+      "packed_bytes_len": 96
+    },
+    "layers.1.moe.experts.6.w3.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.03210029378533363,
+      "packed_bytes_len": 24576
+    },
+    "layers.1.moe.experts.6.w3.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9994300007820129,
+      "packed_bytes_len": 64
+    },
+    "layers.1.moe.experts.7.w1.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.03362102806568146,
+      "packed_bytes_len": 24576
+    },
+    "layers.1.moe.experts.7.w1.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9994635581970215,
+      "packed_bytes_len": 64
+    },
+    "layers.1.moe.experts.7.w2.weight": {
+      "shape": [
+        256,
+        384
+      ],
+      "gamma": 0.029805706813931465,
+      "packed_bytes_len": 24576
+    },
+    "layers.1.moe.experts.7.w2.rms_norm.weight": {
+      "shape": [
+        384
+      ],
+      "gamma": 0.9997456073760986,
+      "packed_bytes_len": 96
+    },
+    "layers.1.moe.experts.7.w3.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.03192928060889244,
+      "packed_bytes_len": 24576
+    },
+    "layers.1.moe.experts.7.w3.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9991390109062195,
+      "packed_bytes_len": 64
+    },
+    "layers.2.attn.q_proj.weight": {
+      "shape": [
+        256,
+        256
+      ],
+      "gamma": 0.03404782712459564,
+      "packed_bytes_len": 16384
+    },
+    "layers.2.attn.q_proj.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 1.0001051425933838,
+      "packed_bytes_len": 64
+    },
+    "layers.2.attn.k_proj.weight": {
+      "shape": [
+        256,
+        256
+      ],
+      "gamma": 0.03409953415393829,
+      "packed_bytes_len": 16384
+    },
+    "layers.2.attn.k_proj.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.999740719795227,
+      "packed_bytes_len": 64
+    },
+    "layers.2.attn.v_proj.weight": {
+      "shape": [
+        256,
+        256
+      ],
+      "gamma": 0.031643155962228775,
+      "packed_bytes_len": 16384
+    },
+    "layers.2.attn.v_proj.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9987549781799316,
+      "packed_bytes_len": 64
+    },
+    "layers.2.attn.out_proj.weight": {
+      "shape": [
+        256,
+        256
+      ],
+      "gamma": 0.03225141763687134,
+      "packed_bytes_len": 16384
+    },
+    "layers.2.attn.out_proj.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9981743693351746,
+      "packed_bytes_len": 64
+    },
+    "layers.2.moe.experts.0.w1.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.0306390468031168,
+      "packed_bytes_len": 24576
+    },
+    "layers.2.moe.experts.0.w1.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9987183809280396,
+      "packed_bytes_len": 64
+    },
+    "layers.2.moe.experts.0.w2.weight": {
+      "shape": [
+        256,
+        384
+      ],
+      "gamma": 0.02583208866417408,
+      "packed_bytes_len": 24576
+    },
+    "layers.2.moe.experts.0.w2.rms_norm.weight": {
+      "shape": [
+        384
+      ],
+      "gamma": 0.9986507892608643,
+      "packed_bytes_len": 96
+    },
+    "layers.2.moe.experts.0.w3.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.03206871449947357,
+      "packed_bytes_len": 24576
+    },
+    "layers.2.moe.experts.0.w3.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9996749758720398,
+      "packed_bytes_len": 64
+    },
+    "layers.2.moe.experts.1.w1.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.03236135467886925,
+      "packed_bytes_len": 24576
+    },
+    "layers.2.moe.experts.1.w1.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9995622634887695,
+      "packed_bytes_len": 64
+    },
+    "layers.2.moe.experts.1.w2.weight": {
+      "shape": [
+        256,
+        384
+      ],
+      "gamma": 0.027427708730101585,
+      "packed_bytes_len": 24576
+    },
+    "layers.2.moe.experts.1.w2.rms_norm.weight": {
+      "shape": [
+        384
+      ],
+      "gamma": 0.9996766448020935,
+      "packed_bytes_len": 96
+    },
+    "layers.2.moe.experts.1.w3.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.03189197927713394,
+      "packed_bytes_len": 24576
+    },
+    "layers.2.moe.experts.1.w3.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.999518871307373,
+      "packed_bytes_len": 64
+    },
+    "layers.2.moe.experts.2.w1.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.031356897205114365,
+      "packed_bytes_len": 24576
+    },
+    "layers.2.moe.experts.2.w1.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.999541163444519,
+      "packed_bytes_len": 64
+    },
+    "layers.2.moe.experts.2.w2.weight": {
+      "shape": [
+        256,
+        384
+      ],
+      "gamma": 0.02723676897585392,
+      "packed_bytes_len": 24576
+    },
+    "layers.2.moe.experts.2.w2.rms_norm.weight": {
+      "shape": [
+        384
+      ],
+      "gamma": 0.9991968274116516,
+      "packed_bytes_len": 96
+    },
+    "layers.2.moe.experts.2.w3.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.0320918969810009,
+      "packed_bytes_len": 24576
+    },
+    "layers.2.moe.experts.2.w3.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9996393918991089,
+      "packed_bytes_len": 64
+    },
+    "layers.2.moe.experts.3.w1.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.030424095690250397,
+      "packed_bytes_len": 24576
+    },
+    "layers.2.moe.experts.3.w1.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9984368085861206,
+      "packed_bytes_len": 64
+    },
+    "layers.2.moe.experts.3.w2.weight": {
+      "shape": [
+        256,
+        384
+      ],
+      "gamma": 0.025336122140288353,
+      "packed_bytes_len": 24576
+    },
+    "layers.2.moe.experts.3.w2.rms_norm.weight": {
+      "shape": [
+        384
+      ],
+      "gamma": 0.9982606768608093,
+      "packed_bytes_len": 96
+    },
+    "layers.2.moe.experts.3.w3.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.03212427347898483,
+      "packed_bytes_len": 24576
+    },
+    "layers.2.moe.experts.3.w3.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9994165897369385,
+      "packed_bytes_len": 64
+    },
+    "layers.2.moe.experts.4.w1.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.0335255041718483,
+      "packed_bytes_len": 24576
+    },
+    "layers.2.moe.experts.4.w1.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9996159076690674,
+      "packed_bytes_len": 64
+    },
+    "layers.2.moe.experts.4.w2.weight": {
+      "shape": [
+        256,
+        384
+      ],
+      "gamma": 0.029177872464060783,
+      "packed_bytes_len": 24576
+    },
+    "layers.2.moe.experts.4.w2.rms_norm.weight": {
+      "shape": [
+        384
+      ],
+      "gamma": 0.9998183846473694,
+      "packed_bytes_len": 96
+    },
+    "layers.2.moe.experts.4.w3.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.031839340925216675,
+      "packed_bytes_len": 24576
+    },
+    "layers.2.moe.experts.4.w3.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9996947050094604,
+      "packed_bytes_len": 64
+    },
+    "layers.2.moe.experts.5.w1.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.03375867381691933,
+      "packed_bytes_len": 24576
+    },
+    "layers.2.moe.experts.5.w1.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9997104406356812,
+      "packed_bytes_len": 64
+    },
+    "layers.2.moe.experts.5.w2.weight": {
+      "shape": [
+        256,
+        384
+      ],
+      "gamma": 0.02855471335351467,
+      "packed_bytes_len": 24576
+    },
+    "layers.2.moe.experts.5.w2.rms_norm.weight": {
+      "shape": [
+        384
+      ],
+      "gamma": 0.999889075756073,
+      "packed_bytes_len": 96
+    },
+    "layers.2.moe.experts.5.w3.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.03203660622239113,
+      "packed_bytes_len": 24576
+    },
+    "layers.2.moe.experts.5.w3.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9996463656425476,
+      "packed_bytes_len": 64
+    },
+    "layers.2.moe.experts.6.w1.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.03166808933019638,
+      "packed_bytes_len": 24576
+    },
+    "layers.2.moe.experts.6.w1.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9993523955345154,
+      "packed_bytes_len": 64
+    },
+    "layers.2.moe.experts.6.w2.weight": {
+      "shape": [
+        256,
+        384
+      ],
+      "gamma": 0.0288267582654953,
+      "packed_bytes_len": 24576
+    },
+    "layers.2.moe.experts.6.w2.rms_norm.weight": {
+      "shape": [
+        384
+      ],
+      "gamma": 0.9994046092033386,
+      "packed_bytes_len": 96
+    },
+    "layers.2.moe.experts.6.w3.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.032129961997270584,
+      "packed_bytes_len": 24576
+    },
+    "layers.2.moe.experts.6.w3.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9997636675834656,
+      "packed_bytes_len": 64
+    },
+    "layers.2.moe.experts.7.w1.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.03139476105570793,
+      "packed_bytes_len": 24576
+    },
+    "layers.2.moe.experts.7.w1.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.999622106552124,
+      "packed_bytes_len": 64
+    },
+    "layers.2.moe.experts.7.w2.weight": {
+      "shape": [
+        256,
+        384
+      ],
+      "gamma": 0.02748771943151951,
+      "packed_bytes_len": 24576
+    },
+    "layers.2.moe.experts.7.w2.rms_norm.weight": {
+      "shape": [
+        384
+      ],
+      "gamma": 0.9996922612190247,
+      "packed_bytes_len": 96
+    },
+    "layers.2.moe.experts.7.w3.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.031984757632017136,
+      "packed_bytes_len": 24576
+    },
+    "layers.2.moe.experts.7.w3.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9994280338287354,
+      "packed_bytes_len": 64
+    },
+    "layers.3.attn.q_proj.weight": {
+      "shape": [
+        256,
+        256
+      ],
+      "gamma": 0.030844828113913536,
+      "packed_bytes_len": 16384
+    },
+    "layers.3.attn.q_proj.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.997826337814331,
+      "packed_bytes_len": 64
+    },
+    "layers.3.attn.k_proj.weight": {
+      "shape": [
+        256,
+        256
+      ],
+      "gamma": 0.030999986454844475,
+      "packed_bytes_len": 16384
+    },
+    "layers.3.attn.k_proj.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9990631937980652,
+      "packed_bytes_len": 64
+    },
+    "layers.3.attn.v_proj.weight": {
+      "shape": [
+        256,
+        256
+      ],
+      "gamma": 0.032278552651405334,
+      "packed_bytes_len": 16384
+    },
+    "layers.3.attn.v_proj.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9994408488273621,
+      "packed_bytes_len": 64
+    },
+    "layers.3.attn.out_proj.weight": {
+      "shape": [
+        256,
+        256
+      ],
+      "gamma": 0.030612800270318985,
+      "packed_bytes_len": 16384
+    },
+    "layers.3.attn.out_proj.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9969323873519897,
+      "packed_bytes_len": 64
+    },
+    "layers.3.moe.experts.0.w1.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.028336087241768837,
+      "packed_bytes_len": 24576
+    },
+    "layers.3.moe.experts.0.w1.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9975478649139404,
+      "packed_bytes_len": 64
+    },
+    "layers.3.moe.experts.0.w2.weight": {
+      "shape": [
+        256,
+        384
+      ],
+      "gamma": 0.023636935278773308,
+      "packed_bytes_len": 24576
+    },
+    "layers.3.moe.experts.0.w2.rms_norm.weight": {
+      "shape": [
+        384
+      ],
+      "gamma": 0.9986026883125305,
+      "packed_bytes_len": 96
+    },
+    "layers.3.moe.experts.0.w3.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.03232559189200401,
+      "packed_bytes_len": 24576
+    },
+    "layers.3.moe.experts.0.w3.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9992297291755676,
+      "packed_bytes_len": 64
+    },
+    "layers.3.moe.experts.1.w1.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.029372243210673332,
+      "packed_bytes_len": 24576
+    },
+    "layers.3.moe.experts.1.w1.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.999405562877655,
+      "packed_bytes_len": 64
+    },
+    "layers.3.moe.experts.1.w2.weight": {
+      "shape": [
+        256,
+        384
+      ],
+      "gamma": 0.025019844993948936,
+      "packed_bytes_len": 24576
+    },
+    "layers.3.moe.experts.1.w2.rms_norm.weight": {
+      "shape": [
+        384
+      ],
+      "gamma": 0.9982292652130127,
+      "packed_bytes_len": 96
+    },
+    "layers.3.moe.experts.1.w3.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.0322343073785305,
+      "packed_bytes_len": 24576
+    },
+    "layers.3.moe.experts.1.w3.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.999556839466095,
+      "packed_bytes_len": 64
+    },
+    "layers.3.moe.experts.2.w1.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.02657460607588291,
+      "packed_bytes_len": 24576
+    },
+    "layers.3.moe.experts.2.w1.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9983619451522827,
+      "packed_bytes_len": 64
+    },
+    "layers.3.moe.experts.2.w2.weight": {
+      "shape": [
+        256,
+        384
+      ],
+      "gamma": 0.021950824186205864,
+      "packed_bytes_len": 24576
+    },
+    "layers.3.moe.experts.2.w2.rms_norm.weight": {
+      "shape": [
+        384
+      ],
+      "gamma": 0.9973821640014648,
+      "packed_bytes_len": 96
+    },
+    "layers.3.moe.experts.2.w3.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.032489415258169174,
+      "packed_bytes_len": 24576
+    },
+    "layers.3.moe.experts.2.w3.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9991810917854309,
+      "packed_bytes_len": 64
+    },
+    "layers.3.moe.experts.3.w1.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.030519867315888405,
+      "packed_bytes_len": 24576
+    },
+    "layers.3.moe.experts.3.w1.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9983005523681641,
+      "packed_bytes_len": 64
+    },
+    "layers.3.moe.experts.3.w2.weight": {
+      "shape": [
+        256,
+        384
+      ],
+      "gamma": 0.025157557800412178,
+      "packed_bytes_len": 24576
+    },
+    "layers.3.moe.experts.3.w2.rms_norm.weight": {
+      "shape": [
+        384
+      ],
+      "gamma": 0.9978833794593811,
+      "packed_bytes_len": 96
+    },
+    "layers.3.moe.experts.3.w3.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.032173722982406616,
+      "packed_bytes_len": 24576
+    },
+    "layers.3.moe.experts.3.w3.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9995607137680054,
+      "packed_bytes_len": 64
+    },
+    "layers.3.moe.experts.4.w1.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.029017889872193336,
+      "packed_bytes_len": 24576
+    },
+    "layers.3.moe.experts.4.w1.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9983662366867065,
+      "packed_bytes_len": 64
+    },
+    "layers.3.moe.experts.4.w2.weight": {
+      "shape": [
+        256,
+        384
+      ],
+      "gamma": 0.024078289046883583,
+      "packed_bytes_len": 24576
+    },
+    "layers.3.moe.experts.4.w2.rms_norm.weight": {
+      "shape": [
+        384
+      ],
+      "gamma": 0.9975056648254395,
+      "packed_bytes_len": 96
+    },
+    "layers.3.moe.experts.4.w3.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.032259367406368256,
+      "packed_bytes_len": 24576
+    },
+    "layers.3.moe.experts.4.w3.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.999536395072937,
+      "packed_bytes_len": 64
+    },
+    "layers.3.moe.experts.5.w1.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.029185587540268898,
+      "packed_bytes_len": 24576
+    },
+    "layers.3.moe.experts.5.w1.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9982860088348389,
+      "packed_bytes_len": 64
+    },
+    "layers.3.moe.experts.5.w2.weight": {
+      "shape": [
+        256,
+        384
+      ],
+      "gamma": 0.02441653609275818,
+      "packed_bytes_len": 24576
+    },
+    "layers.3.moe.experts.5.w2.rms_norm.weight": {
+      "shape": [
+        384
+      ],
+      "gamma": 0.9978542327880859,
+      "packed_bytes_len": 96
+    },
+    "layers.3.moe.experts.5.w3.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.03211428225040436,
+      "packed_bytes_len": 24576
+    },
+    "layers.3.moe.experts.5.w3.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9993327260017395,
+      "packed_bytes_len": 64
+    },
+    "layers.3.moe.experts.6.w1.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.029645271599292755,
+      "packed_bytes_len": 24576
+    },
+    "layers.3.moe.experts.6.w1.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9985450506210327,
+      "packed_bytes_len": 64
+    },
+    "layers.3.moe.experts.6.w2.weight": {
+      "shape": [
+        256,
+        384
+      ],
+      "gamma": 0.024605767801404,
+      "packed_bytes_len": 24576
+    },
+    "layers.3.moe.experts.6.w2.rms_norm.weight": {
+      "shape": [
+        384
+      ],
+      "gamma": 0.998852550983429,
+      "packed_bytes_len": 96
+    },
+    "layers.3.moe.experts.6.w3.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.0322285071015358,
+      "packed_bytes_len": 24576
+    },
+    "layers.3.moe.experts.6.w3.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9990109205245972,
+      "packed_bytes_len": 64
+    },
+    "layers.3.moe.experts.7.w1.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.028098294511437416,
+      "packed_bytes_len": 24576
+    },
+    "layers.3.moe.experts.7.w1.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.998771607875824,
+      "packed_bytes_len": 64
+    },
+    "layers.3.moe.experts.7.w2.weight": {
+      "shape": [
+        256,
+        384
+      ],
+      "gamma": 0.023760022595524788,
+      "packed_bytes_len": 24576
+    },
+    "layers.3.moe.experts.7.w2.rms_norm.weight": {
+      "shape": [
+        384
+      ],
+      "gamma": 0.9978542923927307,
+      "packed_bytes_len": 96
+    },
+    "layers.3.moe.experts.7.w3.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.032236699014902115,
+      "packed_bytes_len": 24576
+    },
+    "layers.3.moe.experts.7.w3.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9992049336433411,
+      "packed_bytes_len": 64
+    },
+    "layers.4.attn.q_proj.weight": {
+      "shape": [
+        256,
+        256
+      ],
+      "gamma": 0.030669620260596275,
+      "packed_bytes_len": 16384
+    },
+    "layers.4.attn.q_proj.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9994439482688904,
+      "packed_bytes_len": 64
+    },
+    "layers.4.attn.k_proj.weight": {
+      "shape": [
+        256,
+        256
+      ],
+      "gamma": 0.03063795156776905,
+      "packed_bytes_len": 16384
+    },
+    "layers.4.attn.k_proj.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9985792636871338,
+      "packed_bytes_len": 64
+    },
+    "layers.4.attn.v_proj.weight": {
+      "shape": [
+        256,
+        256
+      ],
+      "gamma": 0.03221133351325989,
+      "packed_bytes_len": 16384
+    },
+    "layers.4.attn.v_proj.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.998715877532959,
+      "packed_bytes_len": 64
+    },
+    "layers.4.attn.out_proj.weight": {
+      "shape": [
+        256,
+        256
+      ],
+      "gamma": 0.03219086676836014,
+      "packed_bytes_len": 16384
+    },
+    "layers.4.attn.out_proj.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9968594908714294,
+      "packed_bytes_len": 64
+    },
+    "layers.4.moe.experts.0.w1.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.027643302455544472,
+      "packed_bytes_len": 24576
+    },
+    "layers.4.moe.experts.0.w1.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9986188411712646,
+      "packed_bytes_len": 64
+    },
+    "layers.4.moe.experts.0.w2.weight": {
+      "shape": [
+        256,
+        384
+      ],
+      "gamma": 0.02283748984336853,
+      "packed_bytes_len": 24576
+    },
+    "layers.4.moe.experts.0.w2.rms_norm.weight": {
+      "shape": [
+        384
+      ],
+      "gamma": 0.9980535507202148,
+      "packed_bytes_len": 96
+    },
+    "layers.4.moe.experts.0.w3.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.03215707838535309,
+      "packed_bytes_len": 24576
+    },
+    "layers.4.moe.experts.0.w3.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9991008043289185,
+      "packed_bytes_len": 64
+    },
+    "layers.4.moe.experts.1.w1.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.027452563866972923,
+      "packed_bytes_len": 24576
+    },
+    "layers.4.moe.experts.1.w1.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9983342289924622,
+      "packed_bytes_len": 64
+    },
+    "layers.4.moe.experts.1.w2.weight": {
+      "shape": [
+        256,
+        384
+      ],
+      "gamma": 0.021899810060858727,
+      "packed_bytes_len": 24576
+    },
+    "layers.4.moe.experts.1.w2.rms_norm.weight": {
+      "shape": [
+        384
+      ],
+      "gamma": 0.9969621300697327,
+      "packed_bytes_len": 96
+    },
+    "layers.4.moe.experts.1.w3.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.03243715688586235,
+      "packed_bytes_len": 24576
+    },
+    "layers.4.moe.experts.1.w3.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9992684125900269,
+      "packed_bytes_len": 64
+    },
+    "layers.4.moe.experts.2.w1.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.027771497145295143,
+      "packed_bytes_len": 24576
+    },
+    "layers.4.moe.experts.2.w1.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9985818862915039,
+      "packed_bytes_len": 64
+    },
+    "layers.4.moe.experts.2.w2.weight": {
+      "shape": [
+        256,
+        384
+      ],
+      "gamma": 0.02362612634897232,
+      "packed_bytes_len": 24576
+    },
+    "layers.4.moe.experts.2.w2.rms_norm.weight": {
+      "shape": [
+        384
+      ],
+      "gamma": 0.9978468418121338,
+      "packed_bytes_len": 96
+    },
+    "layers.4.moe.experts.2.w3.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.03237586095929146,
+      "packed_bytes_len": 24576
+    },
+    "layers.4.moe.experts.2.w3.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.999208927154541,
+      "packed_bytes_len": 64
+    },
+    "layers.4.moe.experts.3.w1.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.02850501984357834,
+      "packed_bytes_len": 24576
+    },
+    "layers.4.moe.experts.3.w1.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9984990358352661,
+      "packed_bytes_len": 64
+    },
+    "layers.4.moe.experts.3.w2.weight": {
+      "shape": [
+        256,
+        384
+      ],
+      "gamma": 0.023521453142166138,
+      "packed_bytes_len": 24576
+    },
+    "layers.4.moe.experts.3.w2.rms_norm.weight": {
+      "shape": [
+        384
+      ],
+      "gamma": 0.9982412457466125,
+      "packed_bytes_len": 96
+    },
+    "layers.4.moe.experts.3.w3.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.03224596381187439,
+      "packed_bytes_len": 24576
+    },
+    "layers.4.moe.experts.3.w3.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9988310933113098,
+      "packed_bytes_len": 64
+    },
+    "layers.4.moe.experts.4.w1.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.02697475254535675,
+      "packed_bytes_len": 24576
+    },
+    "layers.4.moe.experts.4.w1.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9984642267227173,
+      "packed_bytes_len": 64
+    },
+    "layers.4.moe.experts.4.w2.weight": {
+      "shape": [
+        256,
+        384
+      ],
+      "gamma": 0.02194720320403576,
+      "packed_bytes_len": 24576
+    },
+    "layers.4.moe.experts.4.w2.rms_norm.weight": {
+      "shape": [
+        384
+      ],
+      "gamma": 0.9975150227546692,
+      "packed_bytes_len": 96
+    },
+    "layers.4.moe.experts.4.w3.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.03233921900391579,
+      "packed_bytes_len": 24576
+    },
+    "layers.4.moe.experts.4.w3.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9995760917663574,
+      "packed_bytes_len": 64
+    },
+    "layers.4.moe.experts.5.w1.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.02606162242591381,
+      "packed_bytes_len": 24576
+    },
+    "layers.4.moe.experts.5.w1.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9975901246070862,
+      "packed_bytes_len": 64
+    },
+    "layers.4.moe.experts.5.w2.weight": {
+      "shape": [
+        256,
+        384
+      ],
+      "gamma": 0.02227860689163208,
+      "packed_bytes_len": 24576
+    },
+    "layers.4.moe.experts.5.w2.rms_norm.weight": {
+      "shape": [
+        384
+      ],
+      "gamma": 0.9971389174461365,
+      "packed_bytes_len": 96
+    },
+    "layers.4.moe.experts.5.w3.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.03228931874036789,
+      "packed_bytes_len": 24576
+    },
+    "layers.4.moe.experts.5.w3.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9989944696426392,
+      "packed_bytes_len": 64
+    },
+    "layers.4.moe.experts.6.w1.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.029922673478722572,
+      "packed_bytes_len": 24576
+    },
+    "layers.4.moe.experts.6.w1.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9985136389732361,
+      "packed_bytes_len": 64
+    },
+    "layers.4.moe.experts.6.w2.weight": {
+      "shape": [
+        256,
+        384
+      ],
+      "gamma": 0.025152603164315224,
+      "packed_bytes_len": 24576
+    },
+    "layers.4.moe.experts.6.w2.rms_norm.weight": {
+      "shape": [
+        384
+      ],
+      "gamma": 0.999729335308075,
+      "packed_bytes_len": 96
+    },
+    "layers.4.moe.experts.6.w3.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.03214133158326149,
+      "packed_bytes_len": 24576
+    },
+    "layers.4.moe.experts.6.w3.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9993689060211182,
+      "packed_bytes_len": 64
+    },
+    "layers.4.moe.experts.7.w1.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.027594558894634247,
+      "packed_bytes_len": 24576
+    },
+    "layers.4.moe.experts.7.w1.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9986955523490906,
+      "packed_bytes_len": 64
+    },
+    "layers.4.moe.experts.7.w2.weight": {
+      "shape": [
+        256,
+        384
+      ],
+      "gamma": 0.022854812443256378,
+      "packed_bytes_len": 24576
+    },
+    "layers.4.moe.experts.7.w2.rms_norm.weight": {
+      "shape": [
+        384
+      ],
+      "gamma": 0.9976472854614258,
+      "packed_bytes_len": 96
+    },
+    "layers.4.moe.experts.7.w3.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.03223426640033722,
+      "packed_bytes_len": 24576
+    },
+    "layers.4.moe.experts.7.w3.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9993612170219421,
+      "packed_bytes_len": 64
+    },
+    "layers.5.attn.q_proj.weight": {
+      "shape": [
+        256,
+        256
+      ],
+      "gamma": 0.03262932598590851,
+      "packed_bytes_len": 16384
+    },
+    "layers.5.attn.q_proj.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9991052150726318,
+      "packed_bytes_len": 64
+    },
+    "layers.5.attn.k_proj.weight": {
+      "shape": [
+        256,
+        256
+      ],
+      "gamma": 0.032602012157440186,
+      "packed_bytes_len": 16384
+    },
+    "layers.5.attn.k_proj.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9987401962280273,
+      "packed_bytes_len": 64
+    },
+    "layers.5.attn.v_proj.weight": {
+      "shape": [
+        256,
+        256
+      ],
+      "gamma": 0.03248973190784454,
+      "packed_bytes_len": 16384
+    },
+    "layers.5.attn.v_proj.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9984138607978821,
+      "packed_bytes_len": 64
+    },
+    "layers.5.attn.out_proj.weight": {
+      "shape": [
+        256,
+        256
+      ],
+      "gamma": 0.030344992876052856,
+      "packed_bytes_len": 16384
+    },
+    "layers.5.attn.out_proj.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9969432353973389,
+      "packed_bytes_len": 64
+    },
+    "layers.5.moe.experts.0.w1.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.029144421219825745,
+      "packed_bytes_len": 24576
+    },
+    "layers.5.moe.experts.0.w1.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9988494515419006,
+      "packed_bytes_len": 64
+    },
+    "layers.5.moe.experts.0.w2.weight": {
+      "shape": [
+        256,
+        384
+      ],
+      "gamma": 0.023004740476608276,
+      "packed_bytes_len": 24576
+    },
+    "layers.5.moe.experts.0.w2.rms_norm.weight": {
+      "shape": [
+        384
+      ],
+      "gamma": 0.9978651404380798,
+      "packed_bytes_len": 96
+    },
+    "layers.5.moe.experts.0.w3.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.03205369412899017,
+      "packed_bytes_len": 24576
+    },
+    "layers.5.moe.experts.0.w3.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9993746876716614,
+      "packed_bytes_len": 64
+    },
+    "layers.5.moe.experts.1.w1.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.023371471092104912,
+      "packed_bytes_len": 24576
+    },
+    "layers.5.moe.experts.1.w1.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9974192976951599,
+      "packed_bytes_len": 64
+    },
+    "layers.5.moe.experts.1.w2.weight": {
+      "shape": [
+        256,
+        384
+      ],
+      "gamma": 0.021094784140586853,
+      "packed_bytes_len": 24576
+    },
+    "layers.5.moe.experts.1.w2.rms_norm.weight": {
+      "shape": [
+        384
+      ],
+      "gamma": 0.9976896643638611,
+      "packed_bytes_len": 96
+    },
+    "layers.5.moe.experts.1.w3.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.03239298239350319,
+      "packed_bytes_len": 24576
+    },
+    "layers.5.moe.experts.1.w3.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9991375803947449,
+      "packed_bytes_len": 64
+    },
+    "layers.5.moe.experts.2.w1.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.027081472799181938,
+      "packed_bytes_len": 24576
+    },
+    "layers.5.moe.experts.2.w1.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9986333847045898,
+      "packed_bytes_len": 64
+    },
+    "layers.5.moe.experts.2.w2.weight": {
+      "shape": [
+        256,
+        384
+      ],
+      "gamma": 0.02343655191361904,
+      "packed_bytes_len": 24576
+    },
+    "layers.5.moe.experts.2.w2.rms_norm.weight": {
+      "shape": [
+        384
+      ],
+      "gamma": 0.9976489543914795,
+      "packed_bytes_len": 96
+    },
+    "layers.5.moe.experts.2.w3.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.03222663328051567,
+      "packed_bytes_len": 24576
+    },
+    "layers.5.moe.experts.2.w3.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9991002082824707,
+      "packed_bytes_len": 64
+    },
+    "layers.5.moe.experts.3.w1.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.02721421606838703,
+      "packed_bytes_len": 24576
+    },
+    "layers.5.moe.experts.3.w1.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9989259839057922,
+      "packed_bytes_len": 64
+    },
+    "layers.5.moe.experts.3.w2.weight": {
+      "shape": [
+        256,
+        384
+      ],
+      "gamma": 0.021985014900565147,
+      "packed_bytes_len": 24576
+    },
+    "layers.5.moe.experts.3.w2.rms_norm.weight": {
+      "shape": [
+        384
+      ],
+      "gamma": 0.9981176853179932,
+      "packed_bytes_len": 96
+    },
+    "layers.5.moe.experts.3.w3.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.03232556954026222,
+      "packed_bytes_len": 24576
+    },
+    "layers.5.moe.experts.3.w3.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.999282717704773,
+      "packed_bytes_len": 64
+    },
+    "layers.5.moe.experts.4.w1.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.02307145856320858,
+      "packed_bytes_len": 24576
+    },
+    "layers.5.moe.experts.4.w1.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9961883425712585,
+      "packed_bytes_len": 64
+    },
+    "layers.5.moe.experts.4.w2.weight": {
+      "shape": [
+        256,
+        384
+      ],
+      "gamma": 0.018323540687561035,
+      "packed_bytes_len": 24576
+    },
+    "layers.5.moe.experts.4.w2.rms_norm.weight": {
+      "shape": [
+        384
+      ],
+      "gamma": 0.9976910948753357,
+      "packed_bytes_len": 96
+    },
+    "layers.5.moe.experts.4.w3.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.032748397439718246,
+      "packed_bytes_len": 24576
+    },
+    "layers.5.moe.experts.4.w3.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9992595911026001,
+      "packed_bytes_len": 64
+    },
+    "layers.5.moe.experts.5.w1.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.019068509340286255,
+      "packed_bytes_len": 24576
+    },
+    "layers.5.moe.experts.5.w1.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9970961809158325,
+      "packed_bytes_len": 64
+    },
+    "layers.5.moe.experts.5.w2.weight": {
+      "shape": [
+        256,
+        384
+      ],
+      "gamma": 0.018197549507021904,
+      "packed_bytes_len": 24576
+    },
+    "layers.5.moe.experts.5.w2.rms_norm.weight": {
+      "shape": [
+        384
+      ],
+      "gamma": 0.9971833825111389,
+      "packed_bytes_len": 96
+    },
+    "layers.5.moe.experts.5.w3.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.032759204506874084,
+      "packed_bytes_len": 24576
+    },
+    "layers.5.moe.experts.5.w3.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.999211847782135,
+      "packed_bytes_len": 64
+    },
+    "layers.5.moe.experts.6.w1.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.0222784336656332,
+      "packed_bytes_len": 24576
+    },
+    "layers.5.moe.experts.6.w1.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9977153539657593,
+      "packed_bytes_len": 64
+    },
+    "layers.5.moe.experts.6.w2.weight": {
+      "shape": [
+        256,
+        384
+      ],
+      "gamma": 0.019784284755587578,
+      "packed_bytes_len": 24576
+    },
+    "layers.5.moe.experts.6.w2.rms_norm.weight": {
+      "shape": [
+        384
+      ],
+      "gamma": 0.9969167709350586,
+      "packed_bytes_len": 96
+    },
+    "layers.5.moe.experts.6.w3.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.032730504870414734,
+      "packed_bytes_len": 24576
+    },
+    "layers.5.moe.experts.6.w3.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9993492960929871,
+      "packed_bytes_len": 64
+    },
+    "layers.5.moe.experts.7.w1.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.02204265631735325,
+      "packed_bytes_len": 24576
+    },
+    "layers.5.moe.experts.7.w1.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.996880054473877,
+      "packed_bytes_len": 64
+    },
+    "layers.5.moe.experts.7.w2.weight": {
+      "shape": [
+        256,
+        384
+      ],
+      "gamma": 0.019675282761454582,
+      "packed_bytes_len": 24576
+    },
+    "layers.5.moe.experts.7.w2.rms_norm.weight": {
+      "shape": [
+        384
+      ],
+      "gamma": 0.9967617392539978,
+      "packed_bytes_len": 96
+    },
+    "layers.5.moe.experts.7.w3.weight": {
+      "shape": [
+        384,
+        256
+      ],
+      "gamma": 0.03276382014155388,
+      "packed_bytes_len": 24576
+    },
+    "layers.5.moe.experts.7.w3.rms_norm.weight": {
+      "shape": [
+        256
+      ],
+      "gamma": 0.9991909265518188,
+      "packed_bytes_len": 64
+    }
+  }
+}

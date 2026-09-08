@@ -1,84 +1,90 @@
-# Sarah Ngin - Modèle d'Intelligence Artificielle 100% From Scratch
+# Sarah Ngin - Modèle d'Intelligence Artificielle Locale (iPhone 14)
 
-**Sarah Ngin** est un modèle d'intelligence artificielle auto-régressif (Small Language Model - Transformer) développé intégralement de zéro (sans dépendances pré-entraînées), optimisé pour tourner sur des environnements contraints en mémoire (< 4 Go RAM, parfait pour **iPhone 14**).
-
----
-
-## 🏗️ Architecture Technique
-
-```
-Sarah_Ngin/
-├── agent_developer/          # Agent Développeur autonome (acquisition & nettoyage)
-│   ├── data_collector.py     # Dictionnaires FR/HE/EN/ZH et corpus logiques
-│   └── cleaner.py            # Normalisation Unicode NFC et filtrage
-├── tokenizer/                # Tokenizer BPE (Byte-Pair Encoding) de zéro
-│   └── bpe_tokenizer.py      # Zéro OOV (Unicode Byte-level fallback multilingue)
-├── model/                    # Réseau de Neurones Transformer
-│   ├── config.py             # Hyperparamètres modulaires (Mobile / Standard)
-│   └── transformer.py        # RMSNorm, RoPE (Rotary Embeddings), SwiGLU, Weight Tying
-├── training/                 # Pipeline d'Entraînement
-│   ├── dataset.py            # Dataloader à fenêtrage glissant
-│   └── trainer.py            # AdamW, Cosine Warmup, Gradient Clipping, Perplexité
-├── inference/                # Moteur de Génération
-│   └── generate.py           # Top-K, Top-P (Nucleus), Température, Pénalité de répétition
-├── export/                   # Export Mobile & Edge
-│   └── export_mobile.py      # Quantification INT8, TorchScript iOS, ONNX, Benchmarks
-├── checkpoints/              # Poids du modèle et vocabulaire
-├── mobile_build/             # Modèles exportés pour iPhone 14
-└── main.py                   # Interface CLI unifiée
-```
+**Sarah Ngin** est un modèle d'intelligence artificielle conversationnelle auto-régressif (Small Language Model - Transformer) développé intégralement de zéro (from scratch), optimisé pour les environnements mobiles et contraints en mémoire (< 4 Go RAM, calibré pour **Apple iPhone 14 / A15 Bionic**).
 
 ---
 
-## ⚡ Caractéristiques pour iPhone 14 (4 Go RAM)
+## 🚀 Test Immédiat du Modèle
 
-- **Paramètres :** ~3.6M à 25M paramètres (selon configuration)
-- **Empreinte mémoire :** 
-  - **FP32 :** ~13.8 Mo
-  - **Quantifié INT8 :** ~3.46 Mo
-  - **RAM en fonctionnement :** < 100 Mo (Consomme moins de 2.5% des 4 Go de RAM d'un iPhone 14)
-- **Latence :** Inférence ultra-rapide sur CPU / Neural Engine (A15 Bionic).
+Pour tester le modèle d'intelligence artificielle directement :
 
----
-
-## 🚀 Utilisation Rapide
-
-### 1. Exécuter le pipeline complet (Collecte -> Tokenizer -> Entraînement -> Test -> Export Mobile)
+### 1. Test avec une question unique :
 ```bash
-python main.py --action all --epochs 25
+python test_sarah_model.py "Bonjour Sarah, comment vas-tu ?"
 ```
 
-### 2. Discuter en direct avec Sarah Ngin (Mode Chat Interactif)
+### 2. Mode conversation interactive en direct :
 ```bash
-python main.py --action chat
+python test_sarah_model.py
 ```
 
-### 3. Exécuter des étapes spécifiques
-- **Collecte des dictionnaires par l'Agent Développeur :**
-  ```bash
-  python main.py --action collect
-  ```
-- **Entraînement du Tokenizer BPE :**
-  ```bash
-  python main.py --action tokenize
-  ```
-- **Entraînement du réseau de neurones :**
-  ```bash
-  python main.py --action train --epochs 30
-  ```
-- **Test de génération textuelle :**
-  ```bash
-  python main.py --action generate
-  ```
-- **Exportation pour iPhone / Mobile :**
-  ```bash
-  python main.py --action export
-  ```
+### 3. Interface Web & Serveur Local :
+```bash
+python server.py
+# Accès navigateur : http://localhost:8080
+```
 
 ---
 
-## 🌐 Langues & Logique
-- **Français :** Définitions complètes, grammaire, relations sujet-verbe-complément, syllogismes logiques.
-- **Hébreu (עברית) :** Vocabulaire, concepts fondamentaux, alignement sémantique.
-- **Anglais (English) :** Termes techniques, structure des phrases, correspondances.
-- **Chinois (中文) :** Caractères essentiels, traductions, paires bilingues.
+## 🏗️ Architecture Technique & Spécifications
+
+* **Paramètres totaux :** `18,556,416` (18.55 M)
+* **Vocabulaire :** `3,763` tokens (BPE Byte-level multilingue)
+* **Dimension cachée (`d_model`) :** `384`
+* **Couches (`layers`) :** `8`
+* **Têtes d'attention (`heads`) :** `12` Q-Heads / `8` KV-Heads (Grouped-Query Attention)
+* **Contexte maximal :** `128` tokens
+* **Fonctionnalités :** RoPE (Rotary Position Embeddings), SwiGLU, RMSNorm, Weight Tying.
+
+---
+
+## 📦 Compilation & Exportation Mobile
+
+Pour compiler et exporter le modèle dans les formats optimisés :
+
+```bash
+# Compilation JIT / TorchScript autonome & standalone package
+python export/compile_model.py
+
+# Quantification INT8 et FP16 pour Apple Neural Engine / Metal
+python export/quantize_iphone14.py
+```
+
+### Empreinte mémoire sur iPhone 14 :
+* **Modèle original FP32 :** ~70.8 Mo
+* **Modèle exporté FP16 (Metal) :** ~35.4 Mo
+* **Modèle quantifié INT8 :** ~23.3 Mo
+* **RAM totale en fonctionnement :** < 65 Mo (< 2% de la RAM disponible sur iPhone 14)
+
+---
+
+## 📋 Rapport d'Audit & Évaluation
+
+Le rapport d'audit exhaustif et transparent du modèle chargé est disponible dans :
+* [AUDIT_COMPLET.md](AUDIT_COMPLET.md)
+* [web/audit_report.html](web/audit_report.html) (Rapport visuel HTML)
+
+---
+
+## 📂 Structure du Répertoire
+
+```
+Local-LLM-Sarah/
+├── agent_developer/          # Acquisition et nettoyage des données
+├── checkpoints/              # Poids du modèle et tokenizers (8k)
+├── data/                     # Datasets de conversation et corpus multilingue
+├── export/                   # Compilation JIT, quantization FP16/INT8
+│   ├── compile_model.py      # Compilation autonome
+│   └── quantize_iphone14.py  # Quantification mobile
+├── inference/                # Moteurs d'inférence autorégressifs
+│   └── generate.py           # Générateur avec pénalité de répétition
+├── memory/                   # Mémoire contextuelle persistante
+├── model/                    # Définition de l'architecture Transformer & BitNet/MoE
+├── tokenizer/                # Tokenizer BPE multilingue
+├── training/                 # Pipelines d'entraînement et curriculum
+├── web/                      # Interface web et tableau de bord
+├── AUDIT_COMPLET.md          # Rapport d'audit complet
+├── main.py                   # CLI unifiée
+├── server.py                 # Serveur HTTP API & Web UI
+└── test_sarah_model.py       # Script de test direct du modèle
+```

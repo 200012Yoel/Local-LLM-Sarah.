@@ -1,10 +1,11 @@
 """
 Tokenizer Byte-Pair Encoding (BPE) Multilingue conçu de zéro pour Sarah Ngin.
-Garantit 100% de couverture de vocabulaire (Français, Hébreu, Chinois, Anglais)
-sans risque de token inconnu (Unicode byte-level fallback).
+Garantit 100% de couverture de vocabulaire (Français, Anglais, Hébreu, Code)
+avec support natif des tokens de rôles conversationnels (<user>, <assistant>, <system>).
 """
 
 import json
+import re
 from pathlib import Path
 from typing import List, Dict, Tuple, Optional
 import logging
@@ -12,20 +13,25 @@ import logging
 logger = logging.getLogger(__name__)
 
 class SarahTokenizer:
-    def __init__(self, vocab_size: int = 4096):
+    def __init__(self, vocab_size: int = 8192):
         self.target_vocab_size = vocab_size
         self.special_tokens = {
             "<pad>": 0,
             "<bos>": 1,
             "<eos>": 2,
             "<unk>": 3,
+            "<user>": 4,
+            "<assistant>": 5,
+            "<system>": 6,
         }
         self.pad_token_id = self.special_tokens["<pad>"]
         self.bos_token_id = self.special_tokens["<bos>"]
         self.eos_token_id = self.special_tokens["<eos>"]
         self.unk_token_id = self.special_tokens["<unk>"]
-        
-        # Initialisation du vocabulaire avec les 256 octets standards (Byte-level)
+        self.user_token_id = self.special_tokens["<user>"]
+        self.assistant_token_id = self.special_tokens["<assistant>"]
+        self.system_token_id = self.special_tokens["<system>"]
+
         self.vocab: Dict[int, bytes] = {}
         self.inv_vocab: Dict[bytes, int] = {}
         self.merges: List[Tuple[bytes, bytes]] = []
@@ -37,7 +43,7 @@ class SarahTokenizer:
         """Initialise les tokens spéciaux et les 256 octets bruts pour zéro OOV."""
         self.vocab.clear()
         self.inv_vocab.clear()
-        
+
         # Special tokens
         for name, idx in self.special_tokens.items():
             b_name = name.encode("utf-8")
@@ -57,30 +63,30 @@ class SarahTokenizer:
         return len(self.vocab)
 
     def train(self, texts: List[str], max_merges: Optional[int] = None):
-        """
-        Entraîne l'algorithme BPE ultra-rapidement en agrégeant les fréquences de mots.
-        """
+        """Entraîne l'algorithme BPE en agrégeant les fréquences de mots."""
         self._init_base_vocab()
         self.merges = []
 
         offset = len(self.special_tokens)
-        
-        # 1. Extraction et comptage des mots/segments fréquents
+
         from collections import Counter
         word_counts = Counter()
         for text in texts:
-            for word in text.split(" "):
+            # Ne pas découper les tokens spéciaux
+            clean_text = text
+            for st in self.special_tokens.keys():
+                clean_text = clean_text.replace(st, " ")
+            for word in clean_text.split(" "):
                 if word:
                     word_counts[" " + word] += 1
 
-        # 2. Conversion en tuples d'octets (sur les 4000 mots les plus fréquents)
         vocab_words = {}
-        for word, freq in word_counts.most_common(4000):
+        for word, freq in word_counts.most_common(6000):
             raw_bytes = word.encode("utf-8")
             vocab_words[tuple(offset + b for b in raw_bytes)] = freq
 
         num_merges = (self.target_vocab_size - len(self.vocab)) if max_merges is None else max_merges
-        logger.info(f"Entraînement rapide du Tokenizer Sarah Ngin : {num_merges} fusions ciblées sur {len(vocab_words)} mots uniques...")
+        logger.info(f"Entraînement BPE : {num_merges} fusions ciblées...")
 
         for i in range(num_merges):
             pairs = {}
@@ -102,7 +108,6 @@ class SarahTokenizer:
             self.inv_vocab[merged_bytes] = new_idx
             self.merges.append((self.vocab[best_pair[0]], self.vocab[best_pair[1]]))
 
-            # Mettre à jour les mots du vocabulaire
             new_vocab_words = {}
             p0, p1 = best_pair
             for word_tuple, freq in vocab_words.items():
@@ -118,71 +123,67 @@ class SarahTokenizer:
                 new_vocab_words[tuple(new_word)] = freq
             vocab_words = new_vocab_words
 
-        logger.info(f"Tokenizer entraîné avec succès en mode rapide. Taille du vocabulaire : {self.vocab_size}")
+    def _ensure_bpe_ranks(self):
+        if not hasattr(self, "_bpe_ranks") or len(self._bpe_ranks) != len(self.merges):
+            self._bpe_ranks = {(p0, p1): idx for idx, (p0, p1) in enumerate(self.merges)}
 
     def _encode_single_word(self, word: str) -> List[int]:
-        """Encode un mot ou segment unique avec application des merges."""
         if not hasattr(self, "_encode_cache"):
             self._encode_cache = {}
         if word in self._encode_cache:
             return self._encode_cache[word]
 
+        self._ensure_bpe_ranks()
         raw_bytes = word.encode("utf-8")
         offset = len(self.special_tokens)
-        ids = [offset + b for b in raw_bytes]
+        parts = [self.vocab[offset + b] for b in raw_bytes]
 
-        for p0_bytes, p1_bytes in self.merges:
-            if len(ids) < 2:
+        while len(parts) >= 2:
+            pairs = [(parts[i], parts[i+1]) for i in range(len(parts)-1)]
+            ranks = [(self._bpe_ranks.get(p, float('inf')), i, p) for i, p in enumerate(pairs) if p in self._bpe_ranks]
+            if not ranks:
                 break
-            p0_id = self.inv_vocab.get(p0_bytes)
-            p1_id = self.inv_vocab.get(p1_bytes)
-            if p0_id is None or p1_id is None:
-                continue
-            merged_id = self.inv_vocab.get(p0_bytes + p1_bytes)
-            if merged_id is None:
-                continue
+            _, min_i, best_pair = min(ranks)
+            merged = best_pair[0] + best_pair[1]
+            parts = parts[:min_i] + [merged] + parts[min_i+2:]
 
-            new_ids = []
-            i = 0
-            while i < len(ids):
-                if i < len(ids) - 1 and ids[i] == p0_id and ids[i+1] == p1_id:
-                    new_ids.append(merged_id)
-                    i += 2
-                else:
-                    new_ids.append(ids[i])
-                    i += 1
-            ids = new_ids
-
+        ids = [self.inv_vocab[p] for p in parts if p in self.inv_vocab]
         self._encode_cache[word] = ids
         return ids
 
     def encode(self, text: str, add_bos: bool = True, add_eos: bool = True) -> List[int]:
-        """
-        Encode une chaîne de caractères en IDs de tokens ultra-rapidement avec cache.
-        """
+        """Encode une chaîne de caractères en tokens en préservant les balises de rôles spéciales."""
         if not text:
             tokens = []
             if add_bos: tokens = [self.bos_token_id] + tokens
             if add_eos: tokens = tokens + [self.eos_token_id]
             return tokens
 
-        tokens = []
-        words = text.split(" ")
-        for idx, word in enumerate(words):
-            segment = (" " if idx > 0 else "") + word
-            tokens.extend(self._encode_single_word(segment))
+        special_pattern = r"(<pad>|<bos>|<eos>|<unk>|<user>|<assistant>|<system>)"
+        parts = re.split(special_pattern, text)
 
-        if add_bos:
-            tokens = [self.bos_token_id] + tokens
-        if add_eos:
-            tokens = tokens + [self.eos_token_id]
+        tokens = []
+        if add_bos and not text.startswith("<bos>"):
+            tokens.append(self.bos_token_id)
+
+        for part in parts:
+            if not part:
+                continue
+            if part in self.special_tokens:
+                tokens.append(self.special_tokens[part])
+            else:
+                words = part.split(" ")
+                for idx, word in enumerate(words):
+                    segment = (" " if idx > 0 else "") + word
+                    tokens.extend(self._encode_single_word(segment))
+
+        if add_eos and not text.endswith("<eos>"):
+            tokens.append(self.eos_token_id)
 
         return tokens
 
     def decode(self, tokens: List[int], skip_special_tokens: bool = True) -> str:
-        """
-        Décode une liste de tokens en texte UTF-8.
-        """
+        """Décode les tokens en chaîne de caractères UTF-8."""
         byte_chunks = []
         special_ids = set(self.special_tokens.values())
 
@@ -195,14 +196,12 @@ class SarahTokenizer:
                 byte_chunks.append(b"?")
 
         all_bytes = b"".join(byte_chunks)
-        # Décodage avec remplacement tolérant si un octet isolé
-        return all_bytes.decode("utf-8", errors="replace")
+        text = all_bytes.decode("utf-8", errors="replace").replace("\ufffd", "")
+        return text
 
     def save(self, filepath: str):
-        """Sauvegarde le vocabulaire et les règles de merge au format JSON."""
         path = Path(filepath)
         path.parent.mkdir(parents=True, exist_ok=True)
-
         data = {
             "special_tokens": self.special_tokens,
             "vocab": {str(k): list(v) for k, v in self.vocab.items()},
@@ -210,11 +209,9 @@ class SarahTokenizer:
         }
         with open(path, "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False)
-        logger.info(f"Tokenizer sauvegardé dans {path}")
 
     @classmethod
     def load(cls, filepath: str) -> "SarahTokenizer":
-        """Recharge un tokenizer sauvegardé."""
         path = Path(filepath)
         with open(path, "r", encoding="utf-8") as f:
             data = json.load(f)
@@ -225,10 +222,11 @@ class SarahTokenizer:
         tokenizer.bos_token_id = tokenizer.special_tokens["<bos>"]
         tokenizer.eos_token_id = tokenizer.special_tokens["<eos>"]
         tokenizer.unk_token_id = tokenizer.special_tokens["<unk>"]
+        tokenizer.user_token_id = tokenizer.special_tokens.get("<user>", 4)
+        tokenizer.assistant_token_id = tokenizer.special_tokens.get("<assistant>", 5)
+        tokenizer.system_token_id = tokenizer.special_tokens.get("<system>", 6)
 
         tokenizer.vocab = {int(k): bytes(v) for k, v in data["vocab"].items()}
         tokenizer.inv_vocab = {v: k for k, v in tokenizer.vocab.items()}
         tokenizer.merges = [(bytes(p0), bytes(p1)) for p0, p1 in data["merges"]]
-
-        logger.info(f"Tokenizer chargé depuis {path} (Vocabulaire: {tokenizer.vocab_size})")
         return tokenizer

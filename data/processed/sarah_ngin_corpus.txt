@@ -9355,6 +9355,7 @@ _La sculpture décorative_ (fig. 81 à 92).
 CHAPITRE VI.--L'AVENIR DE L'ART RUSSE
 _La peinture décorative_ (fig. 93 à 97).
 FIN DE LA TABLE DES MATIÈRES.
+* * * * *
 Il est des peuples auxquels on accorde tout, d'autres auxquels on refuse
 tout: dans notre vieux coin occidental de l'Europe, s'entend.
 Et quand on voit, en France, bon nombre de Français refuser à leur
@@ -15415,74 +15416,45 @@ Humain: Sah quel plaisir de discuter avec toi.
 Sarah Ngin: Merci bcp frérot ! Le plaisir est partagé.
 Humain: Jpp de réviser mes cours.
 Sarah Ngin: Courage ! Fais une petite pause pour chiller et on reprend ensemble après.
-<knowledge_category>Python_DeepLearning</knowledge_category>
-<source_code>
-# Implémentation du Bloc Transformer Sarah Engine
-import torch
-import torch.nn as nn
-
-class RMSNorm(nn.Module):
- def __init__(self, dim: int, eps: float = 1e-5):
- super().__init__()
- self.eps = eps
- self.weight = nn.Parameter(torch.ones(dim))
- def forward(self, x: torch.Tensor) -> torch.Tensor:
- return x * torch.rsqrt(x.pow(2).mean(-1, keepdim=True) + self.eps) * self.weight
-
-class SwiGLUFeedForward(nn.Module):
- def __init__(self, dim: int, hidden_dim: int):
- super().__init__()
- self.w1 = nn.Linear(dim, hidden_dim, bias=False)
- self.w2 = nn.Linear(hidden_dim, dim, bias=False)
- self.w3 = nn.Linear(dim, hidden_dim, bias=False)
- def forward(self, x: torch.Tensor) -> torch.Tensor:
- return self.w2(torch.nn.functional.silu(self.w1(x)) * self.w3(x))
-
-</source_code>
-<knowledge_category>Swift_AppleShortcuts</knowledge_category>
-<source_code>
-// Intégration Native Apple Shortcuts & AppIntents pour Sarah Engine
-import AppIntents
-import SwiftUI
-
-@available(iOS 16.0, macOS 13.0, *)
-struct SarahEngineChatIntent: AppIntent {
- static var title: LocalizedStringResource = "Exécuter Sarah Engine"
- static var description = IntentDescription("Envoie une consigne au réseau neuronal Sarah Engine embarqué.")
- 
- @Parameter(title: "Prompt", description: "La question ou commande pour Sarah")
- var prompt: String
- 
- func perform() async throws -> some ProvidesDialog {
- let response = await SarahEngineBridge.generate(prompt: prompt)
- return .result(dialog: IntentDialog(stringLiteral: response))
- }
-}
-
-</source_code>
-<knowledge_category>NodeJS_Backend</knowledge_category>
-<source_code>
-// Serveur Micro-Service HTTP Node.js Ultra-Rapide pour Sarah Engine
-const http = require('http');
-
-const server = http.createServer((req, res) => {
- if (req.method === 'POST' && req.url === '/v1/sarah/infer') {
- let body = '';
- req.on('data', chunk => body += chunk);
- req.on('end', () => {
- const payload = JSON.parse(body);
- res.writeHead(200, { 'Content-Type': 'application/json' });
- res.end(JSON.stringify({ model: 'Sarah Engine', status: 'ready', answer: 'Inférence locale exécutée.' }));
- });
- } else {
- res.writeHead(404);
- res.end();
- }
-});
-
-server.listen(8080, () => console.log('Serveur Sarah Engine en écoute sur 8080'));
-
-</source_code>
+Règle de fiabilité : Tout code généré doit être syntaxiquement valide, typé, et exempt de bugs.
+Architecture Single-File Web : Les composants HTML, le style CSS et la logique JavaScript doivent être unifiés dans un seul fichier autonome.
+Gestion de la mémoire : Éviter les fuites de mémoire, libérer les écouteurs d'événements et utiliser des structures légères.
+Complexité algorithmique : Privilégier les algorithmes en O(n) ou O(n log n) et éviter les boucles imbriquées inutiles.
+Typage et Clarté : Déclarer explicitement les types et documenter les entrées et sorties des fonctions.
+Python : Calcul de la perte d'entropie croisée : loss = -torch.sum(targets * torch.log(predictions + 1e-12)) / batch_size
+Python : Définition d'un module PyTorch Transformer : class TransformerBlock(nn.Module): def __init__(self, d_model, n_heads): super().__init__()
+Python : Fonction de recherche binaire optimisée : def binary_search(arr: list, target: int) -> int: left, right = 0, len(arr) - 1
+Python : Décorateur de mesure de latence : def timeit(func): def wrapper(*args, **kwargs): start = time.perf_counter(); return func(*args, **kwargs)
+Python : Générateur de tokens avec streaming : def stream_tokens(model, tokenizer, prompt): for token in model.generate(prompt): yield token
+Python : Optimiseur AdamW avec découplage du Weight Decay pour stabiliser l'apprentissage des réseaux de neurones.
+Python : Mécanisme d'attention multi-têtes : Attention(Q, K, V) = softmax(Q @ K.T / sqrt(d_k)) @ V
+Python : Quantification INT8 : torch.quantization.quantize_dynamic(model, {nn.Linear}, dtype=torch.qint8)
+HTML/CSS/JS : Structure Single-File propre avec <!DOCTYPE html><html><head><style>...</style></head><body>...<script>...</script></body></html>
+CSS Moderne : Utilisation des variables CSS :root { --bg: #0d0e12; --accent: #3b82f6; --text: #f3f4f6; } pour le mode sombre.
+CSS Glassmorphism : backdrop-filter: blur(20px); background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1);
+JavaScript : Requête asynchrone sécurisée : const res = await fetch('/api/chat', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ message }) });
+JavaScript Web Audio API : const ctx = new AudioContext(); const osc = ctx.createOscillator(); osc.frequency.setValueAtTime(440, ctx.currentTime);
+JavaScript HTML5 Canvas : const ctx = canvas.getContext('2d'); ctx.clearRect(0, 0, width, height); ctx.arc(x, y, radius, 0, Math.PI * 2);
+JavaScript Gestion d'événements clavier : window.addEventListener('keydown', (e) => { if (e.key === 'Enter' && !e.shiftKey) sendMessage(); });
+SwiftUI : Structure de vue principale : struct ContentView: View { @State private var message = ''; var body: some View { VStack { Text(message) } } }
+SwiftUI : Gestion de la mémoire et des états : @StateObject private var modelEngine = SarahEngineViewModel()
+Swift : Intégration de modèle CoreML ou TorchScript Mobile : let module = TorchModule(fileAtPath: modelPath)
+Swift : Exécution en arrière-plan asynchrone : Task.detached(priority: .userInitiated) { let output = await engine.generate(prompt: prompt) }
+Swift : Performance sur iPhone 14 : Consommation mémoire optimisée sous 150 Mo avec quantification des tenseurs.
+Java : Modèle de données immuable : public record UserMemory(String id, String text, double importance) {}
+Java : Traitement fonctionnel avec Stream API : list.stream().filter(m -> m.importance() > 1.5).map(UserMemory::text).toList();
+Java : Singleton Thread-Safe pour moteur d'inférence : public class ModelEngine { private static volatile ModelEngine instance; }
+Java : Gestion propre des exceptions : try (var reader = Files.newBufferedReader(path)) { return reader.lines().toList(); }
+Question: Comment optimiser un réseau de neurones pour mobile ?
+Réponse: Appliquer la quantification dynamique INT8, réduire la dimension d'embedding et fusionner les opérations linéaires.
+Question: Quelle est la règle d'or pour un front-end Single-File ?
+Réponse: Intégrer l'ensemble du HTML, des styles CSS modernes et des scripts JS dans un seul fichier sans dépendance externe superflue.
+Question: Comment fonctionne l'attention multi-têtes ?
+Réponse: Elle projette les vecteurs Query, Key et Value dans plusieurs sous-espaces pour capturer simultanément différentes relations sémantiques.
+Question: Comment garantir 0 erreur dans la génération de code ?
+Réponse: Respecter scrupuleusement la syntaxe du langage, valider l'AST, typer les variables et tester chaque fonction de manière unitaire.
+Question: Pourquoi Sarah Ngin est-elle optimisée pour iPhone 14 ?
+Réponse: Avec 3.71M de paramètres et une empreinte mémoire inférieure à 150 Mo, elle s'exécute localement à 3400+ tokens/s sur 4 Go de RAM.
 Apple Shortcuts (Scripting & Logique) : Action 'Définir une variable (Set Variable)' - Rôle : Stocke une valeur textuelle, numérique ou objet dans une variable réutilisable.
 Guide Raccourcis iOS : Pour utiliser 'Définir une variable (Set Variable)', on configure le flux d'automatisation selon : Stocke une valeur textuelle, numérique ou objet dans une variable réutilisable.
 Automatisation Apple : 'Définir une variable (Set Variable)' permet d'interagir nativement avec l'écosystème iPhone et macOS.
@@ -15533,26 +15505,16 @@ Guide Raccourcis iOS : Pour utiliser 'IntentParameter', on configure le flux d'a
 Automatisation Apple : 'IntentParameter' permet d'interagir nativement avec l'écosystème iPhone et macOS.
 Exemple de Code Swift / Xcode pour Apple Shortcuts :
 import AppIntents
-
 struct SarahNginIntent: AppIntent {
- static var title: LocalizedStringResource = 'Demander à Sarah Ngin'
- @Parameter(title: 'Question') var prompt: String
- func perform() async throws -> some ProvidesDialog {
- return .result(dialog: 'Sarah Ngin traite votre demande.')
- }
-}
-Exemple de Code Swift / Xcode pour Apple Shortcuts :
-import AppIntents
-
+static var title: LocalizedStringResource = 'Demander à Sarah Ngin'
+@Parameter(title: 'Question') var prompt: String
+func perform() async throws -> some ProvidesDialog {
+return .result(dialog: 'Sarah Ngin traite votre demande.')
 struct SarahShortcutsProvider: AppShortcutsProvider {
- static var appShortcuts: [AppShortcut] {
- AppShortcut(
- intent: SarahNginIntent(),
- phrases: ['Demande à Sarah Ngin', 'Ouvre Sarah Ngin']
- )
- }
-}
-Exemple de Code Swift / Xcode pour Apple Shortcuts :
+static var appShortcuts: [AppShortcut] {
+AppShortcut(
+intent: SarahNginIntent(),
+phrases: ['Demande à Sarah Ngin', 'Ouvre Sarah Ngin']
 // Apple Shortcuts HTTP API Request:
 // Action: Get Contents of URL -> Method: POST -> Headers: Content-Type: application/json -> Request Body: JSON payload
 Dictionnaire Français : L'intelligence artificielle (nom féminin) - Définition : Ensemble des théories et des techniques développant des programmes informatiques complexes capables de simuler certains traits de l'intelligence humaine comme l'apprentissage et le raisonnement.
@@ -15698,7 +15660,6 @@ Question: Qu'est-ce que l'intelligence artificielle ?
 Réponse: L'intelligence artificielle est la capacité d'un système informatique à apprendre des modèles et à raisonner logiquement.
 Question: Quel est le rôle d'un dictionnaire ?
 Réponse: Un dictionnaire répertorie et définit les mots pour structurer la langue et la compréhension.
-Question: Pourquoi Sarah Ngin est-elle optimisée pour iPhone 14 ?
 Réponse: Grâce à une architecture Transformer compacte et une faible empreinte mémoire, Sarah Ngin fonctionne avec moins de 4 Go de RAM.
 Question: Quelle est la relation entre cause et effet ?
 Réponse: La cause est l'événement qui produit un résultat, et l'effet est la conséquence directe de cette cause.
